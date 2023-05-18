@@ -1,12 +1,12 @@
 import { Bindable, Event, Events } from '@ephox/porkbun';
 import { SugarElement } from '@ephox/sugar';
 
-import * as Adjustments from '../resize/Adjustments';
-import { BarManager } from '../resize/BarManager';
-import * as BarPositions from '../resize/BarPositions';
 import { ResizeBehaviour } from './ResizeBehaviour';
 import { ResizeWire } from './ResizeWire';
 import { TableSize } from './TableSize';
+import * as Adjustments from '../resize/Adjustments';
+import { BarManager } from '../resize/BarManager';
+import * as BarPositions from '../resize/BarPositions';
 
 type BarPositions<A> = BarPositions.BarPositions<A>;
 type ResizeType = 'row' | 'col';

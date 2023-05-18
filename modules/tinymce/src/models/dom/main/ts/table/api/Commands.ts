@@ -4,14 +4,14 @@ import { Insert, Remove, Replication, SelectorFind, Selectors, SugarElement, Sug
 
 import Editor from 'tinymce/core/api/Editor';
 
+import * as FakeClipboard from './Clipboard';
+import * as Options from './Options';
 import * as InsertTable from '../actions/InsertTable';
 import { AdvancedPasteTableAction, CombinedTargetsTableAction, TableActionResult, TableActions } from '../actions/TableActions';
 import * as Events from '../api/Events';
 import * as Utils from '../core/TableUtils';
 import * as TableTargets from '../queries/TableTargets';
 import * as TableSelection from '../selection/TableSelection';
-import * as FakeClipboard from './Clipboard';
-import * as Options from './Options';
 
 type ExecuteAction<T> = (table: SugarElement<HTMLTableElement>, startCell: SugarElement<HTMLTableCellElement>) => T;
 

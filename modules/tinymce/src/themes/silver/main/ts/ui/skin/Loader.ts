@@ -5,8 +5,8 @@ import DOMUtils from 'tinymce/core/api/dom/DOMUtils';
 import StyleSheetLoader from 'tinymce/core/api/dom/StyleSheetLoader';
 import Editor from 'tinymce/core/api/Editor';
 
-import * as Options from '../../api/Options';
 import * as SkinLoaded from './SkinLoaded';
+import * as Options from '../../api/Options';
 
 const loadStylesheet = (editor: Editor, stylesheetUrl: string, styleSheetLoader: StyleSheetLoader): Promise<void> => {
   // Ensure the stylesheet is cleaned up when the editor is destroyed

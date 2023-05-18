@@ -18,8 +18,8 @@
 
 import { Obj, Unicode } from '@ephox/katamari';
 
-import { URLConverter } from '../OptionTypes';
 import Schema, { SchemaMap } from './Schema';
+import { URLConverter } from '../OptionTypes';
 
 export type StyleMap = Record<string, string | number>;
 

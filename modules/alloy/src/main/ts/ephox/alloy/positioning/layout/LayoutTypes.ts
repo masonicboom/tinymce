@@ -1,9 +1,9 @@
 import { SugarElement } from '@ephox/sugar';
 
-import * as Boxes from '../../alien/Boxes';
-import { SpotInfo } from '../view/SpotInfo';
 import { Bubble } from './Bubble';
 import { Placement } from './Placement';
+import * as Boxes from '../../alien/Boxes';
+import { SpotInfo } from '../view/SpotInfo';
 
 export interface AnchorBox {
   readonly x: number;

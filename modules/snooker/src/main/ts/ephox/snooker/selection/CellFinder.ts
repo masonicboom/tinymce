@@ -1,9 +1,9 @@
 import { Arr, Fun, Optional } from '@ephox/katamari';
 import { Compare, SugarElement } from '@ephox/sugar';
 
-import { Warehouse } from '../api/Warehouse';
 import * as CellBounds from './CellBounds';
 import * as CellGroup from './CellGroup';
+import { Warehouse } from '../api/Warehouse';
 
 const moveBy = (warehouse: Warehouse, cell: SugarElement<HTMLTableCellElement>, row: number, column: number): Optional<SugarElement<HTMLTableCellElement>> => {
   return Warehouse.findItem(warehouse, cell, Compare.eq).bind((detail) => {

@@ -1,13 +1,13 @@
 import { Arr, Fun, Optional } from '@ephox/katamari';
 import { Css, Height, SugarElement, Width } from '@ephox/sugar';
 
+import { DetailExt, RowDetail, Column, Detail } from './Structs';
+import { Warehouse } from './Warehouse';
 import * as BarPositions from '../resize/BarPositions';
 import * as ColumnSizes from '../resize/ColumnSizes';
 import * as Redistribution from '../resize/Redistribution';
 import * as Sizes from '../resize/Sizes';
 import * as CellUtils from '../util/CellUtils';
-import { DetailExt, RowDetail, Column, Detail } from './Structs';
-import { Warehouse } from './Warehouse';
 
 const redistributeToW = (newWidths: string[], cells: DetailExt[], unit: string): void => {
   Arr.each(cells, (cell) => {

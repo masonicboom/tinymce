@@ -1,3 +1,6 @@
+import { Form } from './Form';
+import * as Sketcher from './Sketcher';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as AlloyParts from '../../parts/AlloyParts';
 import * as ExpandableFormSchema from '../../ui/schema/ExpandableFormSchema';
 import { ExpandableFormApis, ExpandableFormDetail, ExpandableFormSketcher, ExpandableFormSpec } from '../../ui/types/ExpandableFormTypes';
@@ -6,9 +9,6 @@ import { Sliding } from '../behaviour/Sliding';
 import { AlloyComponent } from '../component/ComponentApi';
 import * as SketchBehaviours from '../component/SketchBehaviours';
 import { SketchSpec } from '../component/SpecTypes';
-import { Form } from './Form';
-import * as Sketcher from './Sketcher';
-import { CompositeSketchFactory } from './UiSketcher';
 
 const runOnExtra = (detail: ExpandableFormDetail, operation: (comp: AlloyComponent) => void) => (anyComp: AlloyComponent) => {
   AlloyParts.getPart(anyComp, detail, 'extra').each(operation);

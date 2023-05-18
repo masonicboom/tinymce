@@ -2,13 +2,13 @@ import { FieldSchema } from '@ephox/boulder';
 import { Optional } from '@ephox/katamari';
 import { SugarBody } from '@ephox/sugar';
 
-import { AlloyComponent } from '../../api/component/ComponentApi';
-import * as Fields from '../../data/Fields';
-import * as Origins from '../layout/Origins';
 import { Anchoring, NodeAnchor } from './Anchoring';
 import * as AnchorLayouts from './AnchorLayouts';
 import * as ContainerOffsets from './ContainerOffsets';
 import * as ContentAnchorCommon from './ContentAnchorCommon';
+import { AlloyComponent } from '../../api/component/ComponentApi';
+import * as Fields from '../../data/Fields';
+import * as Origins from '../layout/Origins';
 
 const placement = (component: AlloyComponent, anchorInfo: NodeAnchor, origin: Origins.OriginAdt): Optional<Anchoring> => {
   const rootPoint = ContainerOffsets.getRootPoint(component, origin, anchorInfo);

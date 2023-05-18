@@ -1,5 +1,9 @@
 import { Fun, Optional, Singleton } from '@ephox/katamari';
 
+import { Button } from './Button';
+import * as Sketcher from './Sketcher';
+import { Toolbar } from './Toolbar';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as ComponentStructure from '../../alien/ComponentStructure';
 import * as AriaControls from '../../aria/AriaControls';
 import * as MaxWidth from '../../positioning/layout/MaxWidth';
@@ -21,10 +25,6 @@ import { Toggling } from '../behaviour/Toggling';
 import { AlloyComponent } from '../component/ComponentApi';
 import { SketchBehaviours } from '../component/SketchBehaviours';
 import { AlloySpec, SketchSpec } from '../component/SpecTypes';
-import { Button } from './Button';
-import * as Sketcher from './Sketcher';
-import { Toolbar } from './Toolbar';
-import { CompositeSketchFactory } from './UiSketcher';
 
 const shouldSkipFocus = Singleton.value<boolean>();
 

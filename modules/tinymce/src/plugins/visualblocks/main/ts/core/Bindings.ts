@@ -2,8 +2,8 @@ import { Cell } from '@ephox/katamari';
 
 import Editor from 'tinymce/core/api/Editor';
 
-import * as Options from '../api/Options';
 import * as VisualBlocks from './VisualBlocks';
+import * as Options from '../api/Options';
 
 const setup = (editor: Editor, pluginUrl: string, enabledState: Cell<boolean>): void => {
   // Prevents the visualblocks from being presented in the preview of formats when that is computed

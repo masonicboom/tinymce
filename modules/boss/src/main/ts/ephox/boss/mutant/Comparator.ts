@@ -1,7 +1,7 @@
 import { Arr, Optional } from '@ephox/katamari';
 
-import { Gene } from '../api/Gene';
 import * as Attribution from './Attribution';
+import { Gene } from '../api/Gene';
 
 const ATTR_REGEX = /^\[(.*)\]$/;
 

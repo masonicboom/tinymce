@@ -1,13 +1,13 @@
 import { Future, Optional, Result } from '@ephox/katamari';
 
+import { CommonDropdownDetail } from './DropdownTypes';
+import { TieredData, TieredMenuSpec } from './TieredMenuTypes';
 import { AlloyBehaviourRecord } from '../../api/behaviour/Behaviour';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import { SketchBehaviours } from '../../api/component/SketchBehaviours';
 import { AlloySpec, RawDomSchema } from '../../api/component/SpecTypes';
 import { CompositeSketch, CompositeSketchSpec } from '../../api/ui/Sketcher';
 import { AnchorOverrides, AnchorSpec, HasLayoutAnchorSpec } from '../../positioning/mode/Anchoring';
-import { CommonDropdownDetail } from './DropdownTypes';
-import { TieredData, TieredMenuSpec } from './TieredMenuTypes';
 
 export interface SplitDropdownDetail extends CommonDropdownDetail<TieredData> {
   splitDropdownBehaviours: SketchBehaviours;

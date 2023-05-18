@@ -2,13 +2,13 @@ import { Objects } from '@ephox/boulder';
 import { Fun } from '@ephox/katamari';
 import { TransformFind } from '@ephox/sugar';
 
+import * as AlloyTriggers from './AlloyTriggers';
+import * as SystemEvents from './SystemEvents';
 import * as EventRoot from '../../alien/EventRoot';
 import * as EventHandler from '../../construct/EventHandler';
 import { EventFormat, SimulatedEvent } from '../../events/SimulatedEvent';
 import { AlloyComponent } from '../component/ComponentApi';
 import { CompositeSketchDetail } from '../ui/Sketcher';
-import * as AlloyTriggers from './AlloyTriggers';
-import * as SystemEvents from './SystemEvents';
 
 export type AlloyEventRecord = Record<string, AlloyEventHandler<EventFormat>>;
 

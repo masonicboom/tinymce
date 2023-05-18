@@ -1,5 +1,5 @@
-import { SugarElement } from '../node/SugarElement';
 import * as SelectorFind from './SelectorFind';
+import { SugarElement } from '../node/SugarElement';
 
 const any = (selector: string): boolean =>
   SelectorFind.first(selector).isSome();

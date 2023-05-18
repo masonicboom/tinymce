@@ -1,11 +1,11 @@
 import { Adt, Arr, Cell, Fun, Optional } from '@ephox/katamari';
 import { SugarElement, Traverse } from '@ephox/sugar';
 
-import { DebuggerLogger } from '../debugging/Debugging';
 import * as DescribedHandler from './DescribedHandler';
 import { ElementAndHandler, UidAndHandler } from './EventRegistry';
 import * as EventSource from './EventSource';
 import { EventFormat, fromExternal, fromSource } from './SimulatedEvent';
+import { DebuggerLogger } from '../debugging/Debugging';
 
 type LookupEvent = (eventName: string, target: SugarElement<Node>) => Optional<ElementAndHandler>;
 

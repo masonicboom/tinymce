@@ -1,7 +1,7 @@
 import { Arr, Type } from '@ephox/katamari';
 
-import Entities from '../html/Entities';
 import Tools from './Tools';
+import Entities from '../html/Entities';
 
 /**
  * This class handles parsing, modification and serialization of URI/URL strings.

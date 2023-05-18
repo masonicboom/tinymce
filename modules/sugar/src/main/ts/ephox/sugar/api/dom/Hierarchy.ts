@@ -1,8 +1,8 @@
 import { Fun, Optional } from '@ephox/katamari';
 
+import * as Compare from './Compare';
 import { SugarElement } from '../node/SugarElement';
 import * as Traverse from '../search/Traverse';
-import * as Compare from './Compare';
 
 /*
  * The exported functions in this module are:

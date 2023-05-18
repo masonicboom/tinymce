@@ -3,11 +3,11 @@ import { Fun, Optional } from '@ephox/katamari';
 import { Bindable, Event, Events } from '@ephox/porkbun';
 import { Attribute, Class, Compare, ContentEditable, Css, DomEvent, SelectorFind, SugarBody, SugarElement } from '@ephox/sugar';
 
+import { BarMutation } from './BarMutation';
+import * as Bars from './Bars';
 import { ResizeWire } from '../api/ResizeWire';
 import * as Styles from '../style/Styles';
 import * as CellUtils from '../util/CellUtils';
-import { BarMutation } from './BarMutation';
-import * as Bars from './Bars';
 
 export interface DragAdjustHeightEvent {
   readonly table: SugarElement<HTMLTableElement>;

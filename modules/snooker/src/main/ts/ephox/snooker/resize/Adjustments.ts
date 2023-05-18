@@ -1,6 +1,10 @@
 import { Arr } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import { BarPositions, RowInfo } from './BarPositions';
+import * as ColumnSizes from './ColumnSizes';
+import * as Recalculations from './Recalculations';
+import * as Sizes from './Sizes';
 import { ResizeBehaviour } from '../api/ResizeBehaviour';
 import { Detail, RowDetail } from '../api/Structs';
 import { TableSize } from '../api/TableSize';
@@ -8,10 +12,6 @@ import { Warehouse } from '../api/Warehouse';
 import * as Deltas from '../calc/Deltas';
 import * as CellUtils from '../util/CellUtils';
 import { CellElement } from '../util/TableTypes';
-import { BarPositions, RowInfo } from './BarPositions';
-import * as ColumnSizes from './ColumnSizes';
-import * as Recalculations from './Recalculations';
-import * as Sizes from './Sizes';
 
 const sumUp = (newSize: number[]) => Arr.foldr(newSize, (b, a) => b + a, 0);
 

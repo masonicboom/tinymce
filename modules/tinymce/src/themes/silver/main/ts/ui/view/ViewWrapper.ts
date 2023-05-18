@@ -7,10 +7,10 @@ import { View as BridgeView } from '@ephox/bridge';
 import { Arr, Fun, Obj, Optional } from '@ephox/katamari';
 import { Attribute, Css } from '@ephox/sugar';
 
-import { UiFactoryBackstage, UiFactoryBackstageProviders } from '../../backstage/Backstage';
-import { SimpleBehaviours } from '../alien/SimpleBehaviours';
 import View from './View';
 import { ViewConfig } from './ViewTypes';
+import { UiFactoryBackstage, UiFactoryBackstageProviders } from '../../backstage/Backstage';
+import { SimpleBehaviours } from '../alien/SimpleBehaviours';
 
 interface SilverViewWrapperSpec extends Sketcher.SingleSketchSpec {
   readonly backstage: UiFactoryBackstage;

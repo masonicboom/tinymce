@@ -1,10 +1,10 @@
 import { Fun } from '@ephox/katamari';
 
+import * as PartType from './PartType';
 import * as Behaviour from '../api/behaviour/Behaviour';
 import { Positioning } from '../api/behaviour/Positioning';
 import * as AlloyEvents from '../api/events/AlloyEvents';
 import * as NativeEvents from '../api/events/NativeEvents';
-import * as PartType from './PartType';
 
 const suffix = Fun.constant('sink');
 const partType = Fun.constant(PartType.optional({

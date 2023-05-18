@@ -1,12 +1,12 @@
 import { Optional, Type } from '@ephox/katamari';
 import { PlatformDetection } from '@ephox/sand';
 
+import * as SugarLocation from './SugarLocation';
+import { SugarPosition } from './SugarPosition';
 import * as Insert from '../dom/Insert';
 import * as Remove from '../dom/Remove';
 import * as SugarBody from '../node/SugarBody';
 import { SugarElement } from '../node/SugarElement';
-import * as SugarLocation from './SugarLocation';
-import { SugarPosition } from './SugarPosition';
 
 interface ScrollCapture {
   readonly save: () => void;

@@ -1,14 +1,14 @@
 import { Cell } from '@ephox/katamari';
 
-import Editor from '../api/Editor';
-import Env from '../api/Env';
-import VK from '../api/util/VK';
 import * as BoundarySelection from './BoundarySelection';
 import * as CefNavigation from './CefNavigation';
 import * as ContentEndpointNavigation from './ContentEndpointNavigation';
 import * as MatchKeys from './MatchKeys';
 import * as MediaNavigation from './MediaNavigation';
 import * as TableNavigation from './TableNavigation';
+import Editor from '../api/Editor';
+import Env from '../api/Env';
+import VK from '../api/util/VK';
 
 const executeKeydownOverride = (editor: Editor, caret: Cell<Text | null>, evt: KeyboardEvent) => {
   const isMac = Env.os.isMacOS() || Env.os.isiOS();

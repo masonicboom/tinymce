@@ -1,10 +1,10 @@
 import { Optional } from '@ephox/katamari';
 import { EventArgs } from '@ephox/sugar';
 
+import { PinchDragData, PinchingConfig, PinchingState } from './PinchingTypes';
 import * as AlloyEvents from '../../api/events/AlloyEvents';
 import * as NativeEvents from '../../api/events/NativeEvents';
 import { DragModeDeltas } from '../../dragging/common/DraggingTypes';
-import { PinchDragData, PinchingConfig, PinchingState } from './PinchingTypes';
 
 const mode: DragModeDeltas<TouchEvent, PinchDragData> = {
   getData: (e: EventArgs<TouchEvent>) => {

@@ -1,8 +1,8 @@
 import { Optional } from '@ephox/katamari';
 import { DomEvent, EventArgs, Insert, Remove, SugarElement, SugarPosition } from '@ephox/sugar';
 
-import { Blocker, BlockerOptions } from '../detect/Blocker';
 import { DragApi, DragMode, DragMutation, DragSink } from './DragApis';
+import { Blocker, BlockerOptions } from '../detect/Blocker';
 
 const compare = (old: SugarPosition, nu: SugarPosition) => {
   return SugarPosition(nu.left - old.left, nu.top - old.top);

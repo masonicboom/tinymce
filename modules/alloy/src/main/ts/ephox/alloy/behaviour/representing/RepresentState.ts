@@ -1,10 +1,10 @@
 import { Arr, Cell, Fun, Obj, Optional } from '@ephox/katamari';
 
-import { ItemDataTuple } from '../../ui/types/ItemTypes';
-import { nuState } from '../common/BehaviourState';
 import {
   DatasetRepresentingState, ManualRepresentingState, MemoryRepresentingState, RepresentingConfig, RepresentingState
 } from './RepresentingTypes';
+import { ItemDataTuple } from '../../ui/types/ItemTypes';
+import { nuState } from '../common/BehaviourState';
 
 const memory = (): MemoryRepresentingState => {
   const data = Cell<any>(null);

@@ -1,10 +1,10 @@
 import { Fun, Optional } from '@ephox/katamari';
 
-import * as NodeType from '../dom/NodeType';
 import * as CaretCandidate from './CaretCandidate';
 import CaretPosition from './CaretPosition';
 import * as CaretUtils from './CaretUtils';
 import { CaretWalker } from './CaretWalker';
+import * as NodeType from '../dom/NodeType';
 
 const walkToPositionIn = (forward: boolean, root: Node, start: Node): Optional<CaretPosition> => {
   const position = forward ? CaretPosition.before(start) : CaretPosition.after(start);

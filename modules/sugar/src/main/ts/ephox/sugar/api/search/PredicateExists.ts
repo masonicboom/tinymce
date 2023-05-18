@@ -1,5 +1,5 @@
-import { SugarElement } from '../node/SugarElement';
 import * as PredicateFind from './PredicateFind';
+import { SugarElement } from '../node/SugarElement';
 
 const any = (predicate: (e: SugarElement<Node>) => boolean): boolean =>
   PredicateFind.first(predicate).isSome();

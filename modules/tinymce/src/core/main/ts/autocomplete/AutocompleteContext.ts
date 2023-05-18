@@ -1,10 +1,10 @@
 import { Optional, Strings } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
-import * as TextSearch from '../alien/TextSearch';
-import DOMUtils from '../api/dom/DOMUtils';
 import * as AutocompleteTag from './AutocompleteTag';
 import { getText, isValidTextRange, isWhitespace } from './AutocompleteUtils';
+import * as TextSearch from '../alien/TextSearch';
+import DOMUtils from '../api/dom/DOMUtils';
 
 export interface AutocompleteContext {
   range: Range;

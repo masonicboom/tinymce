@@ -1,10 +1,10 @@
 import { Fun } from '@ephox/katamari';
 import { Focus, SugarElement } from '@ephox/sugar';
 
-import * as Clicks from '../mouse/Clicks';
 import { Chain } from './Chain';
 import { Step } from './Step';
 import * as UiFinder from './UiFinder';
+import * as Clicks from '../mouse/Clicks';
 
 const click = (element: SugarElement<Node>, settings: Clicks.Settings = { }): void => Clicks.click(settings)(element);
 const mouseOver = (element: SugarElement<Node>, settings: Clicks.Settings = { }): void => Clicks.mouseOver(settings)(element);

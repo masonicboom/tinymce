@@ -1,5 +1,3 @@
-import { RangeLikeObject } from '../selection/RangeTypes';
-import { UndoManager as UndoManagerType } from '../undo/UndoManagerTypes';
 import AddOnManager from './AddOnManager';
 import Annotator from './Annotator';
 import BookmarkManager from './dom/BookmarkManager';
@@ -47,6 +45,8 @@ import Tools from './util/Tools';
 import URI, { URIConstructor } from './util/URI';
 import VK from './util/VK';
 import WindowManager from './WindowManager';
+import { RangeLikeObject } from '../selection/RangeTypes';
+import { UndoManager as UndoManagerType } from '../undo/UndoManagerTypes';
 
 interface DOMUtilsNamespace {
   (doc: Document, settings: Partial<DOMUtilsSettings>): DOMUtils;

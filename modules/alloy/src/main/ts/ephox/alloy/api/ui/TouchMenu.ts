@@ -1,6 +1,10 @@
 import { Cell, Fun, Optional } from '@ephox/katamari';
 import { EventArgs, Focus, SugarShadowDom } from '@ephox/sugar';
 
+import { InlineView } from './InlineView';
+import { Menu } from './Menu';
+import * as Sketcher from './Sketcher';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as ElementFromPoint from '../../alien/ElementFromPoint';
 import { TransitionPropertiesSpec } from '../../behaviour/transitioning/TransitioningTypes';
 import * as DropdownUtils from '../../dropdown/DropdownUtils';
@@ -21,10 +25,6 @@ import * as AlloyEvents from '../events/AlloyEvents';
 import * as AlloyTriggers from '../events/AlloyTriggers';
 import * as NativeEvents from '../events/NativeEvents';
 import * as SystemEvents from '../events/SystemEvents';
-import { InlineView } from './InlineView';
-import { Menu } from './Menu';
-import * as Sketcher from './Sketcher';
-import { CompositeSketchFactory } from './UiSketcher';
 
 type TouchHoverState = (comp: AlloyComponent) => void;
 

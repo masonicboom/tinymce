@@ -1,8 +1,8 @@
 import { Type } from '@ephox/katamari';
 
+import * as NewLineUtils from './NewLineUtils';
 import Editor from '../api/Editor';
 import * as NodeType from '../dom/NodeType';
-import * as NewLineUtils from './NewLineUtils';
 
 const hasFirstChild = (elm: Node, name: string) => {
   return elm.firstChild && elm.firstChild.nodeName === name;

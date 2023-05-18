@@ -4,9 +4,9 @@ import { Optional } from '@ephox/katamari';
 
 import { UiFactoryBackstageProviders } from 'tinymce/themes/silver/backstage/Backstage';
 
+import { buildData, renderCommonItem } from './CommonMenuItem';
 import ItemResponse from '../ItemResponse';
 import { renderItemStructure } from '../structure/ItemStructure';
-import { buildData, renderCommonItem } from './CommonMenuItem';
 
 // Note, this does not create a valid SketchSpec.
 const renderNormalItem = (spec: Menu.MenuItem, itemResponse: ItemResponse, providersBackstage: UiFactoryBackstageProviders, renderIcons: boolean = true): ItemTypes.ItemSpec => {

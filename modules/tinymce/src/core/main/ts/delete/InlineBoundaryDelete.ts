@@ -1,6 +1,8 @@
 import { Cell, Fun, Optional, Optionals } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import * as DeleteElement from './DeleteElement';
+import { execNativeDeleteCommand } from './DeleteUtils';
 import Editor from '../api/Editor';
 import * as Options from '../api/Options';
 import * as CaretFinder from '../caret/CaretFinder';
@@ -10,8 +12,6 @@ import * as BoundaryCaret from '../keyboard/BoundaryCaret';
 import * as BoundaryLocation from '../keyboard/BoundaryLocation';
 import * as BoundarySelection from '../keyboard/BoundarySelection';
 import * as InlineUtils from '../keyboard/InlineUtils';
-import * as DeleteElement from './DeleteElement';
-import { execNativeDeleteCommand } from './DeleteUtils';
 
 const rangeFromPositions = (from: CaretPosition, to: CaretPosition): Range => {
   const range = document.createRange();

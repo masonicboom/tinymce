@@ -1,7 +1,7 @@
 import Editor from 'tinymce/core/api/Editor';
 
-import * as Options from '../api/Options';
 import * as NodeType from './NodeType';
+import * as Options from '../api/Options';
 
 const createTextBlock = (editor: Editor, contentNode: Node): DocumentFragment => {
   const dom = editor.dom;

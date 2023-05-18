@@ -1,8 +1,8 @@
 import { Arr } from '@ephox/katamari';
 
+import * as InsertAll from './InsertAll';
 import { SugarElement } from '../node/SugarElement';
 import * as Traverse from '../search/Traverse';
-import * as InsertAll from './InsertAll';
 
 const empty = (element: SugarElement<Node>): void => {
   // shortcut "empty node" trick. Requires IE 9.

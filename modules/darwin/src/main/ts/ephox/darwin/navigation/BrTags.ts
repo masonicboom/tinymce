@@ -2,9 +2,9 @@ import { Optional } from '@ephox/katamari';
 import { Spot, SpotPoint } from '@ephox/phoenix';
 import { Awareness, ElementAddress, Situ, SugarElement, SugarNode, SugarText, Traverse } from '@ephox/sugar';
 
-import { Situs } from '../selection/Situs';
 import { BeforeAfter } from './BeforeAfter';
 import { KeyDirection } from './KeyDirection';
+import { Situs } from '../selection/Situs';
 
 const isBr = SugarNode.isTag('br');
 

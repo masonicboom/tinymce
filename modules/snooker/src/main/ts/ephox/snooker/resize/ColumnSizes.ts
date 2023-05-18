@@ -2,14 +2,14 @@ import { Arr, Fun, Optional, Optionals } from '@ephox/katamari';
 import { PlatformDetection } from '@ephox/sand';
 import { SugarElement, SugarNode, Width } from '@ephox/sugar';
 
+import { BarPositions, RowInfo, width } from './BarPositions';
+import * as Sizes from './Sizes';
 import { TableSize } from '../api/TableSize';
 import { Warehouse } from '../api/Warehouse';
 import * as Blocks from '../lookup/Blocks';
 import * as CellUtils from '../util/CellUtils';
 import { CellElement } from '../util/TableTypes';
 import * as Util from '../util/Util';
-import { BarPositions, RowInfo, width } from './BarPositions';
-import * as Sizes from './Sizes';
 
 const isCol = SugarNode.isTag('col');
 

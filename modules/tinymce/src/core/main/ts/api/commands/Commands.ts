@@ -1,5 +1,3 @@
-import * as EditorFocus from '../../focus/EditorFocus';
-import Editor from '../Editor';
 import * as AlignCommands from './AlignCommands';
 import * as ClipboardCommands from './ClipboardCommands';
 import * as ContentCommands from './ContentCommands';
@@ -10,6 +8,8 @@ import * as LinkCommands from './LinkCommands';
 import * as ListCommands from './ListCommands';
 import * as NewlineCommands from './NewlineCommands';
 import * as SelectionCommands from './SelectionCommands';
+import * as EditorFocus from '../../focus/EditorFocus';
+import Editor from '../Editor';
 
 const registerExecCommands = (editor: Editor): void => {
   editor.editorCommands.addCommands({

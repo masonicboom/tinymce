@@ -1,8 +1,8 @@
 import { Arr, Optional } from '@ephox/katamari';
 
-import { Gene } from '../api/Gene';
 import * as Comparator from './Comparator';
 import * as Locator from './Locator';
+import { Gene } from '../api/Gene';
 
 const detach = (root: Gene, target: Gene): Optional<Gene> => {
   return Locator.byItem(root, target).bind((item) => {

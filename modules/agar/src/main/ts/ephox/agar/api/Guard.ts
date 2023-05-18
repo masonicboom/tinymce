@@ -1,7 +1,7 @@
-import * as ErrorTypes from '../alien/ErrorTypes';
-import { DieFn, NextFn, RunFn } from '../pipe/Pipe';
 import * as Logger from './Logger';
 import { addLogEntry, TestLogs } from './TestLogs';
+import * as ErrorTypes from '../alien/ErrorTypes';
+import { DieFn, NextFn, RunFn } from '../pipe/Pipe';
 
 export type GuardFn<T, U, V> = (run: RunFn<T, U>, value: T, next: NextFn<V>, die: DieFn, logs: TestLogs) => void;
 

@@ -1,6 +1,8 @@
 import { Arr, Fun, Result } from '@ephox/katamari';
 import { Compare, EventArgs, Focus, Remove, SugarElement, SugarNode, Traverse } from '@ephox/sugar';
 
+import * as Attachment from './Attachment';
+import { AlloySystemApi } from './SystemApi';
 import * as Debugging from '../../debugging/Debugging';
 import * as DescribedHandler from '../../events/DescribedHandler';
 import * as GuiEvents from '../../events/GuiEvents';
@@ -12,8 +14,6 @@ import { AlloyComponent } from '../component/ComponentApi';
 import * as GuiFactory from '../component/GuiFactory';
 import * as SystemEvents from '../events/SystemEvents';
 import { Container } from '../ui/Container';
-import * as Attachment from './Attachment';
-import { AlloySystemApi } from './SystemApi';
 
 export interface GuiSystem {
   readonly root: AlloyComponent;

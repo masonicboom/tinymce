@@ -1,7 +1,7 @@
 import { Arr } from '@ephox/katamari';
 
-import * as ClientRect from '../geom/ClientRect';
 import * as NodeType from './NodeType';
+import * as ClientRect from '../geom/ClientRect';
 
 type GeomClientRect = ClientRect.ClientRect;
 

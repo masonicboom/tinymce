@@ -2,15 +2,15 @@ import { FieldSchema, StructureSchema } from '@ephox/boulder';
 import { Arr, Cell, Fun, Obj, Optional, Result } from '@ephox/katamari';
 import { SugarElement, Traverse } from '@ephox/sugar';
 
+import * as Component from './Component';
+import { AlloyComponent } from './ComponentApi';
+import { AlloySpec, PremadeSpec, SimpleOrSketchSpec, SketchSpec } from './SpecTypes';
 import * as DefaultEvents from '../../events/DefaultEvents';
 import * as Tagger from '../../registry/Tagger';
 import * as CustomSpec from '../../spec/CustomSpec';
 import { NoContextApi } from '../system/NoContextApi';
 import { AlloySystemApi } from '../system/SystemApi';
 import * as GuiTypes from '../ui/GuiTypes';
-import * as Component from './Component';
-import { AlloyComponent } from './ComponentApi';
-import { AlloySpec, PremadeSpec, SimpleOrSketchSpec, SketchSpec } from './SpecTypes';
 
 export interface ExternalElement {
   readonly uid?: string;

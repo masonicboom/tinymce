@@ -1,8 +1,8 @@
 import { Obj, Optional } from '@ephox/katamari';
 import { SugarElement, TransformFind } from '@ephox/sugar';
 
-import * as Tagger from '../registry/Tagger';
 import * as DescribedHandler from './DescribedHandler';
+import * as Tagger from '../registry/Tagger';
 
 export interface ElementAndHandler {
   readonly element: SugarElement<Node>;

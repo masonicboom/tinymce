@@ -1,8 +1,8 @@
 import { Fun } from '@ephox/katamari';
 import { SelectorFind, SugarElement } from '@ephox/sugar';
 
-import Editor from '../api/Editor';
 import * as CaretContainer from './CaretContainer';
+import Editor from '../api/Editor';
 
 /**
  * This module shows the invisible block that the caret is currently in when contents is added to that block.

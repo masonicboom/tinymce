@@ -1,8 +1,8 @@
 import { StructureSchema, FieldSchema } from '@ephox/boulder';
 import { Result } from '@ephox/katamari';
 
-import * as ComponentSchema from '../../core/ComponentSchema';
 import { FormComponentWithLabel, FormComponentWithLabelSpec, formComponentWithLabelFields } from './FormComponent';
+import * as ComponentSchema from '../../core/ComponentSchema';
 
 export interface SizeInputSpec extends FormComponentWithLabelSpec {
   type: 'sizeinput';

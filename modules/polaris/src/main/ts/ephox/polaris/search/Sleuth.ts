@@ -1,7 +1,7 @@
 import { Arr } from '@ephox/katamari';
 
-import { PRange, PRegExp } from '../pattern/Types';
 import * as Find from './Find';
+import { PRange, PRegExp } from '../pattern/Types';
 
 const sort = <T extends PRange>(array: T[]): T[] => {
   const r: T[] = Array.prototype.slice.call(array, 0);

@@ -1,6 +1,8 @@
 import { Id } from '@ephox/katamari';
 import { Attribute } from '@ephox/sugar';
 
+import * as Sketcher from './Sketcher';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as AlloyParts from '../../parts/AlloyParts';
 import * as FormFieldSchema from '../../ui/schema/FormFieldSchema';
 import { FormFieldApis, FormFieldDetail, FormFieldSketcher, FormFieldSpec } from '../../ui/types/FormFieldTypes';
@@ -10,8 +12,6 @@ import { AlloyComponent } from '../component/ComponentApi';
 import * as SketchBehaviours from '../component/SketchBehaviours';
 import { SketchSpec } from '../component/SpecTypes';
 import * as AlloyEvents from '../events/AlloyEvents';
-import * as Sketcher from './Sketcher';
-import { CompositeSketchFactory } from './UiSketcher';
 
 const factory: CompositeSketchFactory<FormFieldDetail, FormFieldSpec> = (detail, components, _spec, _externals): SketchSpec => {
   const behaviours = SketchBehaviours.augment(

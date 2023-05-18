@@ -1,6 +1,15 @@
 import { Arr, Fun, Obj, Type } from '@ephox/katamari';
 import { PredicateExists, SugarElement } from '@ephox/sugar';
 
+import * as CaretFormat from './CaretFormat';
+import * as ExpandRange from './ExpandRange';
+import { isCaretNode } from './FormatContainer';
+import { ApplyFormat, BlockFormat, FormatVars, InlineFormat } from './FormatTypes';
+import * as FormatUtils from './FormatUtils';
+import * as Hooks from './Hooks';
+import * as ListItemFormat from './ListItemFormat';
+import * as MatchFormat from './MatchFormat';
+import * as MergeFormats from './MergeFormats';
 import DOMUtils from '../api/dom/DOMUtils';
 import Editor from '../api/Editor';
 import * as Events from '../api/Events';
@@ -16,15 +25,6 @@ import * as RangeWalk from '../selection/RangeWalk';
 import * as SelectionUtils from '../selection/SelectionUtils';
 import * as TableCellSelection from '../selection/TableCellSelection';
 import * as Zwsp from '../text/Zwsp';
-import * as CaretFormat from './CaretFormat';
-import * as ExpandRange from './ExpandRange';
-import { isCaretNode } from './FormatContainer';
-import { ApplyFormat, BlockFormat, FormatVars, InlineFormat } from './FormatTypes';
-import * as FormatUtils from './FormatUtils';
-import * as Hooks from './Hooks';
-import * as ListItemFormat from './ListItemFormat';
-import * as MatchFormat from './MatchFormat';
-import * as MergeFormats from './MergeFormats';
 
 const each = Tools.each;
 

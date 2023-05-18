@@ -1,8 +1,8 @@
 import { FieldSchema, StructureSchema } from '@ephox/boulder';
 import { Result } from '@ephox/katamari';
 
-import * as ComponentSchema from '../../core/ComponentSchema';
 import { ContextBar, contextBarFields, ContextBarSpec } from './ContextBar';
+import * as ComponentSchema from '../../core/ComponentSchema';
 
 export interface ContextToolbarSpec extends ContextBarSpec {
   type?: 'contexttoolbar';

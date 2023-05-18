@@ -1,5 +1,6 @@
 import { Fun, Optional } from '@ephox/katamari';
 
+import * as ModelCommon from './ModelCommon';
 import { Keying } from '../../api/behaviour/Keying';
 import { Receiving } from '../../api/behaviour/Receiving';
 import { Representing } from '../../api/behaviour/Representing';
@@ -13,7 +14,6 @@ import { CompositeSketchFactory } from '../../api/ui/UiSketcher';
 import { EventFormat, NativeSimulatedEvent } from '../../events/SimulatedEvent';
 import * as AlloyParts from '../../parts/AlloyParts';
 import { SliderDetail, SliderSpec, SliderUpdateEvent, SliderValue } from '../types/SliderTypes';
-import * as ModelCommon from './ModelCommon';
 
 const sketch: CompositeSketchFactory<SliderDetail, SliderSpec> = (detail: SliderDetail, components: AlloySpec[], _spec: SliderSpec, _externals) => {
   const getThumb = (component: AlloyComponent): AlloyComponent => AlloyParts.getPartOrDie(component, detail, 'thumb');

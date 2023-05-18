@@ -1,7 +1,7 @@
 import { SugarElement } from '@ephox/sugar';
 
-import { AlloyComponent } from '../../api/component/ComponentApi';
 import { SlidingConfig } from './SlidingTypes';
+import { AlloyComponent } from '../../api/component/ComponentApi';
 
 export const getAnimationRoot = (component: AlloyComponent, slideConfig: SlidingConfig): SugarElement<Element> =>
   slideConfig.getAnimationRoot.fold(

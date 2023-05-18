@@ -4,12 +4,12 @@ import { Fun, Optional } from '@ephox/katamari';
 import Editor from 'tinymce/core/api/Editor';
 import { BlockFormat, InlineFormat } from 'tinymce/core/api/fmt/Format';
 
-import { UiFactoryBackstage } from '../../../backstage/Backstage';
-import { updateMenuText } from '../../dropdown/CommonDropdown';
-import { onActionToggleFormat, onSetupEditableToggle } from '../ControlUtils';
 import { createMenuItems, createSelectButton, SelectSpec } from './BespokeSelect';
 import { buildBasicSettingsDataset, Delimiter } from './SelectDatasets';
 import { findNearest } from './utils/FormatDetection';
+import { UiFactoryBackstage } from '../../../backstage/Backstage';
+import { updateMenuText } from '../../dropdown/CommonDropdown';
+import { onActionToggleFormat, onSetupEditableToggle } from '../ControlUtils';
 
 const getSpec = (editor: Editor): SelectSpec => {
   const fallbackFormat = 'Paragraph';

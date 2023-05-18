@@ -6,7 +6,6 @@ import Editor from 'tinymce/core/api/Editor';
 import I18n, { TranslatedString, Untranslated } from 'tinymce/core/api/util/I18n';
 import * as UiFactory from 'tinymce/themes/silver/ui/general/UiFactory';
 
-import { IconProvider } from '../ui/icons/Icons';
 import { UiFactoryBackstageAnchors } from './Anchors';
 import * as Anchors from './Anchors';
 import { ColorInputBackstage, UiFactoryBackstageForColorInput } from './ColorInputBackstage';
@@ -14,6 +13,7 @@ import { DialogBackstage, UiFactoryBackstageForDialog } from './DialogBackstage'
 import { HeaderBackstage, UiFactoryBackstageForHeader } from './HeaderBackstage';
 import { init as initStyleFormatBackstage, UiFactoryBackstageForStyleFormats } from './StyleFormatsBackstage';
 import { UiFactoryBackstageForUrlInput, UrlInputBackstage } from './UrlInputBackstage';
+import { IconProvider } from '../ui/icons/Icons';
 
 export interface UiFactoryBackstageProviders {
   readonly icons: IconProvider;

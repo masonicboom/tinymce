@@ -1,10 +1,10 @@
+import * as Behaviour from './Behaviour';
 import * as ActiveRepresenting from '../../behaviour/representing/ActiveRepresenting';
 import * as RepresentApis from '../../behaviour/representing/RepresentApis';
 import { RepresentingBehaviour } from '../../behaviour/representing/RepresentingTypes';
 import RepresentSchema from '../../behaviour/representing/RepresentSchema';
 import * as RepresentState from '../../behaviour/representing/RepresentState';
 import { AlloyComponent } from '../component/ComponentApi';
-import * as Behaviour from './Behaviour';
 
 // The self-reference is clumsy.
 const Representing: RepresentingBehaviour = Behaviour.create({

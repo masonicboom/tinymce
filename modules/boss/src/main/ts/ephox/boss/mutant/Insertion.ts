@@ -1,9 +1,9 @@
 import { Arr, Optional } from '@ephox/katamari';
 
-import { Gene } from '../api/Gene';
 import * as Detach from './Detach';
 import * as Locator from './Locator';
 import * as Up from './Up';
+import { Gene } from '../api/Gene';
 
 const before = (anchor: Gene, item: Gene): void => {
   anchor.parent.each((parent) => {

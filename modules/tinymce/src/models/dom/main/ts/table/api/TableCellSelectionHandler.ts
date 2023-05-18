@@ -7,13 +7,13 @@ import { Class, Compare, DomEvent, EventArgs, SelectionDirection, SimSelection, 
 import Editor from 'tinymce/core/api/Editor';
 import { EditorEvent } from 'tinymce/core/api/util/EventDispatcher';
 
+import * as Events from './Events';
+import * as Options from './Options';
+import { TableResizeHandler } from './TableResizeHandler';
 import * as Utils from '../core/TableUtils';
 import { ephemera } from '../selection/Ephemera';
 import { getCellsFromSelection } from '../selection/TableSelection';
 import * as TableSelection from '../selection/TableSelection';
-import * as Events from './Events';
-import * as Options from './Options';
-import { TableResizeHandler } from './TableResizeHandler';
 
 export interface TableCellSelectionHandler {
   readonly getSelectedCells: () => HTMLTableCellElement[];

@@ -1,7 +1,7 @@
 import { Arr } from '@ephox/katamari';
 
-import { SugarElement } from '../node/SugarElement';
 import * as Insert from './Insert';
+import { SugarElement } from '../node/SugarElement';
 
 const before = (marker: SugarElement<Node>, elements: SugarElement<Node>[]): void => {
   Arr.each(elements, (x) => {

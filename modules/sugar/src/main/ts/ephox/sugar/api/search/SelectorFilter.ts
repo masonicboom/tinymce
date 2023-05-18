@@ -1,6 +1,6 @@
-import { SugarElement } from '../node/SugarElement';
 import * as PredicateFilter from './PredicateFilter';
 import * as Selectors from './Selectors';
+import { SugarElement } from '../node/SugarElement';
 
 const all = <T extends Element = Element> (selector: string): SugarElement<T>[] =>
   Selectors.all<T>(selector);

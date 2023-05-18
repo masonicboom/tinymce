@@ -2,14 +2,14 @@ import { FieldSchema } from '@ephox/boulder';
 import { Optional, Unicode } from '@ephox/katamari';
 import { Insert, Remove, SimRange, SimSelection, SugarElement, SugarNode, Traverse, WindowSelection } from '@ephox/sugar';
 
-import * as Descend from '../../alien/Descend';
-import { AlloyComponent } from '../../api/component/ComponentApi';
-import * as Fields from '../../data/Fields';
-import * as Origins from '../layout/Origins';
 import { Anchoring, SelectionAnchor } from './Anchoring';
 import * as AnchorLayouts from './AnchorLayouts';
 import * as ContainerOffsets from './ContainerOffsets';
 import * as ContentAnchorCommon from './ContentAnchorCommon';
+import * as Descend from '../../alien/Descend';
+import { AlloyComponent } from '../../api/component/ComponentApi';
+import * as Fields from '../../data/Fields';
+import * as Origins from '../layout/Origins';
 
 // A range from (a, 1) to (body, end) was giving the wrong bounds.
 const descendOnce = (element: SugarElement<Node>, offset: number): Descend.ElementAndOffset<Node> =>

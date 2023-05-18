@@ -1,5 +1,5 @@
-import * as EventUtils from '../../events/EventUtils';
 import EventDispatcher, { EditorEvent, MappedEvent } from './EventDispatcher';
+import * as EventUtils from '../../events/EventUtils';
 
 interface Observable<T extends {}> {
   fire <K extends string, U extends MappedEvent<T, K>>(name: K, args?: U, bubble?: boolean): EditorEvent<U>;

@@ -1,11 +1,11 @@
 import { Arr, Optional } from '@ephox/katamari';
 import { Attribute, InsertAll, Replication, SugarElement } from '@ephox/sugar';
 
+import { ColumnExt, DetailExt } from './Structs';
+import { Warehouse } from './Warehouse';
 import { onUnlockedCells, TargetSelection } from '../model/RunOperation';
 import * as CellUtils from '../util/CellUtils';
 import { CellElement } from '../util/TableTypes';
-import { ColumnExt, DetailExt } from './Structs';
-import { Warehouse } from './Warehouse';
 
 const constrainSpan = (element: SugarElement<CellElement>, property: 'colspan' | 'rowspan' | 'span', value: number) => {
   const currentColspan = CellUtils.getAttrValue(element, property, 1);

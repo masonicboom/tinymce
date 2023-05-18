@@ -3,12 +3,12 @@ import { Dialog, DialogManager } from '@ephox/bridge';
 import { Fun, Id, Optional } from '@ephox/katamari';
 import { Class, Classes, SugarElement } from '@ephox/sugar';
 
-import { UiFactoryBackstage } from '../../backstage/Backstage';
 import { renderModalBody } from './SilverDialogBody';
 import * as SilverDialogCommon from './SilverDialogCommon';
 import { SilverDialogEvents } from './SilverDialogEvents';
 import { renderModalFooter } from './SilverDialogFooter';
 import { DialogAccess, getDialogApi } from './SilverDialogInstanceApi';
+import { UiFactoryBackstage } from '../../backstage/Backstage';
 
 interface RenderedDialog<T extends Dialog.DialogData> {
   readonly dialog: AlloyComponent;

@@ -1,7 +1,7 @@
 import { Fun, Optional } from '@ephox/katamari';
 
-import DomTreeWalker from '../api/dom/TreeWalker';
 import * as NodeType from './NodeType';
+import DomTreeWalker from '../api/dom/TreeWalker';
 
 interface TextWalker {
   current (): Optional<Text>;

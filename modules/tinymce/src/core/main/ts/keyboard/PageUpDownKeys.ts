@@ -1,12 +1,12 @@
 import { Cell } from '@ephox/katamari';
 import { PlatformDetection } from '@ephox/sand';
 
+import * as BoundarySelection from './BoundarySelection';
+import * as MatchKeys from './MatchKeys';
 import Editor from '../api/Editor';
 import { NodeChangeEvent } from '../api/EventTypes';
 import { EditorEvent } from '../api/util/EventDispatcher';
 import VK from '../api/util/VK';
-import * as BoundarySelection from './BoundarySelection';
-import * as MatchKeys from './MatchKeys';
 
 const platform = PlatformDetection.detect();
 

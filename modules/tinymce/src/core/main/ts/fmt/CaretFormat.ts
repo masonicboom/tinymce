@@ -1,6 +1,11 @@
 import { Arr, Fun, Obj, Optional, Strings, Unicode } from '@ephox/katamari';
 import { Attribute, Insert, Remove, SugarElement, SugarNode } from '@ephox/sugar';
 
+import * as ExpandRange from './ExpandRange';
+import { CARET_ID, getParentCaretContainer, isCaretNode } from './FormatContainer';
+import { FormatVars } from './FormatTypes';
+import * as FormatUtils from './FormatUtils';
+import * as MatchFormat from './MatchFormat';
 import DomTreeWalker from '../api/dom/TreeWalker';
 import Editor from '../api/Editor';
 import CaretPosition from '../caret/CaretPosition';
@@ -9,11 +14,6 @@ import * as NodeType from '../dom/NodeType';
 import * as PaddingBr from '../dom/PaddingBr';
 import * as SplitRange from '../selection/SplitRange';
 import * as Zwsp from '../text/Zwsp';
-import * as ExpandRange from './ExpandRange';
-import { CARET_ID, getParentCaretContainer, isCaretNode } from './FormatContainer';
-import { FormatVars } from './FormatTypes';
-import * as FormatUtils from './FormatUtils';
-import * as MatchFormat from './MatchFormat';
 
 const ZWSP = Zwsp.ZWSP;
 

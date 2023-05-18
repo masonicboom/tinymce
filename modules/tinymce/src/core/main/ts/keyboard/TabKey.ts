@@ -1,9 +1,9 @@
+import * as MatchKeys from './MatchKeys';
+import * as TableNavigation from './TableNavigation';
 import Editor from '../api/Editor';
 import * as Options from '../api/Options';
 import { EditorEvent } from '../api/util/EventDispatcher';
 import VK from '../api/util/VK';
-import * as MatchKeys from './MatchKeys';
-import * as TableNavigation from './TableNavigation';
 
 const tableTabNavigation = (editor: Editor): MatchKeys.KeyPattern[] => {
   if (Options.hasTableTabNavigation(editor)) {

@@ -1,6 +1,14 @@
 import { Adt, Arr, Fun, Optional, Type } from '@ephox/katamari';
 import { Insert, InsertAll, SugarElement, Traverse } from '@ephox/sugar';
 
+import * as CaretFormat from './CaretFormat';
+import * as ExpandRange from './ExpandRange';
+import { Format, FormatAttrOrStyleValue, FormatVars } from './FormatTypes';
+import { normalizeStyleValue } from './FormatUtils';
+import * as FormatUtils from './FormatUtils';
+import * as ListItemFormat from './ListItemFormat';
+import * as MatchFormat from './MatchFormat';
+import { mergeSiblings } from './MergeUtils';
 import DOMUtils from '../api/dom/DOMUtils';
 import DomTreeWalker from '../api/dom/TreeWalker';
 import Editor from '../api/Editor';
@@ -16,14 +24,6 @@ import * as RangeWalk from '../selection/RangeWalk';
 import * as SelectionUtils from '../selection/SelectionUtils';
 import * as SplitRange from '../selection/SplitRange';
 import * as TableCellSelection from '../selection/TableCellSelection';
-import * as CaretFormat from './CaretFormat';
-import * as ExpandRange from './ExpandRange';
-import { Format, FormatAttrOrStyleValue, FormatVars } from './FormatTypes';
-import { normalizeStyleValue } from './FormatUtils';
-import * as FormatUtils from './FormatUtils';
-import * as ListItemFormat from './ListItemFormat';
-import * as MatchFormat from './MatchFormat';
-import { mergeSiblings } from './MergeUtils';
 
 interface RemoveFormatAdt {
   fold: <T> (

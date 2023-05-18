@@ -1,10 +1,10 @@
 import { FieldSchema } from '@ephox/boulder';
 import { Fun } from '@ephox/katamari';
 
+import { ManualRepresentingState, ManualStoreConfig, RepresentingConfig } from './RepresentingTypes';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import * as Fields from '../../data/Fields';
 import { NoState } from '../common/BehaviourState';
-import { ManualRepresentingState, ManualStoreConfig, RepresentingConfig } from './RepresentingTypes';
 
 interface ManualRepresentingConfig extends RepresentingConfig {
   store: ManualStoreConfig;

@@ -1,9 +1,9 @@
 import Editor from 'tinymce/core/api/Editor';
 import VK from 'tinymce/core/api/util/VK';
 
+import * as Delete from './Delete';
 import { indentListSelection, outdentListSelection } from '../actions/Indendation';
 import * as Options from '../api/Options';
-import * as Delete from './Delete';
 
 const setupTabKey = (editor: Editor): void => {
   editor.on('keydown', (e) => {

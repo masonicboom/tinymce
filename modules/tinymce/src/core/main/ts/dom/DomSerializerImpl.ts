@@ -1,6 +1,9 @@
 import { Fun } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import * as DomSerializerFilters from './DomSerializerFilters';
+import * as DomSerializerPreProcess from './DomSerializerPreProcess';
+import { isWsPreserveElement } from './ElementType';
 import DOMUtils from '../api/dom/DOMUtils';
 import Editor from '../api/Editor';
 import * as Events from '../api/Events';
@@ -12,9 +15,6 @@ import { WriterSettings } from '../api/html/Writer';
 import { URLConverter } from '../api/OptionTypes';
 import Tools from '../api/util/Tools';
 import * as Zwsp from '../text/Zwsp';
-import * as DomSerializerFilters from './DomSerializerFilters';
-import * as DomSerializerPreProcess from './DomSerializerPreProcess';
-import { isWsPreserveElement } from './ElementType';
 
 interface DomSerializerSettings extends DomParserSettings, WriterSettings, SchemaSettings, HtmlSerializerSettings {
   remove_trailing_brs?: boolean;

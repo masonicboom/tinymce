@@ -7,8 +7,8 @@ import { View as BridgeView } from '@ephox/bridge';
 import { Arr, Optional } from '@ephox/katamari';
 import { PlatformDetection } from '@ephox/sand';
 
-import { UiFactoryBackstageProviders } from '../../backstage/Backstage';
 import { renderButton } from './ViewButtons';
+import { UiFactoryBackstageProviders } from '../../backstage/Backstage';
 
 interface ViewHeaderSpec extends SimpleSpec {
   buttons: (BridgeView.ViewButton | BridgeView.ViewButtonsGroup)[];

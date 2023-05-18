@@ -5,8 +5,8 @@ import Env from 'tinymce/core/api/Env';
 import AstNode from 'tinymce/core/api/html/Node';
 import HtmlSerializer from 'tinymce/core/api/html/Serializer';
 
-import * as Options from '../api/Options';
 import { Parser } from './Parser';
+import * as Options from '../api/Options';
 
 declare let escape: any;
 

@@ -1,7 +1,7 @@
+import * as Insert from './Insert';
 import { SugarElement } from '../node/SugarElement';
 import * as SugarHead from '../node/SugarHead';
 import * as Attribute from '../properties/Attribute';
-import * as Insert from './Insert';
 
 const addToHead = (doc: SugarElement<Document>, tag: SugarElement<Node>): void => {
   const head = SugarHead.getHead(doc);

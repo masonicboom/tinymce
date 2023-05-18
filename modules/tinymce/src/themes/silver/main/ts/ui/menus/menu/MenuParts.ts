@@ -2,8 +2,8 @@ import { Menu as AlloyMenu, RawDomSchema, TieredMenuTypes } from '@ephox/alloy';
 import { Toolbar } from '@ephox/bridge';
 import { Arr } from '@ephox/katamari';
 
-import { classForPreset } from '../item/ItemClasses';
 import { classes as getMenuClasses } from './MenuClasses';
+import { classForPreset } from '../item/ItemClasses';
 
 const markers = (presets: Toolbar.PresetTypes): TieredMenuTypes.TieredMenuSpec['markers'] => {
   const menuClasses = getMenuClasses(presets);

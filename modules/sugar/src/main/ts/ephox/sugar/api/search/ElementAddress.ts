@@ -1,11 +1,11 @@
 import { Arr, Fun, Optional } from '@ephox/katamari';
 
-import * as Compare from '../dom/Compare';
-import { SugarElement } from '../node/SugarElement';
 import * as PredicateFind from './PredicateFind';
 import * as SelectorFilter from './SelectorFilter';
 import * as SelectorFind from './SelectorFind';
 import * as Traverse from './Traverse';
+import * as Compare from '../dom/Compare';
+import { SugarElement } from '../node/SugarElement';
 
 export interface AddressInAncestor<A, D, E> {
   readonly ancestor: SugarElement<A>;

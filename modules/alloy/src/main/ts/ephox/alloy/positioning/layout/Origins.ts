@@ -1,11 +1,11 @@
 import { Adt, Fun, Optional } from '@ephox/katamari';
 import { Height, Scroll, SugarElement, SugarPosition, Width } from '@ephox/sugar';
 
+import * as Direction from './Direction';
 import * as Boxes from '../../alien/Boxes';
 import * as OuterPosition from '../../frame/OuterPosition';
 import { NuPositionCss, PositionCss } from '../view/PositionCss';
 import { RepositionDecision } from '../view/Reposition';
-import * as Direction from './Direction';
 
 type NoneOrigin<T> = () => T;
 type RelativeOrigin<T> = (x: number, y: number, width: number, height: number) => T;

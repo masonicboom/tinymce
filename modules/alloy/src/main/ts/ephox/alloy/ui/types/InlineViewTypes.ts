@@ -1,6 +1,7 @@
 import { Optional } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import { TieredData, TieredMenuSpec } from './TieredMenuTypes';
 import { Bounds } from '../../alien/Boxes';
 import { AlloyBehaviourRecord } from '../../api/behaviour/Behaviour';
 import { LazySink } from '../../api/component/CommonTypes';
@@ -9,7 +10,6 @@ import { SketchBehaviours } from '../../api/component/SketchBehaviours';
 import { AlloySpec, RawDomSchema } from '../../api/component/SpecTypes';
 import { SingleSketch, SingleSketchDetail, SingleSketchSpec } from '../../api/ui/Sketcher';
 import { PlacementSpec } from '../../behaviour/positioning/PositioningTypes';
-import { TieredData, TieredMenuSpec } from './TieredMenuTypes';
 
 export interface InlineViewDetail extends SingleSketchDetail {
   uid: string;

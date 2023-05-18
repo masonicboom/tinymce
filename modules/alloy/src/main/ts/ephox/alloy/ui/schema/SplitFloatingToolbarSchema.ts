@@ -1,13 +1,13 @@
 import { FieldSchema } from '@ephox/boulder';
 import { Cell, Fun } from '@ephox/katamari';
 
+import * as ToolbarSchema from './ToolbarSchema';
 import { Toolbar } from '../../api/ui/Toolbar';
 import * as Fields from '../../data/Fields';
 import * as PartType from '../../parts/PartType';
 import * as SplitToolbarBase from '../common/SplitToolbarBase';
 import { SplitFloatingToolbarDetail } from '../types/SplitFloatingToolbarTypes';
 import { ToolbarSpec } from '../types/ToolbarTypes';
-import * as ToolbarSchema from './ToolbarSchema';
 
 const schema = Fun.constant([
   Fields.markers([ 'overflowToggledClass' ]),

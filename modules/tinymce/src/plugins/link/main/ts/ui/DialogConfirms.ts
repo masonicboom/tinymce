@@ -3,10 +3,10 @@ import { Arr, Optional } from '@ephox/katamari';
 import Editor from 'tinymce/core/api/Editor';
 import Delay from 'tinymce/core/api/util/Delay';
 
+import { LinkDialogOutput } from './DialogTypes';
 import * as Options from '../api/Options';
 import { AssumeExternalTargets } from '../api/Types';
 import * as Utils from '../core/Utils';
-import { LinkDialogOutput } from './DialogTypes';
 
 interface Transformer {
   readonly message: string;

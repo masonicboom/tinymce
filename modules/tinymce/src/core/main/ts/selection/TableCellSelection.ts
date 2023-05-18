@@ -1,9 +1,9 @@
 import { Arr, Optional } from '@ephox/katamari';
 import { SelectorFilter, SelectorFind, SugarElement } from '@ephox/sugar';
 
+import * as MultiRange from './MultiRange';
 import Editor from '../api/Editor';
 import * as ElementType from '../dom/ElementType';
-import * as MultiRange from './MultiRange';
 
 const getCellsFromRanges = (ranges: Range[]): SugarElement<HTMLTableCellElement>[] =>
   Arr.filter(MultiRange.getSelectedNodes(ranges), ElementType.isTableCell);

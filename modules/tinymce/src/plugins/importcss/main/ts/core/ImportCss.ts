@@ -8,8 +8,8 @@ import { StyleFormat } from 'tinymce/core/api/fmt/StyleFormat';
 import { Plugin } from 'tinymce/core/api/PluginManager';
 import Tools from 'tinymce/core/api/util/Tools';
 
-import * as Options from '../api/Options';
 import { generate, SelectorFormatItem } from './SelectorModel';
+import * as Options from '../api/Options';
 
 type Filter = (value: string, imported?: boolean) => boolean;
 type SelectorConvertor = (selector: string, group: Group | null) => StyleFormat | undefined;

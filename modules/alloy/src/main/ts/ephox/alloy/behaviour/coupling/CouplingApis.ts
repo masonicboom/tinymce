@@ -1,7 +1,7 @@
 import { Optional } from '@ephox/katamari';
 
-import { AlloyComponent } from '../../api/component/ComponentApi';
 import { CouplingState, CouplingConfig } from './CouplingTypes';
+import { AlloyComponent } from '../../api/component/ComponentApi';
 
 const getCoupled = (component: AlloyComponent, coupleConfig: CouplingConfig, coupleState: CouplingState, name: string): AlloyComponent =>
   coupleState.getOrCreate(component, coupleConfig, name);

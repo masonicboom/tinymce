@@ -1,9 +1,9 @@
+import * as Sketcher from './Sketcher';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as ToolbarGroupSchema from '../../ui/schema/ToolbarGroupSchema';
 import { ToolbarGroupDetail, ToolbarGroupSketcher, ToolbarGroupSpec } from '../../ui/types/ToolbarGroupTypes';
 import { Keying } from '../behaviour/Keying';
 import * as SketchBehaviours from '../component/SketchBehaviours';
-import * as Sketcher from './Sketcher';
-import { CompositeSketchFactory } from './UiSketcher';
 
 const factory: CompositeSketchFactory<ToolbarGroupDetail, ToolbarGroupSpec> = (detail, components, _spec, _externals) => ({
   uid: detail.uid,

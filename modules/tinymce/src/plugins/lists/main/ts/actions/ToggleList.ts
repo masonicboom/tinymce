@@ -6,13 +6,13 @@ import DomTreeWalker from 'tinymce/core/api/dom/TreeWalker';
 import Editor from 'tinymce/core/api/Editor';
 import Tools from 'tinymce/core/api/util/Tools';
 
+import { flattenListSelection } from './Indendation';
 import { fireListEvent } from '../api/Events';
 import * as Bookmark from '../core/Bookmark';
 import { listToggleActionFromListName } from '../core/ListAction';
 import * as NodeType from '../core/NodeType';
 import * as Selection from '../core/Selection';
 import { hasNonEditableBlocksSelected, isCustomList, isWithinNonEditableList } from '../core/Util';
-import { flattenListSelection } from './Indendation';
 
 interface ListDetail {
   readonly 'list-style-type'?: string;

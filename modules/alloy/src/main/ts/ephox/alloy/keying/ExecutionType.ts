@@ -1,6 +1,9 @@
 import { FieldSchema } from '@ephox/boulder';
 import { Optional } from '@ephox/katamari';
 
+import { ExecutingConfig, KeyRuleHandler } from './KeyingModeTypes';
+import * as KeyingType from './KeyingType';
+import * as KeyingTypes from './KeyingTypes';
 import * as EditableFields from '../alien/EditableFields';
 import * as Keys from '../alien/Keys';
 import { AlloyComponent } from '../api/component/ComponentApi';
@@ -8,9 +11,6 @@ import { NoState, Stateless } from '../behaviour/common/BehaviourState';
 import { NativeSimulatedEvent } from '../events/SimulatedEvent';
 import * as KeyMatch from '../navigation/KeyMatch';
 import * as KeyRules from '../navigation/KeyRules';
-import { ExecutingConfig, KeyRuleHandler } from './KeyingModeTypes';
-import * as KeyingType from './KeyingType';
-import * as KeyingTypes from './KeyingTypes';
 
 const schema = [
   FieldSchema.defaulted('execute', KeyingTypes.defaultExecute),

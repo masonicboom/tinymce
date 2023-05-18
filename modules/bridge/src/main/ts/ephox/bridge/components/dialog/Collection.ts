@@ -1,8 +1,8 @@
 import { FieldProcessor, StructureSchema } from '@ephox/boulder';
 import { Result } from '@ephox/katamari';
 
-import * as ComponentSchema from '../../core/ComponentSchema';
 import { FormComponentWithLabel, FormComponentWithLabelSpec, formComponentWithLabelFields } from './FormComponent';
+import * as ComponentSchema from '../../core/ComponentSchema';
 
 export interface CollectionSpec extends FormComponentWithLabelSpec {
   type: 'collection';

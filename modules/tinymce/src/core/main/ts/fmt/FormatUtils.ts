@@ -2,6 +2,8 @@ import { Transformations } from '@ephox/acid';
 import { Arr, Obj, Optionals, Strings, Type } from '@ephox/katamari';
 import { Selectors, SugarElement } from '@ephox/sugar';
 
+import { isCaretNode } from './FormatContainer';
+import { BlockFormat, Format, FormatAttrOrStyleValue, FormatVars, InlineFormat, MixedFormat, SelectorFormat } from './FormatTypes';
 import DOMUtils from '../api/dom/DOMUtils';
 import EditorSelection from '../api/dom/Selection';
 import DomTreeWalker from '../api/dom/TreeWalker';
@@ -13,8 +15,6 @@ import * as TransparentElements from '../content/TransparentElements';
 import * as NodeType from '../dom/NodeType';
 import * as SelectionUtils from '../selection/SelectionUtils';
 import * as Whitespace from '../text/Whitespace';
-import { isCaretNode } from './FormatContainer';
-import { BlockFormat, Format, FormatAttrOrStyleValue, FormatVars, InlineFormat, MixedFormat, SelectorFormat } from './FormatTypes';
 
 const isNode = (node: any): node is Node =>
   Type.isNumber(node?.nodeType);

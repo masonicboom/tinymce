@@ -1,8 +1,8 @@
 import { FieldProcessor, FieldSchema, StructureSchema, ValueType } from '@ephox/boulder';
 import { Result } from '@ephox/katamari';
 
-import * as ComponentSchema from '../../core/ComponentSchema';
 import { FormComponentWithLabel, formComponentWithLabelFields, FormComponentWithLabelSpec } from './FormComponent';
+import * as ComponentSchema from '../../core/ComponentSchema';
 
 export interface SelectBoxItemSpec {
   text: string;

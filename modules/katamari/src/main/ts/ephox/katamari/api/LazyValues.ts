@@ -1,7 +1,7 @@
-import * as AsyncValues from '../async/AsyncValues';
 import * as Fun from './Fun';
 import { LazyValue } from './LazyValue';
 import { Optional } from './Optional';
+import * as AsyncValues from '../async/AsyncValues';
 
 /** par :: [LazyValue a] -> LazyValue [a] */
 export const par = <T>(lazyValues: LazyValue<T>[]): LazyValue<T[]> => {

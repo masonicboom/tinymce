@@ -6,11 +6,11 @@ import { SelectorFilter } from '@ephox/sugar';
 import { UiFactoryBackstageShared } from 'tinymce/themes/silver/backstage/Backstage';
 import { renderItemDomStructure } from 'tinymce/themes/silver/ui/menus/item/structure/ItemStructure';
 
+import { replaceText } from './AutocompleteMenuItem';
+import { buildData, renderCommonItem } from './CommonMenuItem';
 import * as ItemClasses from '../ItemClasses';
 import ItemResponse from '../ItemResponse';
 import { renderContainer, renderHtml, renderImage } from '../structure/ItemSlices';
-import { replaceText } from './AutocompleteMenuItem';
-import { buildData, renderCommonItem } from './CommonMenuItem';
 
 export interface CardExtras {
   readonly itemBehaviours?: Behaviour.NamedConfiguredBehaviour<any, any, any>[];

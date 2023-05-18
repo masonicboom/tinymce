@@ -1,11 +1,11 @@
 import { Arr, Obj, Type } from '@ephox/katamari';
 
-import Editor from '../api/Editor';
-import * as Options from '../api/Options';
 import * as DefaultFormats from './DefaultFormats';
 import { Format, Formats } from './FormatTypes';
 import { isInlineFormat, isSelectorFormat } from './FormatUtils';
 import * as TableFormats from './TableFormats';
+import Editor from '../api/Editor';
+import * as Options from '../api/Options';
 
 export interface FormatRegistry {
   get: {

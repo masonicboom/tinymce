@@ -1,13 +1,13 @@
 import { Fun, Optional } from '@ephox/katamari';
 import { PredicateFind, SugarElement } from '@ephox/sugar';
 
-import DomTreeWalker from '../api/dom/TreeWalker';
-import * as NodeType from '../dom/NodeType';
 import * as CaretCandidate from './CaretCandidate';
 import * as CaretContainer from './CaretContainer';
 import { CaretPosition } from './CaretPosition';
 import { HDirection } from './CaretWalker';
 import { isFakeCaretTarget } from './FakeCaret';
+import DomTreeWalker from '../api/dom/TreeWalker';
+import * as NodeType from '../dom/NodeType';
 
 const isContentEditableTrue = NodeType.isContentEditableTrue;
 const isContentEditableFalse = NodeType.isContentEditableFalse;

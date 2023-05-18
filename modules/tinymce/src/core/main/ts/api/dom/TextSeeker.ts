@@ -1,8 +1,8 @@
 import { Optional } from '@ephox/katamari';
 
+import DOMUtils from './DOMUtils';
 import * as NodeType from '../../dom/NodeType';
 import { TextWalker } from '../../dom/TextWalker';
-import DOMUtils from './DOMUtils';
 
 type TextProcessCallback = (node: Text, offset: number, text: string) => number;
 interface Spot {

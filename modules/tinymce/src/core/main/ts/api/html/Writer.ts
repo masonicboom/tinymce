@@ -1,6 +1,6 @@
+import Entities from './Entities';
 import { EntityEncoding } from '../OptionTypes';
 import Tools from '../util/Tools';
-import Entities from './Entities';
 
 /**
  * This class is used to write HTML tags out it can be used with the Serializer.

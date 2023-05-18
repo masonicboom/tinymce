@@ -1,15 +1,15 @@
 import { Fun, Optional } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import * as EventProcessRanges from './EventProcessRanges';
+import * as FragmentReader from './FragmentReader';
+import * as MultiRange from './MultiRange';
 import Editor from '../api/Editor';
 import { cleanupBogusElements, cleanupInputNames } from '../content/ContentCleanup';
 import { Content, ContentFormat, GetSelectionContentArgs } from '../content/ContentTypes';
 import { postProcessGetContent, preProcessGetContent } from '../content/PrePostProcess';
 import * as CharType from '../text/CharType';
 import * as Zwsp from '../text/Zwsp';
-import * as EventProcessRanges from './EventProcessRanges';
-import * as FragmentReader from './FragmentReader';
-import * as MultiRange from './MultiRange';
 
 const isCollapsibleWhitespace = (text: string, index: number) => index >= 0 && index < text.length && CharType.isWhiteSpace(text.charAt(index));
 

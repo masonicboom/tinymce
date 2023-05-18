@@ -1,6 +1,7 @@
 import { Arr, Obj, Optional, Type, Unicode } from '@ephox/katamari';
 import { SugarText, SugarElement } from '@ephox/sugar';
 
+import { BlockPattern, BlockPatternMatch, Pattern, PatternSet } from './PatternTypes';
 import * as TextSearch from '../../alien/TextSearch';
 import DOMUtils from '../../api/dom/DOMUtils';
 import Editor from '../../api/Editor';
@@ -9,7 +10,6 @@ import * as Options from '../../api/Options';
 import Tools from '../../api/util/Tools';
 import { generatePathRange, resolvePathRange } from '../utils/PathRange';
 import * as Utils from '../utils/Utils';
-import { BlockPattern, BlockPatternMatch, Pattern, PatternSet } from './PatternTypes';
 
 const startsWithSingleSpace = (s: string): boolean => /^\s[^\s]/.test(s);
 

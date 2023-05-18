@@ -1,9 +1,9 @@
 import { Arr, Cell, Obj } from '@ephox/katamari';
 
+import { toggleReadOnly } from './Readonly';
 import Editor from '../api/Editor';
 import * as Events from '../api/Events';
 import { EditorModeApi } from '../api/Mode';
-import { toggleReadOnly } from './Readonly';
 
 const defaultModes = [ 'design', 'readonly' ];
 

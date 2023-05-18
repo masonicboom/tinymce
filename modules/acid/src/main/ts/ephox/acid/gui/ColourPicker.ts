@@ -4,14 +4,14 @@ import {
 import { FieldSchema } from '@ephox/boulder';
 import { Arr, Cell, Fun } from '@ephox/katamari';
 
-import { Hex } from '../api/colour/ColourTypes';
-import * as HsvColour from '../api/colour/HsvColour';
-import * as RgbaColour from '../api/colour/RgbaColour';
-import * as Transformations from '../api/colour/Transformations';
 import * as ColourEvents from './ColourEvents';
 import * as HueSlider from './components/HueSlider';
 import * as RgbForm from './components/RgbForm';
 import * as SaturationBrightnessPalette from './components/SaturationBrightnessPalette';
+import { Hex } from '../api/colour/ColourTypes';
+import * as HsvColour from '../api/colour/HsvColour';
+import * as RgbaColour from '../api/colour/RgbaColour';
+import * as Transformations from '../api/colour/Transformations';
 
 export interface ColourPickerDetail extends Sketcher.SingleSketchDetail {
   readonly dom: RawDomSchema;

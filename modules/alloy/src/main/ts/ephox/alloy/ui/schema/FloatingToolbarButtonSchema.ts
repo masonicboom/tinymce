@@ -1,6 +1,7 @@
 import { FieldSchema } from '@ephox/boulder';
 import { Fun, Optional } from '@ephox/katamari';
 
+import * as ToolbarSchema from './ToolbarSchema';
 import * as Behaviour from '../../api/behaviour/Behaviour';
 import { Focusing } from '../../api/behaviour/Focusing';
 import { Keying } from '../../api/behaviour/Keying';
@@ -14,7 +15,6 @@ import * as AnchorLayouts from '../../positioning/mode/AnchorLayouts';
 import { ButtonSpec } from '../types/ButtonTypes';
 import { FloatingToolbarButtonDetail } from '../types/FloatingToolbarButtonTypes';
 import { ToolbarSpec } from '../types/ToolbarTypes';
-import * as ToolbarSchema from './ToolbarSchema';
 
 const schema = Fun.constant([
   Fields.markers([ 'toggledClass' ]),

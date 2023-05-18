@@ -1,11 +1,11 @@
 import { Arr, Fun, Optional } from '@ephox/katamari';
 import { Compare, SugarElement, Traverse } from '@ephox/sugar';
 
+import * as CaretCandidate from './CaretCandidate';
+import { isFakeCaretTarget } from './FakeCaret';
 import { getClientRects, NodeClientRect } from '../dom/Dimensions';
 import * as NodeType from '../dom/NodeType';
 import * as ClientRect from '../geom/ClientRect';
-import * as CaretCandidate from './CaretCandidate';
-import { isFakeCaretTarget } from './FakeCaret';
 
 type GeomClientRect = ClientRect.ClientRect;
 

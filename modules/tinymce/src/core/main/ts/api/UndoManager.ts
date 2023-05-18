@@ -1,12 +1,12 @@
 import { Arr, Cell, Singleton } from '@ephox/katamari';
 
+import Editor from './Editor';
 import { Bookmark } from '../bookmark/BookmarkTypes';
 import * as GetBookmark from '../bookmark/GetBookmark';
 import * as Rtc from '../Rtc';
 import * as Levels from '../undo/Levels';
 import { addKeyboardShortcuts, registerEvents } from '../undo/Setup';
 import { Index, Locks, UndoLevel, UndoManager } from '../undo/UndoManagerTypes';
-import Editor from './Editor';
 
 /**
  * This class handles the undo/redo history levels for the editor. Since the built-in undo/redo has major drawbacks a custom one was needed.

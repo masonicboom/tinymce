@@ -1,7 +1,5 @@
 import { Arr, Obj, Type } from '@ephox/katamari';
 
-import * as ErrorReporter from '../ErrorReporter';
-import * as FocusController from '../focus/FocusController';
 import AddOnManager from './AddOnManager';
 import DOMUtils from './dom/DOMUtils';
 import { EventUtilsEvent } from './dom/EventUtils';
@@ -13,6 +11,8 @@ import I18n, { TranslatedString, Untranslated } from './util/I18n';
 import Observable from './util/Observable';
 import Tools from './util/Tools';
 import URI from './util/URI';
+import * as ErrorReporter from '../ErrorReporter';
+import * as FocusController from '../focus/FocusController';
 
 interface PreInit {
   suffix: string;

@@ -1,14 +1,14 @@
 import { FieldSchema } from '@ephox/boulder';
 import { Optional } from '@ephox/katamari';
 
+import { MakeshiftAnchor, nu as NuAnchoring } from './Anchoring';
+import * as AnchorLayouts from './AnchorLayouts';
 import { bounds } from '../../alien/Boxes';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import * as Fields from '../../data/Fields';
 import * as Bubble from '../layout/Bubble';
 import * as Layout from '../layout/Layout';
 import * as Origins from '../layout/Origins';
-import { MakeshiftAnchor, nu as NuAnchoring } from './Anchoring';
-import * as AnchorLayouts from './AnchorLayouts';
 
 const placement = (component: AlloyComponent, anchorInfo: MakeshiftAnchor, origin: Origins.OriginAdt) => {
   const pos = Origins.translate(origin, anchorInfo.x, anchorInfo.y);

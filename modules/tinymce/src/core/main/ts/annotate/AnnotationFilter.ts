@@ -1,9 +1,9 @@
 import { Arr, Optional } from '@ephox/katamari';
 
-import Editor from '../api/Editor';
-import AstNode from '../api/html/Node';
 import { AnnotationsRegistry, AnnotatorSettings } from './AnnotationsRegistry';
 import * as Markings from './Markings';
+import Editor from '../api/Editor';
+import AstNode from '../api/html/Node';
 
 const setup = (editor: Editor, registry: AnnotationsRegistry): void => {
   const dataAnnotation = Markings.dataAnnotation();

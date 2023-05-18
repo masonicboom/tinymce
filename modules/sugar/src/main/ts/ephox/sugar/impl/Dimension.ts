@@ -1,8 +1,8 @@
 import { Arr, Type } from '@ephox/katamari';
 
+import * as Style from './Style';
 import { SugarElement } from '../api/node/SugarElement';
 import * as Css from '../api/properties/Css';
-import * as Style from './Style';
 
 export interface Dimension {
   readonly get: (element: SugarElement<HTMLElement>) => number;

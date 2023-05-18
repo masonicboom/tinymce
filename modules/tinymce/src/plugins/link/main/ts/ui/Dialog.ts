@@ -3,13 +3,13 @@ import { Arr, Fun, Optional, Optionals } from '@ephox/katamari';
 import Editor from 'tinymce/core/api/Editor';
 import { Dialog } from 'tinymce/core/api/ui/Ui';
 
-import * as Options from '../api/Options';
-import { ListOptions } from '../core/ListOptions';
-import * as Utils from '../core/Utils';
 import { DialogChanges } from './DialogChanges';
 import { DialogConfirms } from './DialogConfirms';
 import { DialogInfo } from './DialogInfo';
 import { LinkDialogData, LinkDialogInfo, LinkDialogKey } from './DialogTypes';
+import * as Options from '../api/Options';
+import { ListOptions } from '../core/ListOptions';
+import * as Utils from '../core/Utils';
 
 const handleSubmit = (editor: Editor, info: LinkDialogInfo) => (api: Dialog.DialogInstanceApi<LinkDialogData>): void => {
   const data: LinkDialogData = api.getData();

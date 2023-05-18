@@ -1,7 +1,7 @@
 import { Arr } from '@ephox/katamari';
 
-import { SugarElement } from '../node/SugarElement';
 import * as Attribute from './Attribute';
+import { SugarElement } from '../node/SugarElement';
 
 // Methods for handling attributes that contain a list of values <div foo="alpha beta theta">
 const read = (element: SugarElement<Element>, attr: string): string[] => {

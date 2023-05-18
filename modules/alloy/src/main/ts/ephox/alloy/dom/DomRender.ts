@@ -1,10 +1,10 @@
 import { Optional } from '@ephox/katamari';
 import { Attribute, Classes, Css, Html, InsertAll, SugarElement, SugarNode, Value } from '@ephox/sugar';
 
-import { isPremade } from '../api/ui/GuiTypes';
-import * as Tagger from '../registry/Tagger';
 import * as DomDefinition from './DomDefinition';
 import { reconcileToDom } from './Reconcile';
+import { isPremade } from '../api/ui/GuiTypes';
+import * as Tagger from '../registry/Tagger';
 
 const introduceToDom = (definition: DomDefinition.GeneralDefinitionDetail<SugarElement<Node>>): SugarElement<HTMLElement> => {
   const subject = SugarElement.fromTag(definition.tag);

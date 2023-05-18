@@ -1,9 +1,9 @@
 import { Optional } from '@ephox/katamari';
 import { Compare, SugarElement } from '@ephox/sugar';
 
+import * as CellBounds from './CellBounds';
 import * as Structs from '../api/Structs';
 import { Warehouse } from '../api/Warehouse';
-import * as CellBounds from './CellBounds';
 
 const getBounds = (detailA: Structs.DetailExt, detailB: Structs.DetailExt): Structs.Bounds => {
   return Structs.bounds(

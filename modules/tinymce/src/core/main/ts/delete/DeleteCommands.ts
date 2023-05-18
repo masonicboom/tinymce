@@ -1,6 +1,5 @@
 import { Arr, Cell, Fun } from '@ephox/katamari';
 
-import Editor from '../api/Editor';
 import * as BlockBoundaryDelete from './BlockBoundaryDelete';
 import * as BlockRangeDelete from './BlockRangeDelete';
 import * as CaretBoundaryDelete from './CaretBoundaryDelete';
@@ -12,6 +11,7 @@ import * as InlineFormatDelete from './InlineFormatDelete';
 import * as MediaDelete from './MediaDelete';
 import * as Outdent from './Outdent';
 import * as TableDelete from './TableDelete';
+import Editor from '../api/Editor';
 
 const findAction = (editor: Editor, caret: Cell<Text | null>, forward: boolean) =>
   Arr.findMap([

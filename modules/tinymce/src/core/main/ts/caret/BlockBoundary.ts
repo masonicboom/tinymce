@@ -1,12 +1,12 @@
 import { Arr, Fun, Optional } from '@ephox/katamari';
 import { Compare, SugarElement } from '@ephox/sugar';
 
-import * as ElementType from '../dom/ElementType';
-import * as Parents from '../dom/Parents';
 import * as CaretFinder from './CaretFinder';
 import { CaretPosition } from './CaretPosition';
 import { isEmptyText } from './CaretPositionPredicates';
 import { isInSameBlock } from './CaretUtils';
+import * as ElementType from '../dom/ElementType';
+import * as Parents from '../dom/Parents';
 
 const navigateIgnoreEmptyTextNodes = (forward: boolean, root: Node, from: CaretPosition): Optional<CaretPosition> =>
   CaretFinder.navigateIgnore(forward, root, from, isEmptyText);

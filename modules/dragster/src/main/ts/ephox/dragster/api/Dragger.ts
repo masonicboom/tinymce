@@ -1,7 +1,7 @@
-import * as Dragging from '../core/Dragging';
-import { BlockerOptions } from '../detect/Blocker';
 import { DragMode, DragMutation } from './DragApis';
 import MouseDrag from './MouseDrag';
+import * as Dragging from '../core/Dragging';
+import { BlockerOptions } from '../detect/Blocker';
 
 export interface DraggerOptions extends BlockerOptions {
   readonly mode: DragMode<MouseEvent>;

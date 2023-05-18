@@ -1,5 +1,7 @@
 import { Optional } from '@ephox/katamari';
 
+import { composite } from './Sketcher';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as AlloyParts from '../../parts/AlloyParts';
 import * as ToolbarSchema from '../../ui/schema/ToolbarSchema';
 import { ToolbarApis, ToolbarDetail, ToolbarSketcher, ToolbarSpec } from '../../ui/types/ToolbarTypes';
@@ -8,8 +10,6 @@ import { Replacing } from '../behaviour/Replacing';
 import { AlloyComponent } from '../component/ComponentApi';
 import * as SketchBehaviours from '../component/SketchBehaviours';
 import { AlloySpec } from '../component/SpecTypes';
-import { composite } from './Sketcher';
-import { CompositeSketchFactory } from './UiSketcher';
 
 const factory: CompositeSketchFactory<ToolbarDetail, ToolbarSpec> = (detail, components, _spec, _externals) => {
   const setGroups = (toolbar: AlloyComponent, groups: AlloySpec[]) => {

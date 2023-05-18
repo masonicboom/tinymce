@@ -1,7 +1,7 @@
-import Editor from '../api/Editor';
-import * as Rtc from '../Rtc';
 import { Content, SetContentArgs } from './ContentTypes';
 import { postProcessSetContent, preProcessSetContent } from './PrePostProcess';
+import Editor from '../api/Editor';
+import * as Rtc from '../Rtc';
 
 const defaultFormat = 'html';
 

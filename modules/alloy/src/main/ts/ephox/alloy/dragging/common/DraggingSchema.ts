@@ -1,8 +1,8 @@
 import { FieldProcessor, FieldSchema } from '@ephox/boulder';
 import { Fun } from '@ephox/katamari';
 
-import * as Boxes from '../../alien/Boxes';
 import SnapSchema from './SnapSchema';
+import * as Boxes from '../../alien/Boxes';
 
 const schema: FieldProcessor[] = [
   // Is this used?

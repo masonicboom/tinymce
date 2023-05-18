@@ -1,9 +1,9 @@
-import { nu as NuSpotInfo } from '../view/SpotInfo';
 import { Bubble } from './Bubble';
 import * as Direction from './Direction';
 import { AnchorBoxBounds, boundsRestriction } from './LayoutBounds';
 import { AnchorBox, AnchorElement, AnchorLayout } from './LayoutTypes';
 import { Placement, getPlacement } from './Placement';
+import { nu as NuSpotInfo } from '../view/SpotInfo';
 
 /*
   Layouts for things that overlay over the anchor element/box. These are designed to mirror

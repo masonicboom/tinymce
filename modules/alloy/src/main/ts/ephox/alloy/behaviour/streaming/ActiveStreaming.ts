@@ -1,5 +1,5 @@
-import * as AlloyEvents from '../../api/events/AlloyEvents';
 import { StreamingConfig, StreamingState } from './StreamingTypes';
+import * as AlloyEvents from '../../api/events/AlloyEvents';
 
 const events = (streamConfig: StreamingConfig, streamState: StreamingState): AlloyEvents.AlloyEventRecord => {
   const streams = streamConfig.stream.streams;

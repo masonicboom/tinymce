@@ -1,5 +1,7 @@
 import { Fun } from '@ephox/katamari';
 
+import { Bookmark, IdBookmark, IndexBookmark, PathBookmark, RangeBookmark, StringPathBookmark } from './BookmarkTypes';
+import * as CaretBookmark from './CaretBookmark';
 import DOMUtils from '../api/dom/DOMUtils';
 import EditorSelection from '../api/dom/Selection';
 import Tools from '../api/util/Tools';
@@ -9,8 +11,6 @@ import * as NodeType from '../dom/NodeType';
 import { rangeInsertNode } from '../selection/RangeInsertNode';
 import * as RangeNodes from '../selection/RangeNodes';
 import * as Zwsp from '../text/Zwsp';
-import { Bookmark, IdBookmark, IndexBookmark, PathBookmark, RangeBookmark, StringPathBookmark } from './BookmarkTypes';
-import * as CaretBookmark from './CaretBookmark';
 
 type TrimFn = (s: string) => string;
 

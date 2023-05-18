@@ -1,7 +1,7 @@
 import { Arr, Obj, Optional } from '@ephox/katamari';
 
-import Editor from '../Editor';
 import DOMUtils from './DOMUtils';
+import Editor from '../Editor';
 
 type SelectorChangedCallback = (active: boolean, args: { node: Node; selector: String; parents: Node[] }) => void;
 

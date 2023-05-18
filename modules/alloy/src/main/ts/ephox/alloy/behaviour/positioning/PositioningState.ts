@@ -1,8 +1,8 @@
 import { Obj, Optional, Type } from '@ephox/katamari';
 
+import { PositioningState } from './PositioningTypes';
 import { PlacerResult } from '../../positioning/layout/LayoutTypes';
 import { nuState } from '../common/BehaviourState';
-import { PositioningState } from './PositioningTypes';
 
 export const init = (): PositioningState => {
   let state: Record<string, PlacerResult> = {};

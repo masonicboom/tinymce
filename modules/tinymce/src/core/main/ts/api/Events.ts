@@ -1,6 +1,3 @@
-import { AutocompleterEventArgs } from '../autocomplete/AutocompleteTypes';
-import { FormatVars } from '../fmt/FormatTypes';
-import { RangeLikeObject } from '../selection/RangeTypes';
 import Editor from './Editor';
 import {
   BeforeSetContentEvent, SetContentEvent, PastePlainTextToggleEvent, PastePostProcessEvent, PastePreProcessEvent, GetContentEvent, BeforeGetContentEvent,
@@ -8,6 +5,9 @@ import {
 } from './EventTypes';
 import { ParserArgs } from './html/DomParser';
 import { EditorEvent } from './util/EventDispatcher';
+import { AutocompleterEventArgs } from '../autocomplete/AutocompleteTypes';
+import { FormatVars } from '../fmt/FormatTypes';
+import { RangeLikeObject } from '../selection/RangeTypes';
 
 const firePreProcess = (editor: Editor, args: ParserArgs & { node: Element }): EditorEvent<PreProcessEvent> =>
   editor.dispatch('PreProcess', args);

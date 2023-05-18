@@ -1,14 +1,14 @@
 import { Classes, Css, Height, SugarElement, Width } from '@ephox/sugar';
 
+import * as Bounder from './Bounder';
+import { applyPositionCss } from './PositionCss';
+import { RepositionDecision } from './Reposition';
+import { applyTransitionCss } from './Transitions';
 import { Bubble } from '../layout/Bubble';
 import { AnchorBox, AnchorElement } from '../layout/LayoutTypes';
 import * as Origins from '../layout/Origins';
 import * as Placement from '../layout/Placement';
 import { ReparteeOptions } from '../layout/SimpleLayout';
-import * as Bounder from './Bounder';
-import { applyPositionCss } from './PositionCss';
-import { RepositionDecision } from './Reposition';
-import { applyTransitionCss } from './Transitions';
 
 /*
  * This is the old repartee API. It is retained in a similar structure to the original form,

@@ -1,12 +1,12 @@
 import { Arr, Fun, Optionals, Type, Unicode } from '@ephox/katamari';
 
+import * as CaretCandidate from './CaretCandidate';
 import DOMUtils from '../api/dom/DOMUtils';
 import * as NodeType from '../dom/NodeType';
 import * as ClientRect from '../geom/ClientRect';
 import * as RangeNodes from '../selection/RangeNodes';
 import * as ExtendingChar from '../text/ExtendingChar';
 import * as Predicate from '../util/Predicate';
-import * as CaretCandidate from './CaretCandidate';
 
 type GeomClientRect = ClientRect.ClientRect;
 

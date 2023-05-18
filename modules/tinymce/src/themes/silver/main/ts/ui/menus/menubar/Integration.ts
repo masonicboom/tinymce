@@ -3,8 +3,8 @@ import { Arr, Obj, Type } from '@ephox/katamari';
 import Editor from 'tinymce/core/api/Editor';
 import { Menu } from 'tinymce/core/api/ui/Ui';
 
-import * as Options from '../../../api/Options';
 import { MenubarItemSpec } from './SilverMenubar';
+import * as Options from '../../../api/Options';
 
 interface MenuSpec {
   readonly title: string;

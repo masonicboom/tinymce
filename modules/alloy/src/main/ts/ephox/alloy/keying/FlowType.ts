@@ -2,6 +2,9 @@ import { FieldSchema } from '@ephox/boulder';
 import { Fun, Optional } from '@ephox/katamari';
 import { SelectorFind, SugarElement } from '@ephox/sugar';
 
+import { FlowConfig, KeyRuleHandler } from './KeyingModeTypes';
+import * as KeyingType from './KeyingType';
+import * as KeyingTypes from './KeyingTypes';
 import * as Keys from '../alien/Keys';
 import { AlloyComponent } from '../api/component/ComponentApi';
 import { NoState, Stateless } from '../behaviour/common/BehaviourState';
@@ -11,9 +14,6 @@ import * as DomMovement from '../navigation/DomMovement';
 import * as DomNavigation from '../navigation/DomNavigation';
 import * as KeyMatch from '../navigation/KeyMatch';
 import * as KeyRules from '../navigation/KeyRules';
-import { FlowConfig, KeyRuleHandler } from './KeyingModeTypes';
-import * as KeyingType from './KeyingType';
-import * as KeyingTypes from './KeyingTypes';
 
 const schema = [
   FieldSchema.required('selector'),

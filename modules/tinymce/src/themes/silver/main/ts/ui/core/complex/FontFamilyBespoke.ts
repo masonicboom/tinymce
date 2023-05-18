@@ -3,11 +3,11 @@ import { Arr, Fun, Optional, Optionals } from '@ephox/katamari';
 
 import Editor from 'tinymce/core/api/Editor';
 
+import { createMenuItems, createSelectButton, FormatterFormatItem, PreviewSpec, SelectedFormat, SelectSpec } from './BespokeSelect';
+import { buildBasicSettingsDataset, Delimiter } from './SelectDatasets';
 import { UiFactoryBackstage } from '../../../backstage/Backstage';
 import { updateMenuText } from '../../dropdown/CommonDropdown';
 import { onSetupEditableToggle } from '../ControlUtils';
-import { createMenuItems, createSelectButton, FormatterFormatItem, PreviewSpec, SelectedFormat, SelectSpec } from './BespokeSelect';
-import { buildBasicSettingsDataset, Delimiter } from './SelectDatasets';
 
 // A list of fonts that must be in a font family for the font to be recognised as the system stack
 // Note: Don't include 'BlinkMacSystemFont', as Chrome on Mac converts it to different names

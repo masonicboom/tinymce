@@ -1,9 +1,9 @@
 import { Optional } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
-import Editor from '../api/Editor';
 import * as BlockMergeBoundary from './BlockMergeBoundary';
 import * as MergeBlocks from './MergeBlocks';
+import Editor from '../api/Editor';
 
 const backspaceDelete = (editor: Editor, forward: boolean): Optional<() => void> => {
   const rootNode = SugarElement.fromDom(editor.getBody());

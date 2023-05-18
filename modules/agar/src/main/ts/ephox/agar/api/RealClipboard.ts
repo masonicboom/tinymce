@@ -1,9 +1,9 @@
 import { PlatformDetection } from '@ephox/sand';
 
-import { KeyModifiers } from '../keyboard/FakeKeys';
-import * as SeleniumAction from '../server/SeleniumAction';
 import { RealKeys } from './RealKeys';
 import { Step } from './Step';
+import { KeyModifiers } from '../keyboard/FakeKeys';
+import * as SeleniumAction from '../server/SeleniumAction';
 
 const platform = PlatformDetection.detect();
 

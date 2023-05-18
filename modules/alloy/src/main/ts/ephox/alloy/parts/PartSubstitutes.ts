@@ -1,10 +1,10 @@
 import { Arr, Fun, Merger } from '@ephox/katamari';
 
+import { Substitutions } from './AlloyParts';
+import * as PartType from './PartType';
 import { AlloySpec } from '../api/component/SpecTypes';
 import { CompositeSketchDetail, CompositeSketchSpec } from '../api/ui/Sketcher';
 import * as UiSubstitutes from '../spec/UiSubstitutes';
-import { Substitutions } from './AlloyParts';
-import * as PartType from './PartType';
 
 const combine = <D extends CompositeSketchDetail, S extends CompositeSketchSpec>(detail: D, data: PartType.BasePartDetail<D, S>, partSpec: S, partValidated?: Record<string, any>): S & { uid: string } =>
   // Extremely confusing names and types :(

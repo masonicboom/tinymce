@@ -1,13 +1,13 @@
 import { Fun, Optional, Optionals } from '@ephox/katamari';
 import { Compare, PredicateFind, SugarElement } from '@ephox/sugar';
 
+import * as DeleteUtils from './DeleteUtils';
+import * as MergeBlocks from './MergeBlocks';
 import EditorSelection from '../api/dom/Selection';
 import Editor from '../api/Editor';
 import * as CaretFinder from '../caret/CaretFinder';
 import CaretPosition from '../caret/CaretPosition';
 import * as ElementType from '../dom/ElementType';
-import * as DeleteUtils from './DeleteUtils';
-import * as MergeBlocks from './MergeBlocks';
 
 const deleteRangeMergeBlocks = (rootNode: SugarElement<Node>, selection: EditorSelection): Optional<() => void> => {
   const rng = selection.getRng();

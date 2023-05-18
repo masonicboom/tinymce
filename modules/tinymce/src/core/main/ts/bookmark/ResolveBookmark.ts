@@ -1,5 +1,10 @@
 import { Fun, Optional, Optionals, Type } from '@ephox/katamari';
 
+import {
+  Bookmark, IdBookmark, IndexBookmark, isIdBookmark, isIndexBookmark, isPathBookmark, isRangeBookmark, isStringPathBookmark, PathBookmark,
+  StringPathBookmark
+} from './BookmarkTypes';
+import * as CaretBookmark from './CaretBookmark';
 import DOMUtils from '../api/dom/DOMUtils';
 import EditorSelection from '../api/dom/Selection';
 import Env from '../api/Env';
@@ -9,11 +14,6 @@ import CaretPosition from '../caret/CaretPosition';
 import * as NodeType from '../dom/NodeType';
 import { getParentCaretContainer } from '../fmt/FormatContainer';
 import * as Zwsp from '../text/Zwsp';
-import {
-  Bookmark, IdBookmark, IndexBookmark, isIdBookmark, isIndexBookmark, isPathBookmark, isRangeBookmark, isStringPathBookmark, PathBookmark,
-  StringPathBookmark
-} from './BookmarkTypes';
-import * as CaretBookmark from './CaretBookmark';
 
 export interface BookmarkResolveResult {
   readonly range: Range;

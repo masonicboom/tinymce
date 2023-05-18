@@ -1,12 +1,12 @@
 import { Optional } from '@ephox/katamari';
 
+import * as RangeCompare from './RangeCompare';
 import DOMUtils from '../api/dom/DOMUtils';
 import DomTreeWalker from '../api/dom/TreeWalker';
 import * as CaretContainer from '../caret/CaretContainer';
 import { CaretPosition } from '../caret/CaretPosition';
 import * as NodeType from '../dom/NodeType';
 import { isCaretNode } from '../fmt/FormatContainer';
-import * as RangeCompare from './RangeCompare';
 
 const findParent = (node: Node, rootNode: Node, predicate: (node: Node) => boolean): Node | null => {
   let currentNode: Node | null = node;

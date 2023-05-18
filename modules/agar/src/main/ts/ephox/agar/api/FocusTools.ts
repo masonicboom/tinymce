@@ -1,7 +1,6 @@
 import { Result } from '@ephox/katamari';
 import { Compare, Focus, SugarElement, SugarShadowDom, Truncate } from '@ephox/sugar';
 
-import * as SizzleFind from '../alien/SizzleFind';
 import { Chain } from './Chain';
 import * as Guard from './Guard';
 import * as Logger from './Logger';
@@ -9,6 +8,7 @@ import { Step } from './Step';
 import * as UiControls from './UiControls';
 import * as UiFinder from './UiFinder';
 import * as Waiter from './Waiter';
+import * as SizzleFind from '../alien/SizzleFind';
 
 const getFocused = <T extends HTMLElement>(doc: SugarElement<Document | ShadowRoot>): Result<SugarElement<T>, string> => {
   return Focus.active<T>(doc).fold(

@@ -1,8 +1,8 @@
 import { StructureSchema, ValueType } from '@ephox/boulder';
 import { Result } from '@ephox/katamari';
 
-import * as ComponentSchema from '../../core/ComponentSchema';
 import { FormComponent, formComponentFields, FormComponentSpec } from './FormComponent';
+import * as ComponentSchema from '../../core/ComponentSchema';
 
 export interface CheckboxSpec extends FormComponentSpec {
   type: 'checkbox';

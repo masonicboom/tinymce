@@ -1,10 +1,10 @@
 import { Fun } from '@ephox/katamari';
 import { Compare, SelectorExists, SugarElement } from '@ephox/sugar';
 
+import * as NodeType from './NodeType';
 import DomTreeWalker from '../api/dom/TreeWalker';
 import * as CaretCandidate from '../caret/CaretCandidate';
 import { isWhitespaceText } from '../text/Whitespace';
-import * as NodeType from './NodeType';
 
 const hasWhitespacePreserveParent = (node: Node, rootNode: Node): boolean => {
   const rootElement = SugarElement.fromDom(rootNode);

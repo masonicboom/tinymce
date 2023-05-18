@@ -1,8 +1,3 @@
-import { AutocompleterEventArgs } from '../autocomplete/AutocompleteTypes';
-import { GetContentArgs, SetContentArgs } from '../content/ContentTypes';
-import { FormatVars } from '../fmt/FormatTypes';
-import { RangeLikeObject } from '../selection/RangeTypes';
-import { UndoLevel } from '../undo/UndoManagerTypes';
 import { SetAttribEvent } from './dom/DOMUtils';
 import Editor from './Editor';
 import { ParserArgs } from './html/DomParser';
@@ -10,6 +5,11 @@ import { NotificationApi, NotificationSpec } from './NotificationManager';
 import { Dialog } from './ui/Ui';
 import { NativeEventMap } from './util/EventDispatcher';
 import { InstanceApi } from './WindowManager';
+import { AutocompleterEventArgs } from '../autocomplete/AutocompleteTypes';
+import { GetContentArgs, SetContentArgs } from '../content/ContentTypes';
+import { FormatVars } from '../fmt/FormatTypes';
+import { RangeLikeObject } from '../selection/RangeTypes';
+import { UndoLevel } from '../undo/UndoManagerTypes';
 
 export interface ExecCommandEvent {
   command: string;

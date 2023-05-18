@@ -2,6 +2,8 @@ import { FieldProcessor, FieldSchema } from '@ephox/boulder';
 import { Arr, Fun, Optional } from '@ephox/katamari';
 import { Compare, Height, SelectorFilter, SelectorFind, SugarElement } from '@ephox/sugar';
 
+import { KeyRuleHandler, TabbingConfig } from './KeyingModeTypes';
+import * as KeyingType from './KeyingType';
 import * as Keys from '../alien/Keys';
 import { AlloyComponent } from '../api/component/ComponentApi';
 import { NoState, Stateless } from '../behaviour/common/BehaviourState';
@@ -9,8 +11,6 @@ import { NativeSimulatedEvent } from '../events/SimulatedEvent';
 import * as ArrNavigation from '../navigation/ArrNavigation';
 import * as KeyMatch from '../navigation/KeyMatch';
 import * as KeyRules from '../navigation/KeyRules';
-import { KeyRuleHandler, TabbingConfig } from './KeyingModeTypes';
-import * as KeyingType from './KeyingType';
 
 const create = (cyclicField: FieldProcessor): KeyingType.KeyingType<TabbingConfig, Stateless> => {
   const schema: FieldProcessor[] = [

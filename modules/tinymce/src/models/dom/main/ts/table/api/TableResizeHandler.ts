@@ -4,11 +4,11 @@ import { Attribute, Css, SugarElement } from '@ephox/sugar';
 
 import Editor from 'tinymce/core/api/Editor';
 
+import * as Events from './Events';
+import * as Options from './Options';
 import * as Utils from '../core/TableUtils';
 import * as TableWire from '../core/TableWire';
 import * as TableSize from '../queries/TableSize';
-import * as Events from './Events';
-import * as Options from './Options';
 
 export interface TableResizeHandler {
   readonly refresh: (table: HTMLTableElement) => void;

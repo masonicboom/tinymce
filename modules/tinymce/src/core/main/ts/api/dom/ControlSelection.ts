@@ -1,6 +1,7 @@
 import { Arr, Obj, Throttler, Type } from '@ephox/katamari';
 import { SelectorFind, Selectors, SugarElement } from '@ephox/sugar';
 
+import EditorSelection from './Selection';
 import * as NodeType from '../../dom/NodeType';
 import * as RangePoint from '../../dom/RangePoint';
 import Editor from '../Editor';
@@ -9,7 +10,6 @@ import * as Events from '../Events';
 import * as Options from '../Options';
 import { EditorEvent } from '../util/EventDispatcher';
 import VK from '../util/VK';
-import EditorSelection from './Selection';
 
 interface ControlSelection {
   isResizable: (elm: Element) => boolean;

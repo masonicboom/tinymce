@@ -1,6 +1,8 @@
 import { Arr, Optional, Type } from '@ephox/katamari';
 import { Remove, SugarElement } from '@ephox/sugar';
 
+import { InsertContentDetails } from './ContentTypes';
+import * as InsertList from './InsertList';
 import DOMUtils from '../api/dom/DOMUtils';
 import Editor from '../api/Editor';
 import { ParserArgs } from '../api/html/DomParser';
@@ -21,8 +23,6 @@ import * as InvalidNodes from '../html/InvalidNodes';
 import * as ParserUtils from '../html/ParserUtils';
 import * as RangeNormalizer from '../selection/RangeNormalizer';
 import * as SelectionUtils from '../selection/SelectionUtils';
-import { InsertContentDetails } from './ContentTypes';
-import * as InsertList from './InsertList';
 
 const mergeableWrappedElements = [ 'pre' ];
 

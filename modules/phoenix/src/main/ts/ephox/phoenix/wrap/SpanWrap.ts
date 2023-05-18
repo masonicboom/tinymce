@@ -1,11 +1,11 @@
 import { Universe } from '@ephox/boss';
 import { Fun, Optional, Unicode } from '@ephox/katamari';
 
+import * as Wrapper from './Wrapper';
+import { Wraps } from './Wraps';
 import * as Spot from '../api/data/Spot';
 import { SpanWrapRange, SpotPoint } from '../api/data/Types';
 import * as Injection from '../api/general/Injection';
-import * as Wrapper from './Wrapper';
-import { Wraps } from './Wraps';
 
 interface SpanWrapPoint<E> {
   readonly cursor: SpotPoint<E>;

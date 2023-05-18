@@ -1,13 +1,13 @@
 import { Fun, Type } from '@ephox/katamari';
 
+import { blockbreak } from './InsertBlock';
+import { linebreak } from './InsertBr';
+import * as NewLineAction from './NewLineAction';
 import Editor from '../api/Editor';
 import { getNewlineBehavior } from '../api/Options';
 import { EditorEvent } from '../api/util/EventDispatcher';
 import { execEditorDeleteCommand } from '../delete/DeleteUtils';
 import { fireFakeBeforeInputEvent, fireFakeInputEvent } from '../keyboard/FakeInputEvents';
-import { blockbreak } from './InsertBlock';
-import { linebreak } from './InsertBr';
-import * as NewLineAction from './NewLineAction';
 
 interface BreakType {
   readonly insert: (editor: Editor, evt?: EditorEvent<KeyboardEvent>) => void;

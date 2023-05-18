@@ -1,8 +1,8 @@
 import Editor from 'tinymce/core/api/Editor';
 import AstNode from 'tinymce/core/api/html/Node';
 
-import * as Options from '../api/Options';
 import { Parser } from './Parser';
+import * as Options from '../api/Options';
 
 const parseAndSanitize = (editor: Editor, context: string, html: string): AstNode => {
   const getEditorOption = editor.options.get;

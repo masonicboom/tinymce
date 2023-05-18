@@ -1,8 +1,8 @@
 import { Arr, Optional } from '@ephox/katamari';
 import { EventArgs } from '@ephox/sugar';
 
-import { KeyRuleHandler } from '../keying/KeyingModeTypes';
 import * as KeyMatch from './KeyMatch';
+import { KeyRuleHandler } from '../keying/KeyingModeTypes';
 
 export interface KeyRule<C, S> {
   matches: KeyMatch.KeyMatcher;

@@ -1,7 +1,7 @@
 import { AlloyEvents, AlloyTriggers, EventFormat, SystemEvents } from '@ephox/alloy';
 
-import { GetApiType, runWithApi } from '../../controls/Controls';
 import ItemResponse from './ItemResponse';
+import { GetApiType, runWithApi } from '../../controls/Controls';
 
 export interface OnMenuItemExecuteType<T> extends GetApiType<T> {
   readonly onAction: (itemApi: T) => void;

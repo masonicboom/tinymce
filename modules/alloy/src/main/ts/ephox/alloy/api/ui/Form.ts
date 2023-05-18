@@ -1,5 +1,7 @@
 import { Arr, Fun, Obj, Optional, Result } from '@ephox/katamari';
 
+import * as GuiTypes from './GuiTypes';
+import * as UiSketcher from './UiSketcher';
 import * as AlloyLogger from '../../log/AlloyLogger';
 import * as AlloyParts from '../../parts/AlloyParts';
 import * as PartType from '../../parts/PartType';
@@ -9,8 +11,6 @@ import { Representing } from '../behaviour/Representing';
 import { AlloyComponent } from '../component/ComponentApi';
 import * as SketchBehaviours from '../component/SketchBehaviours';
 import { AlloySpec, SimpleOrSketchSpec, SketchSpec } from '../component/SpecTypes';
-import * as GuiTypes from './GuiTypes';
-import * as UiSketcher from './UiSketcher';
 
 const owner = 'form';
 

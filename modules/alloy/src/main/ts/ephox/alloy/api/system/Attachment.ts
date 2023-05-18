@@ -1,9 +1,9 @@
 import { Arr } from '@ephox/katamari';
 import { Insert, Remove, SugarBody, SugarElement, Traverse } from '@ephox/sugar';
 
+import { GuiSystem } from './Gui';
 import * as InternalAttachment from '../../system/InternalAttachment';
 import { AlloyComponent } from '../component/ComponentApi';
-import { GuiSystem } from './Gui';
 
 const attach = (parent: AlloyComponent, child: AlloyComponent): void => {
   attachWith(parent, child, Insert.append);

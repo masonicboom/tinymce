@@ -1,9 +1,9 @@
 import { Arr, Optional } from '@ephox/katamari';
 
-import { Gene } from '../api/Gene';
 import * as Comparator from './Comparator';
 import * as Detach from './Detach';
 import * as Up from './Up';
+import { Gene } from '../api/Gene';
 
 const unwrap = (item: Gene): void => {
   item.parent.each((parent) => {

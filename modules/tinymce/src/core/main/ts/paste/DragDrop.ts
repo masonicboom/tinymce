@@ -1,5 +1,8 @@
 import { Arr, Cell, Obj, Type } from '@ephox/katamari';
 
+import * as Clipboard from './Clipboard';
+import * as InternalHtml from './InternalHtml';
+import * as PasteUtils from './PasteUtils';
 import DOMUtils from '../api/dom/DOMUtils';
 import RangeUtils from '../api/dom/RangeUtils';
 import Editor from '../api/Editor';
@@ -7,9 +10,6 @@ import Schema from '../api/html/Schema';
 import * as Options from '../api/Options';
 import Delay from '../api/util/Delay';
 import * as TransparentElements from '../content/TransparentElements';
-import * as Clipboard from './Clipboard';
-import * as InternalHtml from './InternalHtml';
-import * as PasteUtils from './PasteUtils';
 
 const getCaretRangeFromEvent = (editor: Editor, e: MouseEvent): Range | undefined =>
   // TODO: TINY-7075 Remove the "?? 0" here when agar passes valid client coords

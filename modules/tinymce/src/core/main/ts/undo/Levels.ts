@@ -1,11 +1,11 @@
 import { Arr, Thunk, Type } from '@ephox/katamari';
 import { Html, Remove, SelectorFilter, SugarElement } from '@ephox/sugar';
 
+import * as Fragments from './Fragments';
+import { CompleteUndoLevel, FragmentedUndoLevel, NewUndoLevel, UndoLevel, UndoLevelType } from './UndoManagerTypes';
 import Editor from '../api/Editor';
 import { isPathBookmark } from '../bookmark/BookmarkTypes';
 import * as TrimHtml from '../dom/TrimHtml';
-import * as Fragments from './Fragments';
-import { CompleteUndoLevel, FragmentedUndoLevel, NewUndoLevel, UndoLevel, UndoLevelType } from './UndoManagerTypes';
 
 // We need to create a temporary document instead of using the global document since
 // innerHTML on a detached element will still make http requests to the images

@@ -1,6 +1,7 @@
 import { Optional, Type } from '@ephox/katamari';
 import { Compare, Focus, SugarElement, SugarShadowDom } from '@ephox/sugar';
 
+import * as FocusController from './FocusController';
 import EditorSelection from '../api/dom/Selection';
 import Editor from '../api/Editor';
 import Env from '../api/Env';
@@ -9,7 +10,6 @@ import { CaretPosition } from '../caret/CaretPosition';
 import * as ElementType from '../dom/ElementType';
 import * as RangeNodes from '../selection/RangeNodes';
 import * as SelectionBookmark from '../selection/SelectionBookmark';
-import * as FocusController from './FocusController';
 
 const getContentEditableHost = (editor: Editor, node: Node): HTMLElement | null =>
   editor.dom.getParent(node, (node): node is HTMLElement => editor.dom.getContentEditable(node) === 'true');

@@ -4,10 +4,10 @@ import { Arr, Optional, Optionals } from '@ephox/katamari';
 
 import { UiFactoryBackstageProviders } from 'tinymce/themes/silver/backstage/Backstage';
 
-import { renderChoiceItem } from '../item/build/ChoiceItem';
-import ItemResponse from '../item/ItemResponse';
 import * as MenuUtils from './MenuUtils';
 import { SingleMenuItemSpec } from './SingleMenuTypes';
+import { renderChoiceItem } from '../item/build/ChoiceItem';
+import ItemResponse from '../item/ItemResponse';
 
 type PartialMenuSpec = MenuUtils.PartialMenuSpec;
 

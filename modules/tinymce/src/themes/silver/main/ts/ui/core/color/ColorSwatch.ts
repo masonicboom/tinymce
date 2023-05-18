@@ -6,10 +6,10 @@ import Editor from 'tinymce/core/api/Editor';
 import { Dialog, Menu, Toolbar } from 'tinymce/core/api/ui/Ui';
 import { EditorEvent } from 'tinymce/core/api/util/EventDispatcher';
 
-import * as Events from '../../../api/Events';
-import { composeUnbinders, onSetupEditableToggle } from '../ControlUtils';
 import * as ColorCache from './ColorCache';
 import * as Options from './Options';
+import * as Events from '../../../api/Events';
+import { composeUnbinders, onSetupEditableToggle } from '../ControlUtils';
 
 export type ColorInputCallback = (valueOpt: Optional<string>) => void;
 

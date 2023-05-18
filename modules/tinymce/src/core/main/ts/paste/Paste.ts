@@ -1,7 +1,5 @@
 import { Cell } from '@ephox/katamari';
 
-import Editor from '../api/Editor';
-import * as Options from '../api/Options';
 import * as Clipboard from './Clipboard';
 import * as Commands from './Commands';
 import * as CutCopy from './CutCopy';
@@ -9,6 +7,8 @@ import * as DragDrop from './DragDrop';
 import { PasteBin } from './PasteBin';
 import * as PrePostProcess from './PrePostProcess';
 import * as Quirks from './Quirks';
+import Editor from '../api/Editor';
+import * as Options from '../api/Options';
 
 const setup = (editor: Editor): void => {
   const draggingInternallyState = Cell(false);

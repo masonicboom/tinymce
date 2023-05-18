@@ -1,5 +1,8 @@
 import { Arr, Fun, Obj, Optional, Type } from '@ephox/katamari';
 
+import { appendContentCssFromSettings } from './ContentCss';
+import * as InitContentBody from './InitContentBody';
+import * as InitIframe from './InitIframe';
 import { AddOnConstructor } from '../api/AddOnManager';
 import DOMUtils from '../api/dom/DOMUtils';
 import Editor from '../api/Editor';
@@ -12,9 +15,6 @@ import ThemeManager, { Theme } from '../api/ThemeManager';
 import { EditorUiApi } from '../api/ui/Ui';
 import Tools from '../api/util/Tools';
 import * as ErrorReporter from '../ErrorReporter';
-import { appendContentCssFromSettings } from './ContentCss';
-import * as InitContentBody from './InitContentBody';
-import * as InitIframe from './InitIframe';
 
 const DOM = DOMUtils.DOM;
 

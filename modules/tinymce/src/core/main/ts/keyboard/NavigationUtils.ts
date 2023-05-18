@@ -1,5 +1,7 @@
 import { Arr, Fun, Optional } from '@ephox/katamari';
 
+import { isCefAtEdgeSelected } from './CefUtils';
+import * as InlineUtils from './InlineUtils';
 import Editor from '../api/Editor';
 import * as CaretContainer from '../caret/CaretContainer';
 import CaretPosition from '../caret/CaretPosition';
@@ -14,8 +16,6 @@ import * as LineWalker from '../caret/LineWalker';
 import * as ScrollIntoView from '../dom/ScrollIntoView';
 import * as RangeNodes from '../selection/RangeNodes';
 import * as ArrUtils from '../util/ArrUtils';
-import { isCefAtEdgeSelected } from './CefUtils';
-import * as InlineUtils from './InlineUtils';
 
 const moveToRange = (editor: Editor, rng: Range): void => {
   editor.selection.setRng(rng);

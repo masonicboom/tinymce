@@ -5,8 +5,8 @@ import Editor from 'tinymce/core/api/Editor';
 import { ContentLanguage } from 'tinymce/core/api/OptionTypes';
 import { Menu, Toolbar } from 'tinymce/core/api/ui/Ui';
 
-import * as Options from '../../api/Options';
 import { composeUnbinders, onSetupEditableToggle } from './ControlUtils';
+import * as Options from '../../api/Options';
 
 interface ControlSpec<T> {
   readonly name: string;

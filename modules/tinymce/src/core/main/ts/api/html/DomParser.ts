@@ -1,5 +1,8 @@
 import { Arr, Fun, Obj, Type } from '@ephox/katamari';
 
+import AstNode from './Node';
+import { getSanitizer, internalElementAttr } from './Sanitization';
+import Schema, { getTextRootBlockElements, SchemaMap, SchemaRegExpMap } from './Schema';
 import * as TransparentElements from '../../content/TransparentElements';
 import * as NodeType from '../../dom/NodeType';
 import * as FilterNode from '../../html/FilterNode';
@@ -10,9 +13,6 @@ import * as ParserFilters from '../../html/ParserFilters';
 import { isEmpty, isLineBreakNode, isPaddedWithNbsp, paddEmptyNode } from '../../html/ParserUtils';
 import { BlobCache } from '../file/BlobCache';
 import Tools from '../util/Tools';
-import AstNode from './Node';
-import { getSanitizer, internalElementAttr } from './Sanitization';
-import Schema, { getTextRootBlockElements, SchemaMap, SchemaRegExpMap } from './Schema';
 
 /**
  * @summary

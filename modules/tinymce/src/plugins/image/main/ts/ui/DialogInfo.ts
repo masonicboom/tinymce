@@ -2,11 +2,11 @@ import { Arr, Optional, Type } from '@ephox/katamari';
 
 import Editor from 'tinymce/core/api/Editor';
 
+import { ImageDialogInfo, ListItem } from './DialogTypes';
 import * as Options from '../api/Options';
 import { readImageDataFromSelection } from '../core/ImageSelection';
 import { ListUtils } from '../core/ListUtils';
 import * as Utils from '../core/Utils';
-import { ImageDialogInfo, ListItem } from './DialogTypes';
 
 const collect = (editor: Editor): Promise<ImageDialogInfo> => {
   const urlListSanitizer = ListUtils.sanitizer((item) => editor.convertURL(item.value || item.url || '', 'src'));

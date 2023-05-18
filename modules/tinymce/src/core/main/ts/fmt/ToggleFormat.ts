@@ -1,8 +1,8 @@
-import Editor from '../api/Editor';
 import * as ApplyFormat from './ApplyFormat';
 import { FormatVars } from './FormatTypes';
 import * as MatchFormat from './MatchFormat';
 import * as RemoveFormat from './RemoveFormat';
+import Editor from '../api/Editor';
 
 const toggle = (editor: Editor, name: string, vars?: FormatVars, node?: Node): void => {
   const fmt = editor.formatter.get(name);

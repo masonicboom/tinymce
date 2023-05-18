@@ -1,7 +1,7 @@
 import Editor from 'tinymce/core/api/Editor';
 
-import * as Options from '../api/Options';
 import * as CodeSample from './CodeSample';
+import * as Options from '../api/Options';
 
 export interface LanguageSpec {
   readonly text: string;

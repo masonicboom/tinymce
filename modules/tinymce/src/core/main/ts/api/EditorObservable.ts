@@ -1,6 +1,5 @@
 import { Obj } from '@ephox/katamari';
 
-import { isReadOnly, processReadonlyEvents } from '../mode/Readonly';
 import DOMUtils from './dom/DOMUtils';
 import { EventUtilsCallback } from './dom/EventUtils';
 import Editor from './Editor';
@@ -8,6 +7,7 @@ import { EditorEventMap } from './EventTypes';
 import * as Options from './Options';
 import Observable from './util/Observable';
 import Tools from './util/Tools';
+import { isReadOnly, processReadonlyEvents } from '../mode/Readonly';
 
 /**
  * This mixin contains the event logic for the tinymce.Editor class.

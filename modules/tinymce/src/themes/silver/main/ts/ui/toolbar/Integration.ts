@@ -5,6 +5,9 @@ import { Arr, Obj, Optional, Result, Type } from '@ephox/katamari';
 
 import Editor from 'tinymce/core/api/Editor';
 
+import { ToolbarButtonClasses } from './button/ButtonClasses';
+import { renderFloatingToolbarButton, renderSplitButton, renderToolbarButton, renderToolbarToggleButton } from './button/ToolbarButtons';
+import { ToolbarGroup } from './CommonToolbar';
 import { getToolbarMode, ToolbarGroupOption, ToolbarMode } from '../../api/Options';
 import { UiFactoryBackstage } from '../../backstage/Backstage';
 import { ToolbarConfig } from '../../Render';
@@ -14,9 +17,6 @@ import { createBlocksButton } from '../core/complex/BlocksBespoke';
 import { createFontFamilyButton } from '../core/complex/FontFamilyBespoke';
 import { createFontSizeButton, createFontSizeInputButton } from '../core/complex/FontSizeBespoke';
 import { createStylesButton } from '../core/complex/StylesBespoke';
-import { ToolbarButtonClasses } from './button/ButtonClasses';
-import { renderFloatingToolbarButton, renderSplitButton, renderToolbarButton, renderToolbarToggleButton } from './button/ToolbarButtons';
-import { ToolbarGroup } from './CommonToolbar';
 
 export type ToolbarButton = Toolbar.ToolbarButtonSpec | Toolbar.ToolbarMenuButtonSpec | Toolbar.ToolbarToggleButtonSpec | Toolbar.ToolbarSplitButtonSpec;
 

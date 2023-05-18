@@ -1,5 +1,3 @@
-import { Bookmark } from '../bookmark/BookmarkTypes';
-import { UndoManager } from '../undo/UndoManagerTypes';
 import AddOnManager from './AddOnManager';
 import Annotator from './Annotator';
 import BookmarkManager from './dom/BookmarkManager';
@@ -51,6 +49,8 @@ import Tools from './util/Tools';
 import URI from './util/URI';
 import VK from './util/VK';
 import WindowManager from './WindowManager';
+import { Bookmark } from '../bookmark/BookmarkTypes';
+import { UndoManager } from '../undo/UndoManagerTypes';
 
 export default tinymce;
 export {

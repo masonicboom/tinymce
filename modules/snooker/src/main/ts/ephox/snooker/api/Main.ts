@@ -1,6 +1,3 @@
-import * as GridRow from '../model/GridRow';
-import * as RunOperation from '../model/RunOperation';
-import * as Adjustments from '../resize/Adjustments';
 import { CellLocation } from './CellLocation';
 import * as CellMutations from './CellMutations';
 import * as CellNavigation from './CellNavigation';
@@ -26,6 +23,9 @@ import { TableResize } from './TableResize';
 import { TableSection } from './TableSection';
 import { TableSize } from './TableSize';
 import { Warehouse } from './Warehouse';
+import * as GridRow from '../model/GridRow';
+import * as RunOperation from '../model/RunOperation';
+import * as Adjustments from '../resize/Adjustments';
 
 export {
   Adjustments,

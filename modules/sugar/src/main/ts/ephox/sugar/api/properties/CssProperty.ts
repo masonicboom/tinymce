@@ -1,5 +1,5 @@
-import { SugarElement } from '../node/SugarElement';
 import * as Css from './Css';
+import { SugarElement } from '../node/SugarElement';
 
 export interface CssProperty {
   readonly is: (element: SugarElement<Element>) => boolean;

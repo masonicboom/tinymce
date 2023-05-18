@@ -4,9 +4,9 @@ import {
 import { Dialog } from '@ephox/bridge';
 import { Arr, Optional } from '@ephox/katamari';
 
+import { footerChannel } from './DialogChannels';
 import { UiFactoryBackstage } from '../../backstage/Backstage';
 import { renderFooterButton } from '../general/Button';
-import { footerChannel } from './DialogChannels';
 
 export interface DialogMemButton {
   readonly name: Dialog.DialogFooterButton['name'];

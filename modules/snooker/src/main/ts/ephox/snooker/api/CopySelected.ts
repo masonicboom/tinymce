@@ -1,13 +1,13 @@
 import { Arr, Obj } from '@ephox/katamari';
 import { Attribute, Insert, Remove, Replication, Selectors, SugarElement } from '@ephox/sugar';
 
+import { Detail, DetailExt, RowDetail } from './Structs';
+import { TableSize } from './TableSize';
+import { Warehouse } from './Warehouse';
 import * as DetailsList from '../model/DetailsList';
 import * as ColumnSizes from '../resize/ColumnSizes';
 import * as LayerSelector from '../util/LayerSelector';
 import { LOCKED_COL_ATTR } from '../util/LockedColumnUtils';
-import { Detail, DetailExt, RowDetail } from './Structs';
-import { TableSize } from './TableSize';
-import { Warehouse } from './Warehouse';
 
 type CellRowDetail = RowDetail<Detail<HTMLTableCellElement>, HTMLTableRowElement>;
 

@@ -1,12 +1,12 @@
 import { Arr, Cell, Obj, Optional, Type } from '@ephox/katamari';
 
+import { FormatVars } from './FormatTypes';
+import * as FormatUtils from './FormatUtils';
+import * as MatchFormat from './MatchFormat';
 import Editor from '../api/Editor';
 import { FormatEvent } from '../api/EventTypes';
 import { EditorEvent } from '../api/util/EventDispatcher';
 import * as NodeType from '../dom/NodeType';
-import { FormatVars } from './FormatTypes';
-import * as FormatUtils from './FormatUtils';
-import * as MatchFormat from './MatchFormat';
 
 export type FormatChangeCallback = (state: boolean, data: { node: Node; format: string; parents: Element[] }) => void;
 

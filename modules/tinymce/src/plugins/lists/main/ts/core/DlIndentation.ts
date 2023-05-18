@@ -3,8 +3,8 @@ import { Replication, SugarElement, SugarNode, Traverse } from '@ephox/sugar';
 
 import Editor from 'tinymce/core/api/Editor';
 
-import { Indentation } from '../listmodel/Indentation';
 import * as SplitList from './SplitList';
+import { Indentation } from '../listmodel/Indentation';
 
 const isDescriptionDetail = SugarNode.isTag('dd');
 const isDescriptionTerm = SugarNode.isTag('dt');

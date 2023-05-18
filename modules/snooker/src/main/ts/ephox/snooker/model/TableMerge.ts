@@ -1,13 +1,13 @@
 import { Arr, Fun, Result } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import * as Fitment from './Fitment';
+import * as GridRow from './GridRow';
 import { SimpleGenerators } from '../api/Generators';
 import * as Structs from '../api/Structs';
 import * as MergingOperations from '../operate/MergingOperations';
 import * as LockedColumnUtils from '../util/LockedColumnUtils';
 import { CompElm } from '../util/TableTypes';
-import * as Fitment from './Fitment';
-import * as GridRow from './GridRow';
 
 const isSpanning = (grid: Structs.RowCells[], row: number, col: number, comparator: CompElm): boolean => {
   const candidate = GridRow.getCell(grid[row], col);

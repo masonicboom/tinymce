@@ -4,10 +4,10 @@ import {
 import { Optional } from '@ephox/katamari';
 import { SelectorFind } from '@ephox/sugar';
 
+import { titleChannel } from './DialogChannels';
 import { UiFactoryBackstageProviders } from '../../backstage/Backstage';
 import { formCancelEvent } from '../general/FormEvents';
 import * as Icons from '../icons/Icons';
-import { titleChannel } from './DialogChannels';
 
 /* eslint-enable max-len */
 

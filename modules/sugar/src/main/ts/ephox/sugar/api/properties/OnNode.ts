@@ -1,6 +1,6 @@
-import { SugarElement } from '../node/SugarElement';
 import * as Class from './Class';
 import * as Classes from './Classes';
+import { SugarElement } from '../node/SugarElement';
 
 const addClass = (clazz: string) => (element: SugarElement<Element>): void => {
   Class.add(element, clazz);

@@ -1,6 +1,8 @@
 import { Arr, Fun, Obj } from '@ephox/katamari';
 import { Attribute, Css } from '@ephox/sugar';
 
+import * as GuiTypes from './GuiTypes';
+import * as UiSketcher from './UiSketcher';
 import * as AlloyParts from '../../parts/AlloyParts';
 import * as PartType from '../../parts/PartType';
 import { SlotContainerApis, SlotContainerDetail, SlotContainerSketcher, SlotContainerSpecBuilder } from '../../ui/types/SlotContainerTypes';
@@ -9,8 +11,6 @@ import * as SketchBehaviours from '../component/SketchBehaviours';
 import { AlloySpec, SketchSpec } from '../component/SpecTypes';
 import * as AlloyTriggers from '../events/AlloyTriggers';
 import * as SystemEvents from '../events/SystemEvents';
-import * as GuiTypes from './GuiTypes';
-import * as UiSketcher from './UiSketcher';
 
 const owner = 'container';
 

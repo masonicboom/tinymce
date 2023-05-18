@@ -1,6 +1,7 @@
 import { Arr, Optional } from '@ephox/katamari';
 import { Css, Focus, Width } from '@ephox/sugar';
 
+import * as Overflows from './Overflows';
 import { Coupling } from '../api/behaviour/Coupling';
 import { Focusing } from '../api/behaviour/Focusing';
 import { Replacing } from '../api/behaviour/Replacing';
@@ -9,7 +10,6 @@ import * as GuiFactory from '../api/component/GuiFactory';
 import { Toolbar } from '../api/ui/Toolbar';
 import * as AlloyParts from '../parts/AlloyParts';
 import { SplitToolbarBaseDetail } from '../ui/types/SplitToolbarBaseTypes';
-import * as Overflows from './Overflows';
 
 const setGroups = (toolbar: AlloyComponent, storedGroups: AlloyComponent[]): void => {
   const bGroups = Arr.map(storedGroups, (g) => GuiFactory.premade(g));

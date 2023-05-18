@@ -1,8 +1,8 @@
 import { StructureSchema } from '@ephox/boulder';
 import { Optional, Result } from '@ephox/katamari';
 
-import * as ComponentSchema from '../../core/ComponentSchema';
 import { CommonMenuItem, CommonMenuItemSpec, commonMenuItemFields, CommonMenuItemInstanceApi } from './CommonMenuItem';
+import * as ComponentSchema from '../../core/ComponentSchema';
 
 export interface ChoiceMenuItemSpec extends CommonMenuItemSpec {
   type?: 'choiceitem';

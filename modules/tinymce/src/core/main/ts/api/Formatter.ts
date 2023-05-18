@@ -1,5 +1,6 @@
 import { Cell, Fun } from '@ephox/katamari';
 
+import Editor from './Editor';
 import * as CaretFormat from '../fmt/CaretFormat';
 import * as FormatChanged from '../fmt/FormatChanged';
 import { FormatRegistry } from '../fmt/FormatRegistry';
@@ -8,7 +9,6 @@ import * as Preview from '../fmt/Preview';
 import * as FormatShortcuts from '../keyboard/FormatShortcuts';
 import * as Rtc from '../Rtc';
 import { RangeLikeObject } from '../selection/RangeTypes';
-import Editor from './Editor';
 
 /**
  * @summary

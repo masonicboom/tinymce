@@ -2,12 +2,12 @@ import { Optional } from '@ephox/katamari';
 import { DomGather } from '@ephox/phoenix';
 import { Awareness, Compare, CursorPosition, PredicateExists, SelectorFilter, SelectorFind, SimRange, SugarElement, Traverse } from '@ephox/sugar';
 
+import * as KeySelection from './KeySelection';
+import * as TableKeys from './TableKeys';
 import { WindowBridge } from '../api/WindowBridge';
 import { KeyDirection } from '../navigation/KeyDirection';
 import { Response } from '../selection/Response';
 import * as Util from '../selection/Util';
-import * as KeySelection from './KeySelection';
-import * as TableKeys from './TableKeys';
 
 interface Simulated {
   readonly start: SugarElement<HTMLTableCellElement>;

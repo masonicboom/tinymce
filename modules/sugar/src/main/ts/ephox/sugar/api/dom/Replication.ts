@@ -1,10 +1,10 @@
+import * as Insert from './Insert';
+import * as InsertAll from './InsertAll';
+import * as Remove from './Remove';
 import { HTMLElementFullTagNameMap } from '../../alien/DomTypes';
 import { SugarElement } from '../node/SugarElement';
 import * as Attribute from '../properties/Attribute';
 import * as Traverse from '../search/Traverse';
-import * as Insert from './Insert';
-import * as InsertAll from './InsertAll';
-import * as Remove from './Remove';
 
 const clone = <E extends Node> (original: SugarElement<E>, isDeep: boolean): SugarElement<E> =>
   SugarElement.fromDom(original.dom.cloneNode(isDeep) as E);

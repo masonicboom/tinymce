@@ -1,13 +1,13 @@
 import { Arr, Obj, Strings, Type } from '@ephox/katamari';
 import { PlatformDetection } from '@ephox/sand';
 
-import * as Pattern from '../textpatterns/core/Pattern';
-import * as PatternTypes from '../textpatterns/core/PatternTypes';
 import DOMUtils from './dom/DOMUtils';
 import Editor from './Editor';
 import { EditorOptions } from './OptionTypes';
 import I18n from './util/I18n';
 import Tools from './util/Tools';
+import * as Pattern from '../textpatterns/core/Pattern';
+import * as PatternTypes from '../textpatterns/core/PatternTypes';
 
 const deviceDetection = PlatformDetection.detect().deviceType;
 const isTouch = deviceDetection.isTouch();

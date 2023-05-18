@@ -9,10 +9,6 @@ import { Class, Compare, Css, Focus, SugarElement } from '@ephox/sugar';
 import Editor from 'tinymce/core/api/Editor';
 import Delay from 'tinymce/core/api/util/Delay';
 
-import { getToolbarMode, ToolbarMode } from '../../api/Options';
-import { UiFactoryBackstage, UiFactoryBackstageProviders } from '../../backstage/Backstage';
-import { renderToolbar } from '../toolbar/CommonToolbar';
-import { identifyButtons } from '../toolbar/Integration';
 import { hideContextToolbarEvent, showContextToolbarEvent } from './ContextEditorEvents';
 import { ContextForm } from './ContextForm';
 import * as ContextToolbarAnchor from './ContextToolbarAnchor';
@@ -20,6 +16,10 @@ import * as ContextToolbarBounds from './ContextToolbarBounds';
 import * as ToolbarLookup from './ContextToolbarLookup';
 import * as ToolbarScopes from './ContextToolbarScopes';
 import { forwardSlideEvent, renderContextToolbar } from './ContextUi';
+import { getToolbarMode, ToolbarMode } from '../../api/Options';
+import { UiFactoryBackstage, UiFactoryBackstageProviders } from '../../backstage/Backstage';
+import { renderToolbar } from '../toolbar/CommonToolbar';
+import { identifyButtons } from '../toolbar/Integration';
 
 type ScopedToolbars = ToolbarScopes.ScopedToolbars;
 

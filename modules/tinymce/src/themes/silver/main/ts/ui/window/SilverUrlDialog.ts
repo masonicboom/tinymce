@@ -6,13 +6,13 @@ import { DomEvent, EventUnbinder, SelectorFind, SugarElement } from '@ephox/suga
 import Editor from 'tinymce/core/api/Editor';
 import URI from 'tinymce/core/api/util/URI';
 
-import { UiFactoryBackstage } from '../../backstage/Backstage';
 import { bodySendMessageChannel } from './DialogChannels';
 import { renderIframeBody } from './SilverDialogBody';
 import { DialogSpec, getEventExtras, getHeader, renderModalDialog, SharedWindowExtra } from './SilverDialogCommon';
 import { SilverDialogEvents } from './SilverDialogEvents';
 import { renderModalFooter } from './SilverDialogFooter';
 import { getUrlDialogApi } from './SilverUrlDialogInstanceApi';
+import { UiFactoryBackstage } from '../../backstage/Backstage';
 
 interface RenderedUrlDialog {
   readonly dialog: AlloyComponent;

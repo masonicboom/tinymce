@@ -1,8 +1,8 @@
 import { Arr } from '@ephox/katamari';
 import { Focus, SugarElement, Traverse } from '@ephox/sugar';
 
-import { keyevent, MixedKeyModifiers } from '../keyboard/FakeKeys';
 import { Step } from './Step';
+import { keyevent, MixedKeyModifiers } from '../keyboard/FakeKeys';
 
 export type KeyModifiers = MixedKeyModifiers;
 

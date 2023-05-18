@@ -2,9 +2,9 @@ import { Fun, Optional } from '@ephox/katamari';
 import { PlatformDetection } from '@ephox/sand';
 import { SugarElement } from '@ephox/sugar';
 
+import * as NativeEvents from './NativeEvents';
 import { CustomEvent } from '../../events/SimulatedEvent';
 import { AlloyComponent } from '../component/ComponentApi';
-import * as NativeEvents from './NativeEvents';
 
 const prefixName = (name: string) => Fun.constant('alloy.' + name);
 

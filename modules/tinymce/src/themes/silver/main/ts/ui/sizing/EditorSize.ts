@@ -2,8 +2,8 @@ import { Optional } from '@ephox/katamari';
 
 import Editor from 'tinymce/core/api/Editor';
 
-import * as Options from '../../api/Options';
 import * as Utils from './Utils';
+import * as Options from '../../api/Options';
 
 export const getHeight = (editor: Editor): Optional<number> => {
   const baseHeight = Options.getHeightOption(editor);

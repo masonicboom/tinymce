@@ -1,6 +1,9 @@
 import { Fun, Future, Obj, Optional } from '@ephox/katamari';
 import { EventArgs } from '@ephox/sugar';
 
+import * as Sketcher from './Sketcher';
+import * as TieredMenu from './TieredMenu';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as DropdownUtils from '../../dropdown/DropdownUtils';
 import { SimulatedEvent } from '../../events/SimulatedEvent';
 import * as ButtonBase from '../../ui/common/ButtonBase';
@@ -17,9 +20,6 @@ import * as SketchBehaviours from '../component/SketchBehaviours';
 import { AlloySpec, SketchSpec } from '../component/SpecTypes';
 import * as AlloyTriggers from '../events/AlloyTriggers';
 import * as SystemEvents from '../events/SystemEvents';
-import * as Sketcher from './Sketcher';
-import * as TieredMenu from './TieredMenu';
-import { CompositeSketchFactory } from './UiSketcher';
 
 const factory: CompositeSketchFactory<DropdownDetail, DropdownSpec> = (detail, components: AlloySpec[], _spec: DropdownSpec, externals): SketchSpec => {
   const lookupAttr = (attr: string) => Obj.get(detail.dom, 'attributes').bind((attrs) => Obj.get(attrs, attr));

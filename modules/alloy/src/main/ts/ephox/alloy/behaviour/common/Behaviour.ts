@@ -1,18 +1,18 @@
 import { StructureProcessor, FieldSchema, StructureSchema, FieldProcessor } from '@ephox/boulder';
 import { Fun, Obj, Optional, Optionals, Thunk } from '@ephox/katamari';
 
-import { AlloyComponent } from '../../api/component/ComponentApi';
-import * as AlloyEvents from '../../api/events/AlloyEvents';
-import * as FunctionAnnotator from '../../debugging/FunctionAnnotator';
-import { DomDefinitionDetail } from '../../dom/DomDefinition';
-import * as DomModification from '../../dom/DomModification';
-import { CustomEvent } from '../../events/SimulatedEvent';
 import { BehaviourConfigAndState } from './BehaviourBlob';
 import { BehaviourState, BehaviourStateInitialiser } from './BehaviourState';
 import {
   AlloyBehaviour, BehaviourActiveSpec, BehaviourApiFunc, BehaviourApisRecord, BehaviourConfigDetail, BehaviourConfigSpec, BehaviourExtraRecord,
   BehaviourInfo, NamedConfiguredBehaviour
 } from './BehaviourTypes';
+import { AlloyComponent } from '../../api/component/ComponentApi';
+import * as AlloyEvents from '../../api/events/AlloyEvents';
+import * as FunctionAnnotator from '../../debugging/FunctionAnnotator';
+import { DomDefinitionDetail } from '../../dom/DomDefinition';
+import * as DomModification from '../../dom/DomModification';
+import { CustomEvent } from '../../events/SimulatedEvent';
 
 export type WrappedApiFunc<T extends (comp: AlloyComponent, config: any, state: any, ...args: any[]) => any> = T extends (comp: AlloyComponent, config: any, state: any, ...args: infer P) => infer R ? (comp: AlloyComponent, ...args: P) => R : never;
 type Executor<D extends BehaviourConfigDetail, S extends BehaviourState> = (component: AlloyComponent, bconfig: D, bState: S) => void;

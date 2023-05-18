@@ -1,8 +1,8 @@
 import { Fun, Singleton } from '@ephox/katamari';
 
+import { SandboxingState } from './SandboxingTypes';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import { nuState } from '../common/BehaviourState';
-import { SandboxingState } from './SandboxingTypes';
 
 const init = (): SandboxingState => {
   const contents = Singleton.value<AlloyComponent>();

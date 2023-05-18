@@ -1,11 +1,11 @@
 import { Fun, Num, Optional, Optionals } from '@ephox/katamari';
 import { Css, Scroll, SugarElement, SugarLocation, SugarPosition, Traverse } from '@ephox/sugar';
 
+import { DraggingConfig, DragStartData, SnapsConfig } from './DraggingTypes';
 import * as OffsetOrigin from '../../alien/OffsetOrigin';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import * as DragCoord from '../../api/data/DragCoord';
 import * as Snappables from '../snap/Snappables';
-import { DraggingConfig, DragStartData, SnapsConfig } from './DraggingTypes';
 
 const getCurrentCoord = (target: SugarElement<HTMLElement>): DragCoord.CoordAdt =>
   Optionals.lift3(Css.getRaw(target, 'left'), Css.getRaw(target, 'top'), Css.getRaw(target, 'position'), (left, top, position) => {

@@ -1,11 +1,11 @@
 import { Type } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
-import DOMUtils from '../api/dom/DOMUtils';
-import DomTreeWalker from '../api/dom/TreeWalker';
 import * as ElementType from './ElementType';
 import { isContent } from './Empty';
 import * as NodeType from './NodeType';
+import DOMUtils from '../api/dom/DOMUtils';
+import DomTreeWalker from '../api/dom/TreeWalker';
 
 const isSpan = (node: Node): node is HTMLSpanElement =>
   node.nodeName.toLowerCase() === 'span';

@@ -1,7 +1,7 @@
 import { Arr, Obj, Type } from '@ephox/katamari';
 
-import * as SelectionBookmark from '../selection/SelectionBookmark';
 import Editor from './Editor';
+import * as SelectionBookmark from '../selection/SelectionBookmark';
 
 /**
  * This class enables you to add custom editor commands and it contains

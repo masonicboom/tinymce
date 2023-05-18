@@ -1,10 +1,10 @@
 import { Arr, Optional } from '@ephox/katamari';
 import { SugarPosition } from '@ephox/sugar';
 
+import * as Presnaps from './Presnaps';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import * as DragCoord from '../../api/data/DragCoord';
 import { SnapConfig, SnapOutput, SnapPin, SnapsConfig } from '../common/DraggingTypes';
-import * as Presnaps from './Presnaps';
 
 // Types of coordinates
 // SugarLocation: This is the position on the screen including scroll.

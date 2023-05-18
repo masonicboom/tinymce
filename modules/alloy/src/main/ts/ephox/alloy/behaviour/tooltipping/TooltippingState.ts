@@ -1,8 +1,8 @@
 import { Fun, Singleton } from '@ephox/katamari';
 
+import { TooltippingState } from './TooltippingTypes';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import { nuState } from '../common/BehaviourState';
-import { TooltippingState } from './TooltippingTypes';
 
 const init = (): TooltippingState => {
   const timer = Singleton.value<number>();

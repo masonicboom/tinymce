@@ -1,9 +1,9 @@
 import { FieldProcessor, FieldSchema, ValueType } from '@ephox/boulder';
 import { Optional } from '@ephox/katamari';
 
+import { DockingViewport } from './DockingTypes';
 import * as Boxes from '../../alien/Boxes';
 import * as Fields from '../../data/Fields';
-import { DockingViewport } from './DockingTypes';
 
 export default [
   FieldSchema.optionObjOf('contextual', [

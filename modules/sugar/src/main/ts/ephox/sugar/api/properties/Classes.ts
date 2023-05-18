@@ -1,8 +1,8 @@
 import { Arr } from '@ephox/katamari';
 
+import * as Class from './Class';
 import * as ClassList from '../../impl/ClassList';
 import { SugarElement } from '../node/SugarElement';
-import * as Class from './Class';
 
 /*
  * ClassList is IE10 minimum:

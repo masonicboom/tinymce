@@ -5,13 +5,13 @@ import { Dimension } from '@ephox/sugar';
 import Editor from 'tinymce/core/api/Editor';
 import * as Options from 'tinymce/themes/silver/api/Options';
 
-import { UiFactoryBackstage } from '../../../backstage/Backstage';
-import { updateMenuText } from '../../dropdown/CommonDropdown';
-import { onSetupEditableToggle } from '../ControlUtils';
 import { createBespokeNumberInput } from './BespokeNumberInput';
 import { createMenuItems, createSelectButton, FormatterFormatItem, SelectedFormat, SelectSpec } from './BespokeSelect';
 import { buildBasicSettingsDataset, Delimiter } from './SelectDatasets';
 import * as FormatRegister from './utils/FormatRegister';
+import { UiFactoryBackstage } from '../../../backstage/Backstage';
+import { updateMenuText } from '../../dropdown/CommonDropdown';
+import { onSetupEditableToggle } from '../ControlUtils';
 
 interface Config {
   readonly step: number;

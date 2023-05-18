@@ -10,6 +10,8 @@ import { SelectorExists, SugarBody, SugarElement, SugarLocation } from '@ephox/s
 import Editor from 'tinymce/core/api/Editor';
 import { WindowManagerImpl, WindowParams } from 'tinymce/core/api/WindowManager';
 
+import * as AlertDialog from './AlertDialog';
+import * as ConfirmDialog from './ConfirmDialog';
 import * as Options from '../../api/Options';
 import { UiFactoryBackstagePair } from '../../backstage/Backstage';
 import * as ScrollingContext from '../../modes/ScrollingContext';
@@ -17,8 +19,6 @@ import { formCancelEvent } from '../general/FormEvents';
 import { renderDialog } from '../window/SilverDialog';
 import { renderInlineDialog } from '../window/SilverInlineDialog';
 import { renderUrlDialog } from '../window/SilverUrlDialog';
-import * as AlertDialog from './AlertDialog';
-import * as ConfirmDialog from './ConfirmDialog';
 
 export interface WindowManagerSetup {
   readonly backstages: UiFactoryBackstagePair;

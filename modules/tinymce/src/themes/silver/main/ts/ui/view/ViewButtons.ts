@@ -2,12 +2,12 @@ import { AlloyComponent, Behaviour, Button as AlloyButton, GuiFactory, Memento, 
 import { Optional } from '@ephox/katamari';
 import { Attribute, Class } from '@ephox/sugar';
 
+import { ViewButtonWithoutGroup } from './View';
 import { UiFactoryBackstageProviders } from '../../backstage/Backstage';
 import { renderReplaceableIconFromPack } from '../button/ButtonSlices';
 import { calculateClassesFromButtonType, IconButtonWrapper, renderCommonSpec } from '../general/Button';
 import { componentRenderPipeline } from '../menus/item/build/CommonMenuItem';
 import { ViewButtonClasses } from '../toolbar/button/ButtonClasses';
-import { ViewButtonWithoutGroup } from './View';
 
 type Behaviours = Behaviour.NamedConfiguredBehaviour<any, any, any>[];
 

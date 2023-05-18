@@ -4,9 +4,9 @@ import Editor from 'tinymce/core/api/Editor';
 import { FilePickerCallback, FilePickerValidationCallback } from 'tinymce/core/api/OptionTypes';
 import Tools from 'tinymce/core/api/util/Tools';
 
+import { addToHistory, getHistory } from './UrlInputHistory';
 import * as Options from '../api/Options';
 import { LinkTarget, LinkTargets } from '../ui/core/LinkTargets';
-import { addToHistory, getHistory } from './UrlInputHistory';
 
 export interface LinkInformation {
   readonly targets: LinkTarget[];

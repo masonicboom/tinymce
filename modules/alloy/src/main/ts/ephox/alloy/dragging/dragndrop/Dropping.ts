@@ -1,13 +1,13 @@
 import { FieldProcessor, FieldSchema } from '@ephox/boulder';
 import { EventArgs } from '@ephox/sugar';
 
+import * as DataTransfers from './DataTransfers';
+import { DroppingConfig } from './DragnDropTypes';
+import { createDropEventDetails } from './DropEvent';
 import * as AlloyEvents from '../../api/events/AlloyEvents';
 import * as NativeEvents from '../../api/events/NativeEvents';
 import * as Fields from '../../data/Fields';
 import * as DomModification from '../../dom/DomModification';
-import * as DataTransfers from './DataTransfers';
-import { DroppingConfig } from './DragnDropTypes';
-import { createDropEventDetails } from './DropEvent';
 
 const schema: FieldProcessor[] = [
   FieldSchema.defaultedString('type', 'text/plain'),

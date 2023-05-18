@@ -1,9 +1,9 @@
 import { Fun, Optional } from '@ephox/katamari';
 
-import * as Compare from '../dom/Compare';
-import { SugarElement } from '../node/SugarElement';
 import * as Awareness from './Awareness';
 import * as CursorPosition from './CursorPosition';
+import * as Compare from '../dom/Compare';
+import { SugarElement } from '../node/SugarElement';
 
 // not sure where the "correct" interface is declared, doesn't seem to be in Sugar
 interface SelectionStart {

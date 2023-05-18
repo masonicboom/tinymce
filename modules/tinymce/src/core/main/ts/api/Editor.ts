@@ -1,18 +1,5 @@
 import { Arr, Fun, Type } from '@ephox/katamari';
 
-import * as EditorContent from '../content/EditorContent';
-import * as Deprecations from '../Deprecations';
-import * as NodeType from '../dom/NodeType';
-import * as EditorRemove from '../EditorRemove';
-import { BlobInfoImagePair } from '../file/ImageScanner';
-import * as EditorFocus from '../focus/EditorFocus';
-import * as Render from '../init/Render';
-import { NodeChange } from '../NodeChange';
-import { normalizeOptions } from '../options/NormalizeOptions';
-import SelectionOverrides from '../SelectionOverrides';
-import { UndoManager } from '../undo/UndoManagerTypes';
-import Quirks from '../util/Quirks';
-import * as VisualAids from '../view/VisualAids';
 import AddOnManager from './AddOnManager';
 import Annotator from './Annotator';
 import * as Commands from './commands/Commands';
@@ -47,6 +34,19 @@ import I18n, { TranslatedString, Untranslated } from './util/I18n';
 import Tools from './util/Tools';
 import URI from './util/URI';
 import WindowManager from './WindowManager';
+import * as EditorContent from '../content/EditorContent';
+import * as Deprecations from '../Deprecations';
+import * as NodeType from '../dom/NodeType';
+import * as EditorRemove from '../EditorRemove';
+import { BlobInfoImagePair } from '../file/ImageScanner';
+import * as EditorFocus from '../focus/EditorFocus';
+import * as Render from '../init/Render';
+import { NodeChange } from '../NodeChange';
+import { normalizeOptions } from '../options/NormalizeOptions';
+import SelectionOverrides from '../SelectionOverrides';
+import { UndoManager } from '../undo/UndoManagerTypes';
+import Quirks from '../util/Quirks';
+import * as VisualAids from '../view/VisualAids';
 
 /**
  * This class contains the core logic for a TinyMCE editor.

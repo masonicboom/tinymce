@@ -4,10 +4,10 @@ import { Fun, Id, Obj, Optional, Type } from '@ephox/katamari';
 
 import I18n from 'tinymce/core/api/util/I18n';
 
+import { renderHtml, renderShortcut, renderStyledText, renderText } from './ItemSlices';
 import { UiFactoryBackstageProviders } from '../../../../backstage/Backstage';
 import * as Icons from '../../../icons/Icons';
 import * as ItemClasses from '../ItemClasses';
-import { renderHtml, renderShortcut, renderStyledText, renderText } from './ItemSlices';
 
 export interface ItemStructure {
   readonly dom: RawDomSchema;

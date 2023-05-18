@@ -1,6 +1,8 @@
 import { Fun, Optional, Type } from '@ephox/katamari';
 import { Attribute, Css, Html, Insert, Remove, SugarElement, SugarShadowDom } from '@ephox/sugar';
 
+import { cleanupBogusElements, cleanupInputNames } from './ContentCleanup';
+import { Content, GetContentArgs } from './ContentTypes';
 import Editor from '../api/Editor';
 import AstNode from '../api/html/Node';
 import * as Options from '../api/Options';
@@ -8,8 +10,6 @@ import Tools from '../api/util/Tools';
 import * as ElementType from '../dom/ElementType';
 import * as TrimHtml from '../dom/TrimHtml';
 import * as Zwsp from '../text/Zwsp';
-import { cleanupBogusElements, cleanupInputNames } from './ContentCleanup';
-import { Content, GetContentArgs } from './ContentTypes';
 
 const trimEmptyContents = (editor: Editor, html: string): string => {
   const blockName = Options.getForcedRootBlock(editor);

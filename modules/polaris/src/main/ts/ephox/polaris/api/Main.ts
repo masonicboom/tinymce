@@ -1,5 +1,3 @@
-import { PRange, PRegExp } from '../pattern/Types';
-import { WordOptions } from '../words/Words';
 import * as Arrays from './Arrays';
 import * as Pattern from './Pattern';
 import * as PositionArray from './PositionArray';
@@ -8,6 +6,8 @@ import * as Search from './Search';
 import { Splitting } from './Splitting';
 import * as Strings from './Strings';
 import * as Words from './Words';
+import { PRange, PRegExp } from '../pattern/Types';
+import { WordOptions } from '../words/Words';
 
 export {
   Arrays,

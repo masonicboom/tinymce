@@ -1,8 +1,8 @@
 import { Arr } from '@ephox/katamari';
 
-import { PRange } from '../pattern/Types';
 import * as Query from './Query';
 import * as Translate from './Translate';
+import { PRange } from '../pattern/Types';
 
 /**
  * After subdivide has split the unit, update the resulting PositionArray based on the unit start position.

@@ -1,9 +1,9 @@
-import Editor from '../api/Editor';
-import { EditorEvent } from '../api/util/EventDispatcher';
-import VK from '../api/util/VK';
 import { fireFakeBeforeInputEvent, fireFakeInputEvent } from './FakeInputEvents';
 import * as InsertSpace from './InsertSpace';
 import * as MatchKeys from './MatchKeys';
+import Editor from '../api/Editor';
+import { EditorEvent } from '../api/util/EventDispatcher';
+import VK from '../api/util/VK';
 
 const executeKeydownOverride = (editor: Editor, evt: KeyboardEvent) => {
   MatchKeys.executeWithDelayedAction([

@@ -1,8 +1,8 @@
 import { SugarElement } from '@ephox/sugar';
 
+import * as SystemEvents from './SystemEvents';
 import { EventFormat, SimulatedEvent } from '../../events/SimulatedEvent';
 import { AlloyComponent } from '../component/ComponentApi';
-import * as SystemEvents from './SystemEvents';
 
 const emit = (component: AlloyComponent, event: string): void => {
   dispatchWith(component, component.element, event, { });

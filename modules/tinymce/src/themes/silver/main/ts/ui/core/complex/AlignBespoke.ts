@@ -4,10 +4,10 @@ import { Arr, Fun, Optional } from '@ephox/katamari';
 import Editor from 'tinymce/core/api/Editor';
 import { UiFactoryBackstage } from 'tinymce/themes/silver/backstage/Backstage';
 
-import { updateMenuIcon } from '../../dropdown/CommonDropdown';
-import { onSetupEditableToggle } from '../ControlUtils';
 import { createMenuItems, createSelectButton, FormatterFormatItem, SelectedFormat, SelectSpec } from './BespokeSelect';
 import { buildBasicStaticDataset } from './SelectDatasets';
+import { updateMenuIcon } from '../../dropdown/CommonDropdown';
+import { onSetupEditableToggle } from '../ControlUtils';
 
 const alignMenuItems = [
   { title: 'Left', icon: 'align-left', format: 'alignleft', command: 'JustifyLeft' },

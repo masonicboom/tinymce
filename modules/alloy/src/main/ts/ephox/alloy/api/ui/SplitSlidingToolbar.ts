@@ -1,5 +1,10 @@
 import { Arr } from '@ephox/katamari';
 
+import { Button } from './Button';
+import * as Sketcher from './Sketcher';
+import { Toolbar } from './Toolbar';
+import { ToolbarGroup } from './ToolbarGroup';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as AlloyParts from '../../parts/AlloyParts';
 import * as SplitToolbarUtils from '../../toolbar/SplitToolbarUtils';
 import * as SplitSlidingToolbarSchema from '../../ui/schema/SplitSlidingToolbarSchema';
@@ -16,11 +21,6 @@ import * as SketchBehaviours from '../component/SketchBehaviours';
 import { AlloySpec } from '../component/SpecTypes';
 import * as AlloyEvents from '../events/AlloyEvents';
 import * as AlloyTriggers from '../events/AlloyTriggers';
-import { Button } from './Button';
-import * as Sketcher from './Sketcher';
-import { Toolbar } from './Toolbar';
-import { ToolbarGroup } from './ToolbarGroup';
-import { CompositeSketchFactory } from './UiSketcher';
 
 const isOpen = (toolbar: AlloyComponent, detail: SplitSlidingToolbarDetail) =>
   AlloyParts.getPart(toolbar, detail, 'overflow').map(Sliding.hasGrown).getOr(false);

@@ -1,6 +1,8 @@
 import { Id, Singleton } from '@ephox/katamari';
 import { Traverse } from '@ephox/sugar';
 
+import * as Sketcher from './Sketcher';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as AriaDescribe from '../../aria/AriaDescribe';
 import * as AriaLabel from '../../aria/AriaLabel';
 import * as AlloyParts from '../../parts/AlloyParts';
@@ -19,8 +21,6 @@ import * as AlloyEvents from '../events/AlloyEvents';
 import * as NativeEvents from '../events/NativeEvents';
 import * as SystemEvents from '../events/SystemEvents';
 import * as Attachment from '../system/Attachment';
-import * as Sketcher from './Sketcher';
-import { CompositeSketchFactory } from './UiSketcher';
 
 const factory: CompositeSketchFactory<ModalDialogDetail, ModalDialogSpec> = (detail, components, spec, externals) => {
 

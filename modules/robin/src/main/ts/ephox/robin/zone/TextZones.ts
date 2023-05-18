@@ -1,13 +1,13 @@
 import { Universe } from '@ephox/boss';
 import { Fun, Optional } from '@ephox/katamari';
 
+import { LanguageZones, ZoneDetails } from './LanguageZones';
+import * as Zones from './Zones';
+import * as ZoneWalker from './ZoneWalker';
 import * as Parent from '../api/general/Parent';
 import { ZoneViewports } from '../api/general/ZoneViewports';
 import * as Clustering from '../words/Clustering';
 import { WordDecision, WordDecisionItem } from '../words/WordDecision';
-import { LanguageZones, ZoneDetails } from './LanguageZones';
-import * as Zones from './Zones';
-import * as ZoneWalker from './ZoneWalker';
 
 type Zones<E> = Zones.Zones<E>;
 

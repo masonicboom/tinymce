@@ -1,10 +1,10 @@
 import { Arr, Obj, Optional, Optionals, Strings, Type } from '@ephox/katamari';
 
+import * as Attribute from './Attribute';
 import * as Style from '../../impl/Style';
 import * as SugarBody from '../node/SugarBody';
 import { SugarElement } from '../node/SugarElement';
 import * as SugarNode from '../node/SugarNode';
-import * as Attribute from './Attribute';
 
 const internalSet = (dom: Node, property: string, value: string): void => {
   // This is going to hurt. Apologies.

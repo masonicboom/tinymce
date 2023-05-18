@@ -1,10 +1,10 @@
 import { Fun } from '@ephox/katamari';
 import { Replication, SugarElement, SugarNode } from '@ephox/sugar';
 
-import { findTableRowHeaderType, RowHeaderType } from '../lookup/Type';
-import { CompElm, Subst } from '../util/TableTypes';
 import * as Structs from './Structs';
 import { Warehouse } from './Warehouse';
+import { findTableRowHeaderType, RowHeaderType } from '../lookup/Type';
+import { CompElm, Subst } from '../util/TableTypes';
 
 export interface TableSection {
   readonly transformRow: (row: Structs.RowCells<HTMLTableRowElement>, section: Structs.Section) => Structs.RowCells<HTMLTableRowElement>;

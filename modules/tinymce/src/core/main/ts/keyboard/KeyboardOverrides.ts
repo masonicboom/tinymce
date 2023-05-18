@@ -1,8 +1,5 @@
 import { Cell } from '@ephox/katamari';
 
-import Editor from '../api/Editor';
-import * as CaretContainerInput from '../caret/CaretContainerInput';
-import * as Rtc from '../Rtc';
 import * as ArrowKeys from './ArrowKeys';
 import * as Autocompleter from './Autocompleter';
 import * as BoundarySelection from './BoundarySelection';
@@ -13,6 +10,9 @@ import * as InputKeys from './InputKeys';
 import * as PageUpDownKeys from './PageUpDownKeys';
 import * as SpaceKey from './SpaceKey';
 import * as TabKey from './TabKey';
+import Editor from '../api/Editor';
+import * as CaretContainerInput from '../caret/CaretContainerInput';
+import * as Rtc from '../Rtc';
 
 const setup = (editor: Editor): Cell<Text | null> => {
   editor.addShortcut('Meta+P', '', 'mcePrint');

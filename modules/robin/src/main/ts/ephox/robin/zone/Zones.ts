@@ -1,9 +1,9 @@
 import { Universe } from '@ephox/boss';
 import { Arr } from '@ephox/katamari';
 
+import { ZoneDetails } from './LanguageZones';
 import { WordScope } from '../data/WordScope';
 import * as Identify from '../words/Identify';
-import { ZoneDetails } from './LanguageZones';
 
 export interface Zone<E> {
   readonly elements: E[];

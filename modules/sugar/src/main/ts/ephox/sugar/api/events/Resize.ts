@@ -1,14 +1,14 @@
 import { Arr, Fun, Optional } from '@ephox/katamari';
 
+import * as DomEvent from './DomEvent';
+import { EventUnbinder } from './Types';
+import * as Viewable from './Viewable';
 import * as Monitors from '../../impl/Monitors';
 import * as Compare from '../dom/Compare';
 import { SugarElement } from '../node/SugarElement';
 import * as Height from '../view/Height';
 import * as Visibility from '../view/Visibility';
 import * as Width from '../view/Width';
-import * as DomEvent from './DomEvent';
-import { EventUnbinder } from './Types';
-import * as Viewable from './Viewable';
 
 interface Monitored {
   element: SugarElement<HTMLElement>;

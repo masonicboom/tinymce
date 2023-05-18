@@ -1,10 +1,10 @@
 import { Chain, Cursors, StructAssert } from '@ephox/agar';
 
+import { Presence } from './TinyApis';
 import { Editor } from '../../alien/EditorTypes';
 import * as Options from '../../alien/Options';
 import * as TinyAssertions from '../bdd/TinyAssertions';
 import * as TinySelections from '../bdd/TinySelections';
-import { Presence } from './TinyApis';
 
 export interface ApiChains {
   cNodeChanged: <T extends Editor> () => Chain<T, T>;

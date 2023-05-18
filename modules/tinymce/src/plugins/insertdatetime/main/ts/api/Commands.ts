@@ -1,7 +1,7 @@
 import Editor from 'tinymce/core/api/Editor';
 
-import * as Actions from '../core/Actions';
 import * as Options from './Options';
+import * as Actions from '../core/Actions';
 
 const register = (editor: Editor): void => {
   editor.addCommand('mceInsertDate', (_ui, value) => {

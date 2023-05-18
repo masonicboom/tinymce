@@ -2,9 +2,9 @@ import { AddEventsBehaviour, AlloyComponent, AlloyEvents, AlloySpec, AlloyTrigge
 import { Optional } from '@ephox/katamari';
 import { Attribute, EventArgs, SelectorFind } from '@ephox/sugar';
 
+import { redirectMenuItemInteractionEvent, RedirectMenuItemInteractionEventData, refetchTriggerEvent } from './SearchableMenuEvents';
 import { UiFactoryBackstageProviders } from '../../../../backstage/Backstage';
 import { selectableClass as usualItemClass } from '../../item/ItemClasses';
-import { redirectMenuItemInteractionEvent, RedirectMenuItemInteractionEventData, refetchTriggerEvent } from './SearchableMenuEvents';
 
 export interface MenuSearcherSpec {
   readonly placeholder: Optional<string>;

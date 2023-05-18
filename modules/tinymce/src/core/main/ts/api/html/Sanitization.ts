@@ -2,11 +2,11 @@ import { Arr, Obj, Strings, Type } from '@ephox/katamari';
 import { Attribute, NodeTypes, Remove, Replication, SugarElement } from '@ephox/sugar';
 import createDompurify, { Config, DOMPurifyI, SanitizeElementHookEvent } from 'dompurify';
 
+import { DomParserSettings } from './DomParser';
+import Schema from './Schema';
 import * as NodeType from '../../dom/NodeType';
 import Tools from '../util/Tools';
 import * as URI from '../util/URI';
-import { DomParserSettings } from './DomParser';
-import Schema from './Schema';
 
 type MimeType = 'text/html' | 'application/xhtml+xml';
 type Sanitizer = (body: HTMLElement, mimeType: MimeType) => void;

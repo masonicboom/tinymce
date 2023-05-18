@@ -1,14 +1,14 @@
 import { Arr, Optional } from '@ephox/katamari';
 import { Compare, Insert, SugarElement } from '@ephox/sugar';
 
+import { withoutReuse, withReuse } from './ReplacingAll';
+import { ReplacingConfig } from './ReplacingTypes';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import { AlloySpec } from '../../api/component/SpecTypes';
 import * as Attachment from '../../api/system/Attachment';
 import * as Patching from '../../dom/Patching';
 import * as InternalAttachment from '../../system/InternalAttachment';
 import { Stateless } from '../common/BehaviourState';
-import { withoutReuse, withReuse } from './ReplacingAll';
-import { ReplacingConfig } from './ReplacingTypes';
 
 const virtualReplace = (component: AlloyComponent, replacee: AlloyComponent, replaceeIndex: number, childSpec: AlloySpec) => {
   InternalAttachment.virtualDetach(replacee);

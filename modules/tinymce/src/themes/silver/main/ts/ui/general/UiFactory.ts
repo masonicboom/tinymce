@@ -2,6 +2,10 @@ import { AlloyParts, AlloySpec, FormTypes, SimpleOrSketchSpec } from '@ephox/all
 import { Dialog } from '@ephox/bridge/';
 import { Fun, Merger, Obj, Optional } from '@ephox/katamari';
 
+import { renderAlertBanner } from './AlertBanner';
+import { renderDialogButton } from './Button';
+import { renderCheckbox } from './Checkbox';
+import { renderHtmlPanel } from './HtmlPanel';
 import { UiFactoryBackstage } from '../../backstage/Backstage';
 import { renderBar } from '../dialog/Bar';
 import { renderCollection } from '../dialog/Collection';
@@ -22,10 +26,6 @@ import { renderTable } from '../dialog/Table';
 import { renderInput, renderTextarea } from '../dialog/TextField';
 import { renderTree } from '../dialog/Tree';
 import { renderUrlInput } from '../dialog/UrlInput';
-import { renderAlertBanner } from './AlertBanner';
-import { renderDialogButton } from './Button';
-import { renderCheckbox } from './Checkbox';
-import { renderHtmlPanel } from './HtmlPanel';
 
 /* eslint-disable no-console */
 

@@ -1,8 +1,8 @@
 import { Universe } from '@ephox/boss';
 
+import * as Split from './Split';
 import * as Spot from '../api/data/Spot';
 import * as Family from '../api/general/Family';
-import * as Split from './Split';
 
 /**
  * Splits the start and end, then collects all text nodes in between.

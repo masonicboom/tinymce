@@ -1,8 +1,8 @@
 import { Arr, Fun, Id, Obj, Result } from '@ephox/katamari';
 
-import { DieFn, NextFn } from '../pipe/Pipe';
 import { Chain } from './Chain';
 import { TestLogs } from './TestLogs';
+import { DieFn, NextFn } from '../pipe/Pipe';
 
 const inputNameId = Id.generate('input-name');
 const outputNameId = Id.generate('output-name');

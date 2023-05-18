@@ -1,14 +1,14 @@
 import { Arr, Optional } from '@ephox/katamari';
 
+import { AutocompleteContext, getContext } from './AutocompleteContext';
+import { AutocompleterDatabase } from './Autocompleters';
+import { AutocompleteLookupData } from './AutocompleteTypes';
+import { isWhitespace } from './AutocompleteUtils';
 import * as Spot from '../alien/Spot';
 import * as TextDescent from '../alien/TextDescent';
 import * as TextSearch from '../alien/TextSearch';
 import DOMUtils from '../api/dom/DOMUtils';
 import Editor from '../api/Editor';
-import { AutocompleteContext, getContext } from './AutocompleteContext';
-import { AutocompleterDatabase } from './Autocompleters';
-import { AutocompleteLookupData } from './AutocompleteTypes';
-import { isWhitespace } from './AutocompleteUtils';
 
 export interface AutocompleteLookupInfo {
   context: AutocompleteContext;

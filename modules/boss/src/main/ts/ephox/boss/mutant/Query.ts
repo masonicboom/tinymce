@@ -1,8 +1,8 @@
 import { Arr, Optional } from '@ephox/katamari';
 
-import { Gene } from '../api/Gene';
 import * as Properties from './Properties';
 import * as Up from './Up';
+import { Gene } from '../api/Gene';
 
 const extract = (item: Gene): string[] => {
   const self = item.id;

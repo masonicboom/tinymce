@@ -6,11 +6,11 @@ import { Focus, SugarElement, Traverse } from '@ephox/sugar';
 import Editor from 'tinymce/core/api/Editor';
 import { UiFactoryBackstage } from 'tinymce/themes/silver/backstage/Backstage';
 
+import { NumberInputSpec } from './FontSizeBespoke';
 import { renderIconFromPack } from '../../button/ButtonSlices';
 import { onControlAttached, onControlDetached } from '../../controls/Controls';
 import { updateMenuText, UpdateMenuTextEvent } from '../../dropdown/CommonDropdown';
 import { onSetupEvent } from '../ControlUtils';
-import { NumberInputSpec } from './FontSizeBespoke';
 
 interface BespokeSelectApi {
   readonly getComponent: () => AlloyComponent;

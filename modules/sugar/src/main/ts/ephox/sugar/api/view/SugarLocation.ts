@@ -1,6 +1,6 @@
+import { SugarPosition } from './SugarPosition';
 import { inBody } from '../node/SugarBody';
 import { SugarElement } from '../node/SugarElement';
-import { SugarPosition } from './SugarPosition';
 
 const boxPosition = (dom: Element): SugarPosition => {
   const box = dom.getBoundingClientRect();

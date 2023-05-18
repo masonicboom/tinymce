@@ -1,13 +1,13 @@
 import { Arr, Obj } from '@ephox/katamari';
 import { SugarBody, SugarElement } from '@ephox/sugar';
 
-import { createCopyEvent, createCutEvent, createPasteEvent } from '../clipboard/ClipboardEvents';
-import { createDataTransfer } from '../datatransfer/DataTransfer';
-import { getWindowFromElement } from '../dragndrop/DndEvents';
 import { Chain } from './Chain';
 import * as ChainSequence from './ChainSequence';
 import { Step } from './Step';
 import { cFindIn } from './UiFinder';
+import { createCopyEvent, createCutEvent, createPasteEvent } from '../clipboard/ClipboardEvents';
+import { createDataTransfer } from '../datatransfer/DataTransfer';
+import { getWindowFromElement } from '../dragndrop/DndEvents';
 
 const pasteDataTransfer = (target: SugarElement<Element>, mutator: (dataTransfer: DataTransfer) => void): void => {
   const win = getWindowFromElement(target);

@@ -1,11 +1,11 @@
 import { Arr } from '@ephox/katamari';
 import { Selectors, SugarElement, SugarNode, SugarText, Traverse } from '@ephox/sugar';
 
+import { isAnnotation } from './Identification';
 import Editor from '../api/Editor';
 import { isCaretNode } from '../fmt/FormatContainer';
 import * as FormatUtils from '../fmt/FormatUtils';
 import { ZWSP } from '../text/Zwsp';
-import { isAnnotation } from './Identification';
 
 export const enum ChildContext {
   // Was previously used for br and zero width cursors. Keep as a state

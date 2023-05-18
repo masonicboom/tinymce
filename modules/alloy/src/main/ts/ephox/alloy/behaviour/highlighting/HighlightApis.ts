@@ -1,11 +1,11 @@
 import { Arr, Num, Optional, Optionals, Result } from '@ephox/katamari';
 import { Class, Compare, SelectorFilter, SelectorFind } from '@ephox/sugar';
 
+import { HighlightingConfig } from './HighlightingTypes';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import * as AlloyTriggers from '../../api/events/AlloyTriggers';
 import * as SystemEvents from '../../api/events/SystemEvents';
 import { Stateless } from '../common/BehaviourState';
-import { HighlightingConfig } from './HighlightingTypes';
 
 // THIS IS NOT API YET
 const dehighlightAllExcept = (component: AlloyComponent, hConfig: HighlightingConfig, hState: Stateless, skip: AlloyComponent[]): void => {

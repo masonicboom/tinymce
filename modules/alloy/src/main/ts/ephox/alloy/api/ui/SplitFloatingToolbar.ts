@@ -1,5 +1,9 @@
 import { Arr, Future } from '@ephox/katamari';
 
+import { FloatingToolbarButton } from './FloatingToolbarButton';
+import * as Sketcher from './Sketcher';
+import { ToolbarGroup } from './ToolbarGroup';
+import { CompositeSketchFactory } from './UiSketcher';
 import * as Layout from '../../positioning/layout/Layout';
 import * as SplitToolbarUtils from '../../toolbar/SplitToolbarUtils';
 import * as SplitFloatingToolbarSchema from '../../ui/schema/SplitFloatingToolbarSchema';
@@ -12,10 +16,6 @@ import * as GuiFactory from '../component/GuiFactory';
 import * as Memento from '../component/Memento';
 import * as SketchBehaviours from '../component/SketchBehaviours';
 import { AlloySpec } from '../component/SpecTypes';
-import { FloatingToolbarButton } from './FloatingToolbarButton';
-import * as Sketcher from './Sketcher';
-import { ToolbarGroup } from './ToolbarGroup';
-import { CompositeSketchFactory } from './UiSketcher';
 
 const buildGroups = (comps: AlloyComponent[]): AlloySpec[] => Arr.map(comps, (g) => GuiFactory.premade(g));
 

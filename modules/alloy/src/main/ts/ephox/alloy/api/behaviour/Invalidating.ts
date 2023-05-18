@@ -1,12 +1,12 @@
 import { Future, Result } from '@ephox/katamari';
 
+import * as Behaviour from './Behaviour';
+import { Representing } from './Representing';
 import * as ActiveInvalidate from '../../behaviour/invalidating/ActiveInvalidate';
 import * as InvalidateApis from '../../behaviour/invalidating/InvalidateApis';
 import InvalidateSchema from '../../behaviour/invalidating/InvalidateSchema';
 import { InvalidatingBehaviour } from '../../behaviour/invalidating/InvalidateTypes';
 import { AlloyComponent } from '../component/ComponentApi';
-import * as Behaviour from './Behaviour';
-import { Representing } from './Representing';
 
 const Invalidating: InvalidatingBehaviour = Behaviour.create({
   fields: InvalidateSchema,

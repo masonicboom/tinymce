@@ -1,8 +1,8 @@
 import { Arr, Optional } from '@ephox/katamari';
 
+import { Version } from './Version';
 import { PlatformInfo } from '../info/PlatformInfo';
 import { UaInfo } from '../info/UaInfo';
-import { Version } from './Version';
 
 const detect = (candidates: PlatformInfo[], userAgent: any): Optional<PlatformInfo> => {
   const agent = String(userAgent).toLowerCase();

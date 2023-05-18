@@ -3,16 +3,16 @@ import { InsertAll, Remove, SugarElement, SugarFragment } from '@ephox/sugar';
 
 import Editor from 'tinymce/core/api/Editor';
 
-import { fireListEvent } from '../api/Events';
-import { ListAction } from '../core/ListAction';
-import * as Selection from '../core/Selection';
-import { createTextBlock } from '../core/TextBlock';
 import { composeList } from './ComposeList';
 import { Entry, isIndented, isSelected } from './Entry';
 import { Indentation, indentEntry } from './Indentation';
 import { normalizeEntries } from './NormalizeEntries';
 import { EntrySet, ItemSelection, parseLists } from './ParseLists';
 import { hasFirstChildList } from './Util';
+import { fireListEvent } from '../api/Events';
+import { ListAction } from '../core/ListAction';
+import * as Selection from '../core/Selection';
+import { createTextBlock } from '../core/TextBlock';
 
 const outdentedComposer = (editor: Editor, entries: Entry[]): SugarElement<DocumentFragment>[] => {
   const normalizedEntries = normalizeEntries(entries);

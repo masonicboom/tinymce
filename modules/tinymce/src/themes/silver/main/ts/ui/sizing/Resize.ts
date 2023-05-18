@@ -3,9 +3,9 @@ import { Css, Height, SugarElement, SugarPosition, Width } from '@ephox/sugar';
 
 import Editor from 'tinymce/core/api/Editor';
 
+import * as Utils from './Utils';
 import * as Events from '../../api/Events';
 import * as Options from '../../api/Options';
-import * as Utils from './Utils';
 
 interface EditorDimensions {
   readonly height: number;

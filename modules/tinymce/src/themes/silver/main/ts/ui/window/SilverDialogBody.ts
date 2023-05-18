@@ -2,12 +2,12 @@ import { AlloyComponent, AlloyParts, Behaviour, Focusing, Keying, ModalDialog, R
 import { Dialog } from '@ephox/bridge';
 import { Fun, Optional } from '@ephox/katamari';
 
+import { bodyChannel } from './DialogChannels';
 import { UiFactoryBackstage } from '../../backstage/Backstage';
 import { ComposingConfigs } from '../alien/ComposingConfigs';
 import { renderBodyPanel } from '../dialog/BodyPanel';
 import { renderTabPanel } from '../dialog/TabPanel';
 import * as NavigableObject from '../general/NavigableObject';
-import { bodyChannel } from './DialogChannels';
 
 // TypeScript allows some pretty weird stuff.
 interface WindowBodySpec {

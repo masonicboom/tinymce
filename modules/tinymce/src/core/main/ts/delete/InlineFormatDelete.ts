@@ -1,6 +1,8 @@
 import { Arr, Fun, Optional, Type } from '@ephox/katamari';
 import { PredicateExists, SugarElement, Traverse } from '@ephox/sugar';
 
+import * as DeleteElement from './DeleteElement';
+import * as DeleteUtils from './DeleteUtils';
 import Editor from '../api/Editor';
 import CaretPosition from '../caret/CaretPosition';
 import * as ElementType from '../dom/ElementType';
@@ -8,8 +10,6 @@ import * as NodeType from '../dom/NodeType';
 import * as Parents from '../dom/Parents';
 import * as CaretFormat from '../fmt/CaretFormat';
 import { isCaretNode } from '../fmt/FormatContainer';
-import * as DeleteElement from './DeleteElement';
-import * as DeleteUtils from './DeleteUtils';
 
 const hasMultipleChildren = (elm: SugarElement<Node>): boolean =>
   Traverse.childNodesCount(elm) > 1;

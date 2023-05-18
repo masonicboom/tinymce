@@ -3,8 +3,8 @@ import { Optional } from '@ephox/katamari';
 import Editor from 'tinymce/core/api/Editor';
 import { Dialog } from 'tinymce/core/api/ui/Ui';
 
-import * as Options from '../api/Options';
 import * as UiUtils from './UiUtils';
+import * as Options from '../api/Options';
 
 const getClassList = (editor: Editor): Optional<Dialog.ListBoxSpec> => {
   const classes = UiUtils.buildListItems(Options.getRowClassList(editor));

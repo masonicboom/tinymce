@@ -1,10 +1,10 @@
 import { FieldSchema } from '@ephox/boulder';
 
+import * as Sketcher from './Sketcher';
+import { SingleSketchFactory } from './UiSketcher';
 import { ContainerDetail, ContainerSketcher, ContainerSpec } from '../../ui/types/ContainerTypes';
 import * as SketchBehaviours from '../component/SketchBehaviours';
 import { SketchSpec } from '../component/SpecTypes';
-import * as Sketcher from './Sketcher';
-import { SingleSketchFactory } from './UiSketcher';
 
 const factory: SingleSketchFactory<ContainerDetail, ContainerSpec> = (detail): SketchSpec => {
   const { attributes, ...domWithoutAttributes } = detail.dom;

@@ -1,11 +1,11 @@
 import { Cell } from '@ephox/katamari';
 
-import Editor from '../api/Editor';
-import Env from '../api/Env';
-import { EditorEvent } from '../api/util/EventDispatcher';
 import * as Levels from './Levels';
 import { endTyping, setTyping } from './TypingState';
 import { Locks, UndoLevel, UndoManager } from './UndoManagerTypes';
+import Editor from '../api/Editor';
+import Env from '../api/Env';
+import { EditorEvent } from '../api/util/EventDispatcher';
 
 // Avoid adding non-typing undo levels for commands that could cause duplicate undo levels to be created
 // or do not alter the editor content or selection in any way

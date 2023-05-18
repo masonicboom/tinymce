@@ -1,39 +1,3 @@
-import * as Boxes from '../alien/Boxes';
-import * as EventRoot from '../alien/EventRoot';
-import * as OffsetOrigin from '../alien/OffsetOrigin';
-import * as AriaVoice from '../aria/AriaVoice';
-import { BehaviourState } from '../behaviour/common/BehaviourState';
-import * as DockingTypes from '../behaviour/docking/DockingTypes';
-import * as Fields from '../data/Fields';
-import * as Debugging from '../debugging/Debugging';
-import * as FunctionAnnotator from '../debugging/FunctionAnnotator';
-import * as DraggingTypes from '../dragging/common/DraggingTypes';
-import {
-  CustomEvent, CustomSimulatedEvent, EventFormat, NativeSimulatedEvent, ReceivingEvent, SimulatedEvent
-} from '../events/SimulatedEvent';
-import * as TapEvent from '../events/TapEvent';
-import { FocusInsideModes } from '../keying/KeyingModeTypes';
-import * as AlloyLogger from '../log/AlloyLogger';
-import * as AlloyParts from '../parts/AlloyParts';
-import * as PartType from '../parts/PartType';
-import * as Bubble from '../positioning/layout/Bubble';
-import * as Layout from '../positioning/layout/Layout';
-import * as LayoutInset from '../positioning/layout/LayoutInset';
-import * as LayoutTypes from '../positioning/layout/LayoutTypes';
-import * as MaxHeight from '../positioning/layout/MaxHeight';
-import * as MaxWidth from '../positioning/layout/MaxWidth';
-import {
-  AnchorSpec, HotspotAnchorSpec, Layouts, MakeshiftAnchorSpec, NodeAnchorSpec, SelectionAnchorSpec, SubmenuAnchorSpec
-} from '../positioning/mode/Anchoring';
-import * as VerticalDir from '../positioning/mode/VerticalDir';
-import * as FormTypes from '../ui/types/FormTypes';
-import * as InlineViewTypes from '../ui/types/InlineViewTypes';
-import * as ItemTypes from '../ui/types/ItemTypes'; // not sure if this is the right thing to expose, but we use it a lot?
-import * as MenuTypes from '../ui/types/MenuTypes';
-import * as SliderTypes from '../ui/types/SliderTypes';
-import * as SlotContainerTypes from '../ui/types/SlotContainerTypes';
-import * as TabbarTypes from '../ui/types/TabbarTypes';
-import * as TieredMenuTypes from '../ui/types/TieredMenuTypes';
 import * as AddEventsBehaviour from './behaviour/AddEventsBehaviour';
 import { AllowBubbling } from './behaviour/AllowBubbling';
 import * as Behaviour from './behaviour/Behaviour';
@@ -121,6 +85,42 @@ import { ToolbarGroup } from './ui/ToolbarGroup';
 import { TouchMenu } from './ui/TouchMenu';
 import { Typeahead } from './ui/Typeahead';
 import * as UiSketcher from './ui/UiSketcher';
+import * as Boxes from '../alien/Boxes';
+import * as EventRoot from '../alien/EventRoot';
+import * as OffsetOrigin from '../alien/OffsetOrigin';
+import * as AriaVoice from '../aria/AriaVoice';
+import { BehaviourState } from '../behaviour/common/BehaviourState';
+import * as DockingTypes from '../behaviour/docking/DockingTypes';
+import * as Fields from '../data/Fields';
+import * as Debugging from '../debugging/Debugging';
+import * as FunctionAnnotator from '../debugging/FunctionAnnotator';
+import * as DraggingTypes from '../dragging/common/DraggingTypes';
+import {
+  CustomEvent, CustomSimulatedEvent, EventFormat, NativeSimulatedEvent, ReceivingEvent, SimulatedEvent
+} from '../events/SimulatedEvent';
+import * as TapEvent from '../events/TapEvent';
+import { FocusInsideModes } from '../keying/KeyingModeTypes';
+import * as AlloyLogger from '../log/AlloyLogger';
+import * as AlloyParts from '../parts/AlloyParts';
+import * as PartType from '../parts/PartType';
+import * as Bubble from '../positioning/layout/Bubble';
+import * as Layout from '../positioning/layout/Layout';
+import * as LayoutInset from '../positioning/layout/LayoutInset';
+import * as LayoutTypes from '../positioning/layout/LayoutTypes';
+import * as MaxHeight from '../positioning/layout/MaxHeight';
+import * as MaxWidth from '../positioning/layout/MaxWidth';
+import {
+  AnchorSpec, HotspotAnchorSpec, Layouts, MakeshiftAnchorSpec, NodeAnchorSpec, SelectionAnchorSpec, SubmenuAnchorSpec
+} from '../positioning/mode/Anchoring';
+import * as VerticalDir from '../positioning/mode/VerticalDir';
+import * as FormTypes from '../ui/types/FormTypes';
+import * as InlineViewTypes from '../ui/types/InlineViewTypes';
+import * as ItemTypes from '../ui/types/ItemTypes'; // not sure if this is the right thing to expose, but we use it a lot?
+import * as MenuTypes from '../ui/types/MenuTypes';
+import * as SliderTypes from '../ui/types/SliderTypes';
+import * as SlotContainerTypes from '../ui/types/SlotContainerTypes';
+import * as TabbarTypes from '../ui/types/TabbarTypes';
+import * as TieredMenuTypes from '../ui/types/TieredMenuTypes';
 
 type AlloyComponent = ComponentApi.AlloyComponent;
 type MementoRecord = Memento.MementoRecord;

@@ -1,6 +1,7 @@
 import { Optional } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import { ItemSpec } from './ItemTypes';
 import { AlloyBehaviourRecord } from '../../api/behaviour/Behaviour';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import { SketchBehaviours } from '../../api/component/SketchBehaviours';
@@ -9,7 +10,6 @@ import { FocusManager } from '../../api/focus/FocusManagers';
 import { CompositeSketch, CompositeSketchDetail, CompositeSketchSpec } from '../../api/ui/Sketcher';
 import { CustomEvent } from '../../events/SimulatedEvent';
 import { FlatgridConfigSpec, MatrixConfigSpec, MenuConfigSpec } from '../../keying/KeyingModeTypes';
-import { ItemSpec } from './ItemTypes';
 
 export interface MenuGridMovementSpec {
   mode: 'grid';

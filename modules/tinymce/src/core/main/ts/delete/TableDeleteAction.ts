@@ -1,9 +1,9 @@
 import { Adt, Arr, Optional, Optionals } from '@ephox/katamari';
 import { Compare, SelectorFind, SugarElement } from '@ephox/sugar';
 
+import * as TableDeleteUtils from './TableDeleteUtils';
 import * as SelectionUtils from '../selection/SelectionUtils';
 import * as TableCellSelection from '../selection/TableCellSelection';
-import * as TableDeleteUtils from './TableDeleteUtils';
 
 type IsRootFn = TableDeleteUtils.IsRootFn;
 type SelectionDetails = TableDeleteUtils.TableSelectionDetails;

@@ -1,5 +1,11 @@
 import { Arr, Cell, Strings, Type } from '@ephox/katamari';
 
+import * as InternalHtml from './InternalHtml';
+import * as Newlines from './Newlines';
+import { PasteBin, isDefaultPasteBinContent } from './PasteBin';
+import * as PasteUtils from './PasteUtils';
+import * as ProcessFilters from './ProcessFilters';
+import * as SmartPaste from './SmartPaste';
 import Editor from '../api/Editor';
 import Env from '../api/Env';
 import { BlobCache, BlobInfo } from '../api/file/BlobCache';
@@ -10,12 +16,6 @@ import { EditorEvent } from '../api/util/EventDispatcher';
 import VK from '../api/util/VK';
 import * as Conversions from '../file/Conversions';
 import * as Whitespace from '../text/Whitespace';
-import * as InternalHtml from './InternalHtml';
-import * as Newlines from './Newlines';
-import { PasteBin, isDefaultPasteBinContent } from './PasteBin';
-import * as PasteUtils from './PasteUtils';
-import * as ProcessFilters from './ProcessFilters';
-import * as SmartPaste from './SmartPaste';
 
 interface FileResult {
   readonly file: File;

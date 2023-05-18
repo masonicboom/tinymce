@@ -1,12 +1,12 @@
 import { Future, Optional } from '@ephox/katamari';
 
+import { ToolbarSpec } from './ToolbarTypes';
 import { Bounds } from '../../alien/Boxes';
 import { LazySink } from '../../api/component/CommonTypes';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import { AlloySpec, SimpleOrSketchSpec } from '../../api/component/SpecTypes';
 import { CompositeSketch, CompositeSketchDetail, CompositeSketchSpec } from '../../api/ui/Sketcher';
 import { HasLayoutAnchor, HasLayoutAnchorSpec } from '../../positioning/mode/Anchoring';
-import { ToolbarSpec } from './ToolbarTypes';
 
 export interface FloatingToolbarButtonDetail extends CompositeSketchDetail, HasLayoutAnchor {
   lazySink: LazySink;

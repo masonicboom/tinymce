@@ -1,5 +1,5 @@
-import { SugarElement } from '../node/SugarElement';
 import * as Attribute from './Attribute';
+import { SugarElement } from '../node/SugarElement';
 
 export interface AttributeProperty {
   readonly is: (element: SugarElement<Element>) => boolean;

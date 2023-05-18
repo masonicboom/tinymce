@@ -1,5 +1,6 @@
 import { Fun, Optional } from '@ephox/katamari';
 
+import * as ToolbarSchema from './ToolbarSchema';
 import * as Behaviour from '../../api/behaviour/Behaviour';
 import { Focusing } from '../../api/behaviour/Focusing';
 import { Keying } from '../../api/behaviour/Keying';
@@ -13,7 +14,6 @@ import * as SplitToolbarBase from '../common/SplitToolbarBase';
 import { ButtonSpec } from '../types/ButtonTypes';
 import { SplitSlidingToolbarDetail } from '../types/SplitSlidingToolbarTypes';
 import { ToolbarSpec } from '../types/ToolbarTypes';
-import * as ToolbarSchema from './ToolbarSchema';
 
 const schema = Fun.constant([
   Fields.markers([ 'closedClass', 'openClass', 'shrinkingClass', 'growingClass', 'overflowToggledClass' ]),

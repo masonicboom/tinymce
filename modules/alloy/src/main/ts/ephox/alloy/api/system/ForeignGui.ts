@@ -2,6 +2,7 @@ import { FieldSchema, StructureSchema } from '@ephox/boulder';
 import { Arr, Obj, Optional } from '@ephox/katamari';
 import { DomEvent, EventArgs, Insert, SugarElement } from '@ephox/sugar';
 
+import * as Gui from './Gui';
 import { UncurriedHandler } from '../../events/EventRegistry';
 import * as SimulatedEvent from '../../events/SimulatedEvent';
 import ForeignCache from '../../foreign/ForeignCache';
@@ -10,7 +11,6 @@ import { AlloyBehaviourRecord } from '../behaviour/Behaviour';
 import { AlloyComponent } from '../component/ComponentApi';
 import * as GuiFactory from '../component/GuiFactory';
 import { AlloyEventRecord } from '../events/AlloyEvents';
-import * as Gui from './Gui';
 
 export interface ForeignGuiSpec {
   readonly root: SugarElement<Node>;

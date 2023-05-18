@@ -1,9 +1,9 @@
-import { nu as NuSpotInfo } from '../view/SpotInfo';
 import { Bubble } from './Bubble';
 import * as Direction from './Direction';
 import { boundsRestriction, AnchorBoxBounds } from './LayoutBounds';
 import { AnchorBox, AnchorElement, AnchorLayout } from './LayoutTypes';
 import { Placement } from './Placement';
+import { nu as NuSpotInfo } from '../view/SpotInfo';
 
 /*
   Layout for menus and inline context dialogs;

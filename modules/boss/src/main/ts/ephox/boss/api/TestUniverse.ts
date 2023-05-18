@@ -1,5 +1,7 @@
 import { Fun, Optional } from '@ephox/katamari';
 
+import { Gene } from './Gene';
+import { Universe } from './Universe';
 import * as Attribution from '../mutant/Attribution';
 import * as Comparator from '../mutant/Comparator';
 import * as Creator from '../mutant/Creator';
@@ -13,8 +15,6 @@ import * as Removal from '../mutant/Removal';
 import * as Styling from '../mutant/Styling';
 import * as Tracks from '../mutant/Tracks';
 import * as Up from '../mutant/Up';
-import { Gene } from './Gene';
-import { Universe } from './Universe';
 
 export interface TestUniverseUp extends ReturnType<Universe<Gene, undefined>['up']> {
   top: (element: Gene) => Gene;

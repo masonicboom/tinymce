@@ -1,7 +1,7 @@
 import { Eq, Pnode, Pprint, Testable } from '@ephox/dispute';
 
-import * as Html from '../properties/Html';
 import { SugarElement } from './SugarElement';
+import * as Html from '../properties/Html';
 
 type Eq<A> = Eq.Eq<A>;
 type Pprint<A> = Pprint.Pprint<A>;

@@ -1,5 +1,5 @@
-import { FieldPresence } from '../api/FieldPresence';
 import { StructureProcessor } from './StructureProcessor';
+import { FieldPresence } from '../api/FieldPresence';
 
 export const enum FieldTag {
   Field = 'field',

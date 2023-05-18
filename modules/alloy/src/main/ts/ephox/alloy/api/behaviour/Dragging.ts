@@ -1,11 +1,11 @@
 import { Optional } from '@ephox/katamari';
 
+import * as Behaviour from './Behaviour';
 import { BehaviourStateInitialiser } from '../../behaviour/common/BehaviourState';
 import * as DraggingApis from '../../behaviour/dragging/DraggingApis';
 import * as DraggingBranches from '../../behaviour/dragging/DraggingBranches';
 import { DraggingBehaviour, DraggingConfig, DraggingState, SnapConfig, SnapConfigSpec } from '../../dragging/common/DraggingTypes';
 import * as DragState from '../../dragging/common/DragState';
-import * as Behaviour from './Behaviour';
 
 const Dragging: DraggingBehaviour<any> = Behaviour.createModes({
   branchKey: 'mode',

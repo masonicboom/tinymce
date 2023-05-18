@@ -1,6 +1,9 @@
 import { Fun, Optional } from '@ephox/katamari';
 import { Insert, SugarElement } from '@ephox/sugar';
 
+import { getEdgeCefPosition } from './CefUtils';
+import * as InlineUtils from './InlineUtils';
+import * as NavigationUtils from './NavigationUtils';
 import EditorSelection from '../api/dom/Selection';
 import Editor from '../api/Editor';
 import * as Options from '../api/Options';
@@ -10,9 +13,6 @@ import * as CaretUtils from '../caret/CaretUtils';
 import { CaretWalker, HDirection } from '../caret/CaretWalker';
 import * as LineWalker from '../caret/LineWalker';
 import * as NodeType from '../dom/NodeType';
-import { getEdgeCefPosition } from './CefUtils';
-import * as InlineUtils from './InlineUtils';
-import * as NavigationUtils from './NavigationUtils';
 
 const isContentEditableFalse = NodeType.isContentEditableFalse;
 

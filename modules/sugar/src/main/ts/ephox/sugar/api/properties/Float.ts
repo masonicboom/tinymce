@@ -1,8 +1,8 @@
 import { Optional } from '@ephox/katamari';
 
+import * as Css from './Css';
 import * as Style from '../../impl/Style';
 import { SugarElement } from '../node/SugarElement';
-import * as Css from './Css';
 
 const isCentered = (element: SugarElement<Node>): boolean => {
   const dom = element.dom;

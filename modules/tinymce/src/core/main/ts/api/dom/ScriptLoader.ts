@@ -1,7 +1,7 @@
 import { Arr, Fun, Obj, Optional, Type, Unique } from '@ephox/katamari';
 
-import Tools from '../util/Tools';
 import DOMUtils from './DOMUtils';
+import Tools from '../util/Tools';
 
 /**
  * This class handles asynchronous/synchronous loading of JavaScript files it will execute callbacks

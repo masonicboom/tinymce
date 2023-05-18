@@ -1,7 +1,7 @@
 import Editor from 'tinymce/core/api/Editor';
 
-import * as FilterContent from '../core/FilterContent';
 import * as Options from './Options';
+import * as FilterContent from '../core/FilterContent';
 
 const register = (editor: Editor): void => {
   editor.addCommand('mcePageBreak', () => {

@@ -8,6 +8,8 @@ import { Toolbar } from '@ephox/bridge';
 import { Arr, Cell, Fun, Future, Id, Merger, Optional } from '@ephox/katamari';
 import { Attribute, EventArgs, SelectorFind } from '@ephox/sugar';
 
+import { ToolbarButtonClasses } from './ButtonClasses';
+import { commonButtonDisplayEvent, onToolbarButtonExecute, toolbarButtonEventOrder } from './ButtonEvents';
 import { ToolbarGroupOption } from '../../../api/Options';
 import { UiFactoryBackstage, UiFactoryBackstageProviders, UiFactoryBackstageShared } from '../../../backstage/Backstage';
 import * as ReadOnly from '../../../ReadOnly';
@@ -28,8 +30,6 @@ import * as MenuParts from '../../menus/menu/MenuParts';
 import { createTieredDataFrom } from '../../menus/menu/SingleMenu';
 import { SingleMenuItemSpec } from '../../menus/menu/SingleMenuTypes';
 import { renderToolbarGroup, ToolbarGroup } from '../CommonToolbar';
-import { ToolbarButtonClasses } from './ButtonClasses';
-import { commonButtonDisplayEvent, onToolbarButtonExecute, toolbarButtonEventOrder } from './ButtonEvents';
 
 type Behaviours = Behaviour.NamedConfiguredBehaviour<any, any, any>[];
 type AlloyButtonSpec = Parameters<typeof AlloyButton['sketch']>[0];

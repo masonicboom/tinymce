@@ -1,5 +1,8 @@
 import { Arr } from '@ephox/katamari';
 
+import * as TooltippingApis from './TooltippingApis';
+import { ExclusivityChannel, HideTooltipEvent, ShowTooltipEvent } from './TooltippingCommunication';
+import { TooltippingConfig, TooltippingState } from './TooltippingTypes';
 import * as Behaviour from '../../api/behaviour/Behaviour';
 // Not ideal coupling here.
 import { Positioning } from '../../api/behaviour/Positioning';
@@ -11,9 +14,6 @@ import * as NativeEvents from '../../api/events/NativeEvents';
 import * as SystemEvents from '../../api/events/SystemEvents';
 import * as Attachment from '../../api/system/Attachment';
 import { ReceivingEvent, ReceivingInternalEvent } from '../../events/SimulatedEvent';
-import * as TooltippingApis from './TooltippingApis';
-import { ExclusivityChannel, HideTooltipEvent, ShowTooltipEvent } from './TooltippingCommunication';
-import { TooltippingConfig, TooltippingState } from './TooltippingTypes';
 
 const events = (tooltipConfig: TooltippingConfig, state: TooltippingState): AlloyEvents.AlloyEventRecord => {
   const hide = (comp: AlloyComponent) => {

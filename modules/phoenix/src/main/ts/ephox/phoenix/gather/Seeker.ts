@@ -1,9 +1,9 @@
 import { Universe } from '@ephox/boss';
 import { Optional } from '@ephox/katamari';
 
-import { Direction, Transition } from '../api/data/Types';
 import * as Walker from './Walker';
 import { Walkers } from './Walkers';
+import { Direction, Transition } from '../api/data/Types';
 
 const hone = <E, D>(universe: Universe<E, D>, item: E, predicate: (e: E) => boolean, mode: Transition, direction: Direction, isRoot: (e: E) => boolean): Optional<E> => {
   const next = Walker.go(universe, item, mode, direction);

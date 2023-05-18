@@ -1,6 +1,8 @@
 import { Cell } from '@ephox/katamari';
 import { PlatformDetection } from '@ephox/sand';
 
+import { fireFakeBeforeInputEvent, fireFakeInputEvent } from './FakeInputEvents';
+import * as MatchKeys from './MatchKeys';
 import Editor from '../api/Editor';
 import { EditorEvent } from '../api/util/EventDispatcher';
 import VK from '../api/util/VK';
@@ -14,8 +16,6 @@ import * as InlineFormatDelete from '../delete/InlineFormatDelete';
 import * as MediaDelete from '../delete/MediaDelete';
 import * as Outdent from '../delete/Outdent';
 import * as TableDelete from '../delete/TableDelete';
-import { fireFakeBeforeInputEvent, fireFakeInputEvent } from './FakeInputEvents';
-import * as MatchKeys from './MatchKeys';
 
 const executeKeydownOverride = (editor: Editor, caret: Cell<Text | null>, evt: KeyboardEvent) => {
   const inputType = evt.keyCode === VK.BACKSPACE ? 'deleteContentBackward' : 'deleteContentForward';

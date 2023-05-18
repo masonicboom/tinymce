@@ -1,6 +1,12 @@
 import { Arr, Type } from '@ephox/katamari';
 import { Compare, SugarElement } from '@ephox/sugar';
 
+import BookmarkManager from './BookmarkManager';
+import ControlSelection from './ControlSelection';
+import DOMUtils from './DOMUtils';
+import RangeUtils from './RangeUtils';
+import SelectorChanged from './SelectorChanged';
+import DomSerializer from './Serializer';
 import { Bookmark } from '../../bookmark/BookmarkTypes';
 import CaretPosition from '../../caret/CaretPosition';
 import { GetSelectionContentArgs, SetSelectionContentArgs } from '../../content/ContentTypes';
@@ -19,12 +25,6 @@ import { hasAnyRanges, moveEndPoint } from '../../selection/SelectionUtils';
 import * as SetSelectionContent from '../../selection/SetSelectionContent';
 import Editor from '../Editor';
 import AstNode from '../html/Node';
-import BookmarkManager from './BookmarkManager';
-import ControlSelection from './ControlSelection';
-import DOMUtils from './DOMUtils';
-import RangeUtils from './RangeUtils';
-import SelectorChanged from './SelectorChanged';
-import DomSerializer from './Serializer';
 
 /**
  * This class handles text and control selection it's an crossbrowser utility class.

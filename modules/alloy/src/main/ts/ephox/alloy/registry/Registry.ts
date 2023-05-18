@@ -1,10 +1,10 @@
 import { Obj, Optional } from '@ephox/katamari';
 import { SugarBody, SugarElement } from '@ephox/sugar';
 
+import * as Tagger from './Tagger';
 import { AlloyComponent } from '../api/component/ComponentApi';
 import { ElementAndHandler, EventRegistry, UidAndHandler } from '../events/EventRegistry';
 import * as AlloyLogger from '../log/AlloyLogger';
-import * as Tagger from './Tagger';
 
 export interface Registry {
   readonly find: (isAboveRoot: (elem: SugarElement<Node>) => boolean, type: string, target: SugarElement<Node>) => Optional<ElementAndHandler>;

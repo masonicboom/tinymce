@@ -1,8 +1,8 @@
 import { Arr, Optional } from '@ephox/katamari';
 
-import { Gene } from '../api/Gene';
 import * as Comparator from './Comparator';
 import * as Creator from './Creator';
+import { Gene } from '../api/Gene';
 
 const byId = (item: Gene, id: string): Optional<Gene> => {
   if (id === undefined) {

@@ -1,6 +1,6 @@
-import * as StrAppend from '../str/StrAppend';
 import { Optional } from './Optional';
 import * as Type from './Type';
+import * as StrAppend from '../str/StrAppend';
 
 const checkRange = (str: string, substr: string, start: number): boolean =>
   substr === '' || str.length >= substr.length && str.substr(start, start + substr.length) === substr;

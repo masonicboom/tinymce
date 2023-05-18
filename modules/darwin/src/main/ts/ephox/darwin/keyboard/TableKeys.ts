@@ -3,14 +3,14 @@ import { Spot, SpotPoint } from '@ephox/phoenix';
 import { PlatformDetection } from '@ephox/sand';
 import { Awareness, Compare, SimRange, SugarElement } from '@ephox/sugar';
 
+import * as Carets from './Carets';
+import * as Rectangles from './Rectangles';
+import { Retries } from './Retries';
 import { WindowBridge } from '../api/WindowBridge';
 import { BeforeAfter } from '../navigation/BeforeAfter';
 import * as BrTags from '../navigation/BrTags';
 import { KeyDirection } from '../navigation/KeyDirection';
 import { Situs } from '../selection/Situs';
-import * as Carets from './Carets';
-import * as Rectangles from './Rectangles';
-import { Retries } from './Retries';
 
 type Carets = Carets.Carets;
 

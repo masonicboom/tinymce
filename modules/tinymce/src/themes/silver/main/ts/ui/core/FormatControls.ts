@@ -1,6 +1,5 @@
 import Editor from 'tinymce/core/api/Editor';
 
-import { UiFactoryBackstage } from '../../backstage/Backstage';
 import * as AlignmentButtons from './AlignmentButtons';
 import * as ChoiceControls from './ChoiceControls';
 import * as ColorSwatch from './color/ColorSwatch';
@@ -10,6 +9,7 @@ import * as PasteControls from './PasteControls';
 import * as SimpleControls from './SimpleControls';
 import * as UndoRedo from './UndoRedo';
 import * as VisualAid from './VisualAid';
+import { UiFactoryBackstage } from '../../backstage/Backstage';
 
 const setup = (editor: Editor, backstage: UiFactoryBackstage): void => {
   AlignmentButtons.register(editor);

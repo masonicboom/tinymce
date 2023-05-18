@@ -1,6 +1,7 @@
 import { Arr, Fun, Obj, Optional, Optionals, Type } from '@ephox/katamari';
 import { Compare, SugarElement, SugarNode, Traverse } from '@ephox/sugar';
 
+import * as TableCellSelection from './TableCellSelection';
 import DOMUtils from '../api/dom/DOMUtils';
 import EditorSelection from '../api/dom/Selection';
 import DomTreeWalker from '../api/dom/TreeWalker';
@@ -9,7 +10,6 @@ import Tools from '../api/util/Tools';
 import { IdBookmark, IndexBookmark } from '../bookmark/BookmarkTypes';
 import * as GetBookmark from '../bookmark/GetBookmark';
 import * as NodeType from '../dom/NodeType';
-import * as TableCellSelection from './TableCellSelection';
 
 const getStartNode = (rng: Range) => {
   const sc = rng.startContainer, so = rng.startOffset;

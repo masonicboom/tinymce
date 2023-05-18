@@ -1,12 +1,12 @@
 import { Compare, PredicateFind, SugarElement } from '@ephox/sugar';
 
+import * as RangeNormalizer from './RangeNormalizer';
 import DomTreeWalker from '../api/dom/TreeWalker';
 import Editor from '../api/Editor';
 import { isCaretCandidate } from '../caret/CaretCandidate';
 import { CaretPosition } from '../caret/CaretPosition';
 import { isBlock } from '../dom/ElementType';
 import * as NodeType from '../dom/NodeType';
-import * as RangeNormalizer from './RangeNormalizer';
 
 const isBr = NodeType.isBr;
 const isText = NodeType.isText;

@@ -3,10 +3,10 @@ import { Regex, Type } from '@ephox/katamari';
 import Editor from 'tinymce/core/api/Editor';
 import Tools from 'tinymce/core/api/util/Tools';
 
-import * as Options from '../api/Options';
 import * as DateTimeHelper from './DateTimeHelper';
 import { ExternalTemplate, TemplateValues } from './Types';
 import { hasAnyClasses, parseAndSerialize } from './Utils';
+import * as Options from '../api/Options';
 
 const createTemplateList = (editor: Editor, callback: (templates: ExternalTemplate[]) => void) => {
   return (): void => {

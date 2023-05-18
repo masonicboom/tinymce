@@ -7,10 +7,6 @@ import { Dialog, DialogManager } from '@ephox/bridge';
 import { Fun, Id, Optional } from '@ephox/katamari';
 import { Attribute, Classes, SugarElement, SugarNode } from '@ephox/sugar';
 
-import { UiFactoryBackstage } from '../../backstage/Backstage';
-import { RepresentingConfigs } from '../alien/RepresentingConfigs';
-import { formCloseEvent } from '../general/FormEvents';
-import * as NavigableObject from '../general/NavigableObject';
 import { dialogChannel } from './DialogChannels';
 import { renderInlineBody } from './SilverDialogBody';
 import * as SilverDialogCommon from './SilverDialogCommon';
@@ -18,6 +14,10 @@ import { SilverDialogEvents } from './SilverDialogEvents';
 import { renderInlineFooter } from './SilverDialogFooter';
 import { renderInlineHeader } from './SilverDialogHeader';
 import { getDialogApi } from './SilverDialogInstanceApi';
+import { UiFactoryBackstage } from '../../backstage/Backstage';
+import { RepresentingConfigs } from '../alien/RepresentingConfigs';
+import { formCloseEvent } from '../general/FormEvents';
+import * as NavigableObject from '../general/NavigableObject';
 
 interface RenderedDialog<T extends Dialog.DialogData> {
   readonly dialog: AlloyComponent;

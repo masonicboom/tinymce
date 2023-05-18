@@ -2,10 +2,10 @@ import { AlloySpec, AlloyTriggers, Behaviour, Input, Keying, Memento, SketchSpec
 import { InlineContent } from '@ephox/bridge';
 import { Id, Optional } from '@ephox/katamari';
 
+import { generate } from './ContextFormButtons';
 import { ToolbarMode } from '../../api/Options';
 import { UiFactoryBackstageProviders } from '../../backstage/Backstage';
 import { renderToolbar, ToolbarGroup } from '../toolbar/CommonToolbar';
-import { generate } from './ContextFormButtons';
 
 const buildInitGroups = (ctx: InlineContent.ContextForm, providers: UiFactoryBackstageProviders): ToolbarGroup[] => {
   // Cannot use the FormField.sketch, because the DOM structure doesn't have a wrapping group

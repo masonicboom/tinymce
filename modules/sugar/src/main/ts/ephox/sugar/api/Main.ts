@@ -1,4 +1,3 @@
-import * as SelectionDirection from '../selection/core/SelectionDirection'; // Used directly by dawin
 import * as Compare from './dom/Compare';
 import * as DocumentPosition from './dom/DocumentPosition';
 import * as DomFuture from './dom/DomFuture';
@@ -77,6 +76,7 @@ import { SugarPosition } from './view/SugarPosition';
 import * as Visibility from './view/Visibility';
 import * as Width from './view/Width';
 import * as WindowVisualViewport from './view/WindowVisualViewport';
+import * as SelectionDirection from '../selection/core/SelectionDirection'; // Used directly by dawin
 
 export {
   Compare,

@@ -2,13 +2,13 @@ import { Universe } from '@ephox/boss';
 import { Arr, Optional } from '@ephox/katamari';
 import { Pattern, PositionArray, Search } from '@ephox/polaris';
 
+import * as MatchSplitter from './MatchSplitter';
 import { NamedPattern } from '../api/data/NamedPattern';
 import * as Spot from '../api/data/Spot';
 import { TypedItem } from '../api/data/TypedItem';
 import { SearchResult, SpotRange } from '../api/data/Types';
 import * as Family from '../api/general/Family';
 import * as TypedList from '../extract/TypedList';
-import * as MatchSplitter from './MatchSplitter';
 
 const gen = <E, D>(universe: Universe<E, D>, input: E[]): SpotRange<E>[] => {
   return PositionArray.generate(input, (unit, offset) => {

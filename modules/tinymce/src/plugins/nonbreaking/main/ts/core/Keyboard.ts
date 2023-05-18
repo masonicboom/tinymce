@@ -1,8 +1,8 @@
 import Editor from 'tinymce/core/api/Editor';
 import VK from 'tinymce/core/api/util/VK';
 
-import * as Options from '../api/Options';
 import * as Actions from './Actions';
+import * as Options from '../api/Options';
 
 const setup = (editor: Editor): void => {
   const spaces = Options.getKeyboardSpaces(editor);

@@ -1,13 +1,13 @@
 import { FieldProcessor, FieldSchema, StructureSchema } from '@ephox/boulder';
 import { Cell, Fun } from '@ephox/katamari';
 
+import * as HorizontalModel from './HorizontalModel';
+import * as TwoDModel from './TwoDModel';
+import * as VerticalModel from './VerticalModel';
 import { Keying } from '../../api/behaviour/Keying';
 import { Representing } from '../../api/behaviour/Representing';
 import * as SketchBehaviours from '../../api/component/SketchBehaviours';
 import * as Fields from '../../data/Fields';
-import * as HorizontalModel from './HorizontalModel';
-import * as TwoDModel from './TwoDModel';
-import * as VerticalModel from './VerticalModel';
 
 interface SliderModelSpec {
   mode: {

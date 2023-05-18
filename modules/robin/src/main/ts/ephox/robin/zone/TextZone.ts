@@ -2,12 +2,12 @@ import { Universe } from '@ephox/boss';
 import { Optional } from '@ephox/katamari';
 import { Descent } from '@ephox/phoenix';
 
-import { ZoneViewports } from '../api/general/ZoneViewports';
-import * as Clustering from '../words/Clustering';
-import { WordDecision, WordDecisionItem } from '../words/WordDecision';
 import { LanguageZones } from './LanguageZones';
 import * as TextZones from './TextZones';
 import { Zone } from './Zones';
+import { ZoneViewports } from '../api/general/ZoneViewports';
+import * as Clustering from '../words/Clustering';
+import { WordDecision, WordDecisionItem } from '../words/WordDecision';
 
 // a Text Zone enforces a language, and returns Optional.some only if a single zone was identified
 // with that language.

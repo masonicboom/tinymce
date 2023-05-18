@@ -1,8 +1,8 @@
 import { Arr, Obj, Optional } from '@ephox/katamari';
 import { Attribute, Compare, Css, CursorPosition, Insert, Replication, SelectorFilter, SugarElement, SugarNode } from '@ephox/sugar';
 
-import { CellElement } from '../util/TableTypes';
 import { CellData, Generators, SimpleGenerators } from './Generators';
+import { CellElement } from '../util/TableTypes';
 
 const transferableAttributes: Record<string, string[]> = {
   scope: [

@@ -3,14 +3,14 @@ import { Optional } from '@ephox/katamari';
 import DOMUtils from 'tinymce/core/api/dom/DOMUtils';
 import Editor from 'tinymce/core/api/Editor';
 
-import * as Options from '../api/Options';
-import * as Utils from '../core/Utils';
 import { LinkDialogInfo } from './DialogTypes';
 import { AnchorListOptions } from './sections/AnchorListOptions';
 import { ClassListOptions } from './sections/ClassListOptions';
 import { LinkListOptions } from './sections/LinkListOptions';
 import { RelOptions } from './sections/RelOptions';
 import { TargetOptions } from './sections/TargetOptions';
+import * as Options from '../api/Options';
+import * as Utils from '../core/Utils';
 
 const nonEmptyAttr = (dom: DOMUtils, elem: string | Element, name: string): Optional<string> => {
   const val: string | null = dom.getAttrib(elem, name);

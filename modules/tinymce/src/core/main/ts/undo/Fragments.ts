@@ -1,8 +1,8 @@
 import { Arr } from '@ephox/katamari';
 
+import * as Diff from './Diff';
 import Entities from '../api/html/Entities';
 import * as NodeType from '../dom/NodeType';
-import * as Diff from './Diff';
 
 /**
  * This module reads and applies html fragments from/to dom nodes.

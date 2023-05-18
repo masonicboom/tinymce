@@ -1,14 +1,14 @@
 import { Optional } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import { DropEvent } from './DropEvent';
+import { DragnDropImageClone } from './ImageClone';
 import * as Behaviour from '../../api/behaviour/Behaviour';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import * as AlloyEvents from '../../api/events/AlloyEvents';
 import { DomDefinitionDetail } from '../../dom/DomDefinition';
 import { DomModification } from '../../dom/DomModification';
 import { EventFormat, NativeSimulatedEvent } from '../../events/SimulatedEvent';
-import { DropEvent } from './DropEvent';
-import { DragnDropImageClone } from './ImageClone';
 
 export interface DragnDropBehaviour extends Behaviour.AlloyBehaviour<DragnDropConfigSpec, DragnDropConfig> {
   config: (config: DragnDropConfigSpec) => Behaviour.NamedConfiguredBehaviour<DragnDropConfigSpec, DragnDropConfig>;

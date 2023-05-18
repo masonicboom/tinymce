@@ -1,10 +1,10 @@
 import { AlloyEvents, Focusing, GuiFactory, Memento, ModalDialog } from '@ephox/alloy';
 import { Optional } from '@ephox/katamari';
 
+import * as Dialogs from './Dialogs';
 import { UiFactoryBackstage } from '../../backstage/Backstage';
 import { renderFooterButton } from '../general/Button';
 import { formCancelEvent, FormCancelEvent, formSubmitEvent, FormSubmitEvent } from '../general/FormEvents';
-import * as Dialogs from './Dialogs';
 
 interface ConfirmDialogApi {
   readonly open: (message: string, callback: (state: boolean) => void) => void;

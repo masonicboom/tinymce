@@ -5,10 +5,10 @@ import DOMUtils from 'tinymce/core/api/dom/DOMUtils';
 import Editor from 'tinymce/core/api/Editor';
 import Env from 'tinymce/core/api/Env';
 
-import * as Events from '../api/Events';
-import * as Options from '../api/Options';
 import { exitFullscreen, getFullscreenchangeEventName, getFullscreenRoot, isFullscreenElement, requestFullscreen } from './NativeFullscreen';
 import * as Thor from './Thor';
+import * as Events from '../api/Events';
+import * as Options from '../api/Options';
 
 interface ScrollPos {
   readonly x: number;

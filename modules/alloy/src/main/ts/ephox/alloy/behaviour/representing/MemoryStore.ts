@@ -1,9 +1,9 @@
 import { FieldSchema } from '@ephox/boulder';
 
-import { AlloyComponent } from '../../api/component/ComponentApi';
-import * as Fields from '../../data/Fields';
 import { MemoryRepresentingState, MemoryStoreConfig, RepresentingConfig } from './RepresentingTypes';
 import { memory } from './RepresentState';
+import { AlloyComponent } from '../../api/component/ComponentApi';
+import * as Fields from '../../data/Fields';
 
 interface MemoryRepresentingConfig extends RepresentingConfig {
   store: MemoryStoreConfig;

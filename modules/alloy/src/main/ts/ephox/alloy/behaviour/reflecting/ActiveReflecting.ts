@@ -1,11 +1,11 @@
 import { Arr } from '@ephox/katamari';
 
+import { ReflectingConfig, ReflectingState } from './ReflectingTypes';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import * as AlloyEvents from '../../api/events/AlloyEvents';
 import * as SystemEvents from '../../api/events/SystemEvents';
 import { ReceivingEvent, ReceivingInternalEvent } from '../../events/SimulatedEvent';
 import { withoutReuse, withReuse } from '../replacing/ReplacingAll';
-import { ReflectingConfig, ReflectingState } from './ReflectingTypes';
 
 const events = <I, S>(reflectingConfig: ReflectingConfig<I, S>, reflectingState: ReflectingState<S>): AlloyEvents.AlloyEventRecord => {
   const update = (component: AlloyComponent, data: I) => {

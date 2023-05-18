@@ -1,7 +1,7 @@
 import { Optional, Strings, Type } from '@ephox/katamari';
 
-import { BlobCache, BlobInfo } from '../api/file/BlobCache';
 import * as Conversions from './Conversions';
+import { BlobCache, BlobInfo } from '../api/file/BlobCache';
 
 let count = 0;
 

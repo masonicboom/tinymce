@@ -7,13 +7,13 @@ import {
 import { Arr, Optional, Result } from '@ephox/katamari';
 import { Traverse } from '@ephox/sugar';
 
+import { ToolbarButtonClasses } from './button/ButtonClasses';
 import { ToolbarMode } from '../../api/Options';
 import { UiFactoryBackstageProviders } from '../../backstage/Backstage';
 import * as Channels from '../../Channels';
 import * as ReadOnly from '../../ReadOnly';
 import { DisablingConfigs } from '../alien/DisablingConfigs';
 import { renderIconButtonSpec } from '../general/Button';
-import { ToolbarButtonClasses } from './button/ButtonClasses';
 
 export interface MoreDrawerData {
   readonly lazyMoreButton: () => AlloyComponent;

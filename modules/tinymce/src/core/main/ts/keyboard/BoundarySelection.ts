@@ -1,6 +1,10 @@
 import { Arr, Cell, Fun } from '@ephox/katamari';
 import { SelectorFilter, SugarElement } from '@ephox/sugar';
 
+import * as BoundaryCaret from './BoundaryCaret';
+import * as BoundaryLocation from './BoundaryLocation';
+import * as InlineUtils from './InlineUtils';
+import * as NavigationUtils from './NavigationUtils';
 import DOMUtils from '../api/dom/DOMUtils';
 import Editor from '../api/Editor';
 import * as Options from '../api/Options';
@@ -8,10 +12,6 @@ import * as CaretContainerRemove from '../caret/CaretContainerRemove';
 import * as CaretFinder from '../caret/CaretFinder';
 import CaretPosition from '../caret/CaretPosition';
 import * as WordSelection from '../selection/WordSelection';
-import * as BoundaryCaret from './BoundaryCaret';
-import * as BoundaryLocation from './BoundaryLocation';
-import * as InlineUtils from './InlineUtils';
-import * as NavigationUtils from './NavigationUtils';
 
 const setCaretPosition = (editor: Editor, pos: CaretPosition): void => {
   const rng = editor.dom.createRng();

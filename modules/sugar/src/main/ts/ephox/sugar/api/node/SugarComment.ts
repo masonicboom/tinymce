@@ -1,8 +1,8 @@
 import { Optional } from '@ephox/katamari';
 
-import { NodeValue } from '../../impl/NodeValue';
 import { SugarElement } from './SugarElement';
 import * as SugarNode from './SugarNode';
+import { NodeValue } from '../../impl/NodeValue';
 
 const api = NodeValue(SugarNode.isComment, 'comment');
 

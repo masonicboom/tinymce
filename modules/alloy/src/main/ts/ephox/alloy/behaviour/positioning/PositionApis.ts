@@ -2,6 +2,8 @@ import { StructureSchema } from '@ephox/boulder';
 import { Arr, Fun, Optional, Optionals } from '@ephox/katamari';
 import { Css, SugarLocation } from '@ephox/sugar';
 
+import { PlacementDetail, PlacementSpec, PositioningConfig, PositioningState } from './PositioningTypes';
+import { PlacementSchema } from './PositionSchema';
 import * as Boxes from '../../alien/Boxes';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import * as AriaFocus from '../../aria/AriaFocus';
@@ -12,8 +14,6 @@ import * as Placement from '../../positioning/layout/Placement';
 import * as SimpleLayout from '../../positioning/layout/SimpleLayout';
 import { Anchoring } from '../../positioning/mode/Anchoring';
 import { Transition } from '../../positioning/view/Transitions';
-import { PlacementDetail, PlacementSpec, PositioningConfig, PositioningState } from './PositioningTypes';
-import { PlacementSchema } from './PositionSchema';
 
 const getFixedOrigin = (): Origins.OriginAdt => {
   // Don't use window.innerWidth/innerHeight here, as we don't want to include scrollbars

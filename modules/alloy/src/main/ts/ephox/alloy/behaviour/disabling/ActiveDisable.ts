@@ -1,11 +1,11 @@
+import * as DisableApis from './DisableApis';
+import { DisableConfig } from './DisableTypes';
 import * as AlloyEvents from '../../api/events/AlloyEvents';
 import * as SystemEvents from '../../api/events/SystemEvents';
 import { DomDefinitionDetail } from '../../dom/DomDefinition';
 import * as DomModification from '../../dom/DomModification';
 import * as Behaviour from '../common/Behaviour';
 import { Stateless } from '../common/BehaviourState';
-import * as DisableApis from './DisableApis';
-import { DisableConfig } from './DisableTypes';
 
 const exhibit = (base: DomDefinitionDetail, disableConfig: DisableConfig): DomModification.DomModification =>
   DomModification.nu({

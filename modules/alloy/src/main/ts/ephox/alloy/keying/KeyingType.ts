@@ -2,6 +2,7 @@ import { FieldProcessor, FieldSchema, StructureSchema } from '@ephox/boulder';
 import { Arr, Optional, Result } from '@ephox/katamari';
 import { EventArgs } from '@ephox/sugar';
 
+import { FocusInsideModes, GeneralKeyingConfig } from './KeyingModeTypes';
 import * as EventRoot from '../alien/EventRoot';
 import * as Keys from '../alien/Keys';
 import { AlloyComponent } from '../api/component/ComponentApi';
@@ -14,7 +15,6 @@ import * as Fields from '../data/Fields';
 import { EventFormat, NativeSimulatedEvent, SimulatedEvent } from '../events/SimulatedEvent';
 import { inSet } from '../navigation/KeyMatch';
 import * as KeyRules from '../navigation/KeyRules';
-import { FocusInsideModes, GeneralKeyingConfig } from './KeyingModeTypes';
 
 type GetRulesFunc<C extends GeneralKeyingConfig, S extends BehaviourState> = (component: AlloyComponent, simulatedEvent: SimulatedEvent<EventArgs>, keyingConfig: C, keyingState: S) => Array<KeyRules.KeyRule<C, S>>;
 

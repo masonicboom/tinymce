@@ -1,10 +1,10 @@
 import { Optional } from '@ephox/katamari';
 
-import Editor from '../api/Editor';
-import * as CefUtils from '../dom/CefUtils';
 import CaretPosition from './CaretPosition';
 import * as CaretUtils from './CaretUtils';
 import { isInlineFakeCaretTarget } from './FakeCaret';
+import Editor from '../api/Editor';
+import * as CefUtils from '../dom/CefUtils';
 
 const showCaret = (direction: number, editor: Editor, node: HTMLElement, before: boolean, scrollIntoView: boolean): Optional<Range> =>
   // TODO: Figure out a better way to handle this dependency

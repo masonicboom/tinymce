@@ -1,9 +1,9 @@
 import { Arr, Optional } from '@ephox/katamari';
 
-import * as SelectionBookmark from '../selection/SelectionBookmark';
-import WindowManagerImpl from '../ui/WindowManagerImpl';
 import Editor from './Editor';
 import { Dialog } from './ui/Ui';
+import * as SelectionBookmark from '../selection/SelectionBookmark';
+import WindowManagerImpl from '../ui/WindowManagerImpl';
 
 /**
  * This class handles the creation of native windows and dialogs. This class can be extended to provide for example inline dialogs.

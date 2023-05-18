@@ -1,10 +1,10 @@
 import { FieldSchema, StructureSchema } from '@ephox/boulder';
 import { Optional, Result } from '@ephox/katamari';
 
-import * as ComponentSchema from '../../core/ComponentSchema';
 import { itemSchema } from './card/CardContainer';
 import { CardItem, CardItemSpec } from './card/CardItem';
 import { CommonMenuItem, commonMenuItemFields, CommonMenuItemInstanceApi, CommonMenuItemSpec } from './CommonMenuItem';
+import * as ComponentSchema from '../../core/ComponentSchema';
 
 export interface CardMenuItemInstanceApi extends CommonMenuItemInstanceApi { }
 

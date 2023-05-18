@@ -7,14 +7,14 @@ import DomTreeWalker from 'tinymce/core/api/dom/TreeWalker';
 import Editor from 'tinymce/core/api/Editor';
 import VK from 'tinymce/core/api/util/VK';
 
-import { flattenListSelection, outdentListSelection } from '../actions/Indendation';
-import * as ToggleList from '../actions/ToggleList';
 import * as Bookmark from './Bookmark';
 import * as NodeType from './NodeType';
 import * as NormalizeLists from './NormalizeLists';
 import * as ListRangeUtils from './RangeUtils';
 import * as Selection from './Selection';
 import { isWithinNonEditableList } from './Util';
+import { flattenListSelection, outdentListSelection } from '../actions/Indendation';
+import * as ToggleList from '../actions/ToggleList';
 
 const findNextCaretContainer = (editor: Editor, rng: Range, isForward: boolean, root: Node): Node | null => {
   let node: Node | null | undefined = rng.startContainer;

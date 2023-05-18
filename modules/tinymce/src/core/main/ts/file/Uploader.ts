@@ -1,9 +1,9 @@
 import { Fun, Optional, Type } from '@ephox/katamari';
 
+import { UploadStatus } from './UploadStatus';
 import { BlobInfo } from '../api/file/BlobCache';
 import { NotificationApi } from '../api/NotificationManager';
 import Tools from '../api/util/Tools';
-import { UploadStatus } from './UploadStatus';
 
 /**
  * Upload blobs or blob infos to the specified URL or handler.

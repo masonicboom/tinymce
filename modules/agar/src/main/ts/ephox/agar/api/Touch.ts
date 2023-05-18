@@ -1,9 +1,9 @@
 import { Focus, SugarElement } from '@ephox/sugar';
 
-import * as Touches from '../touch/Touches';
 import { Chain } from './Chain';
 import { Step } from './Step';
 import * as UiFinder from './UiFinder';
+import * as Touches from '../touch/Touches';
 
 const touchStart = Touches.touchstart;
 const touchStartAt = (element: SugarElement<Node>, dx: number, dy: number): void => Touches.touchstartAt(dx, dy)(element);

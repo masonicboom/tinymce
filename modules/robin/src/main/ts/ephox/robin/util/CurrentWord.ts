@@ -1,7 +1,7 @@
 import { Optional, Optionals } from '@ephox/katamari';
 
-import { BeforeAfter } from '../data/BeforeAfter';
 import * as WordUtil from './WordUtil';
+import { BeforeAfter } from '../data/BeforeAfter';
 
 /*
  * Returns an optional before and optional after representing the index positions of the nearest

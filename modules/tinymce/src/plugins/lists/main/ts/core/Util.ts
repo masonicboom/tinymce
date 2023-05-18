@@ -3,8 +3,8 @@ import { Arr, Fun } from '@ephox/katamari';
 import Editor from 'tinymce/core/api/Editor';
 import { NodeChangeEvent } from 'tinymce/core/api/EventTypes';
 
-import * as Selection from '../core/Selection';
 import * as NodeType from './NodeType';
+import * as Selection from '../core/Selection';
 
 const isCustomList = (list: HTMLElement): boolean =>
   /\btox\-/.test(list.className);

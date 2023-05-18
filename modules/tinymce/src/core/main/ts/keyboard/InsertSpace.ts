@@ -1,13 +1,13 @@
 import { Fun, Optional } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import * as BoundaryLocation from './BoundaryLocation';
+import * as InlineUtils from './InlineUtils';
+import { needsToHaveNbsp } from './Nbsps';
 import Editor from '../api/Editor';
 import * as CaretFinder from '../caret/CaretFinder';
 import CaretPosition from '../caret/CaretPosition';
 import { insertNbspAtPosition, insertSpaceAtPosition } from '../caret/InsertText';
-import * as BoundaryLocation from './BoundaryLocation';
-import * as InlineUtils from './InlineUtils';
-import { needsToHaveNbsp } from './Nbsps';
 
 const insertSpaceOrNbspAtPosition = (root: SugarElement<Node>, pos: CaretPosition): Optional<CaretPosition> =>
   needsToHaveNbsp(root, pos) ? insertNbspAtPosition(pos) : insertSpaceAtPosition(pos);

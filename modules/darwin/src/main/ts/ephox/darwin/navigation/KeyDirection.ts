@@ -2,11 +2,11 @@ import { Optional } from '@ephox/katamari';
 import { DomGather } from '@ephox/phoenix';
 import { Situ, SugarElement, Traverse } from '@ephox/sugar';
 
+import { BeforeAfter, BeforeAfterFailureConstructor } from './BeforeAfter';
 import { WindowBridge } from '../api/WindowBridge';
 import { Carets } from '../keyboard/Carets';
 import { Retries } from '../keyboard/Retries';
 import { Situs } from '../selection/Situs';
-import { BeforeAfter, BeforeAfterFailureConstructor } from './BeforeAfter';
 
 export interface KeyDirection {
   traverse: (element: SugarElement<Node>) => Optional<SugarElement<Node & ChildNode>>;

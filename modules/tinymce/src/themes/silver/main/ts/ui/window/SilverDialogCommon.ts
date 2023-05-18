@@ -5,14 +5,14 @@ import {
 import { Dialog, DialogManager } from '@ephox/bridge';
 import { Arr, Cell, Obj, Optional } from '@ephox/katamari';
 
+import { dialogChannel } from './DialogChannels';
+import { ExtraListeners } from './SilverDialogEvents';
+import { renderModalHeader } from './SilverDialogHeader';
 import { UiFactoryBackstage, UiFactoryBackstageProviders } from '../../backstage/Backstage';
 import { RepresentingConfigs } from '../alien/RepresentingConfigs';
 import { StoredMenuButton, StoredMenuItem } from '../button/MenuButton';
 import * as Dialogs from '../dialog/Dialogs';
 import { FormBlockEvent, formCancelEvent } from '../general/FormEvents';
-import { dialogChannel } from './DialogChannels';
-import { ExtraListeners } from './SilverDialogEvents';
-import { renderModalHeader } from './SilverDialogHeader';
 
 export interface SharedWindowExtra {
   readonly closeWindow: () => void;

@@ -2,8 +2,8 @@ import { Cell } from '@ephox/katamari';
 
 import Editor from 'tinymce/core/api/Editor';
 
-import { SearchState } from '../core/Actions';
 import * as Dialog from './Dialog';
+import { SearchState } from '../core/Actions';
 
 const showDialog = (editor: Editor, currentSearchState: Cell<SearchState>) => (): void => {
   Dialog.open(editor, currentSearchState);

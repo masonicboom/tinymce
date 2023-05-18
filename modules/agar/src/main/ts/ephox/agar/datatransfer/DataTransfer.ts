@@ -1,9 +1,9 @@
 import { Arr, Id, Optional, Type } from '@ephox/katamari';
 
-import { createFileList } from '../file/FileList';
 import { getData } from './DataTransferItem';
 import { createDataTransferItemList } from './DataTransferItemList';
 import { isInProtectedMode, isInReadWriteMode, setReadWriteMode } from './Mode';
+import { createFileList } from '../file/FileList';
 
 type DropEffect = DataTransfer['dropEffect'];
 type EffectAllowed = DataTransfer['effectAllowed'];

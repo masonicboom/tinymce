@@ -1,9 +1,9 @@
 import { Arr } from '@ephox/katamari';
 
-import * as NodeType from '../dom/NodeType';
-import * as Zwsp from '../text/Zwsp';
 import * as CaretContainer from './CaretContainer';
 import CaretPosition from './CaretPosition';
+import * as NodeType from '../dom/NodeType';
+import * as Zwsp from '../text/Zwsp';
 
 interface TrimCount {
   readonly count: number;

@@ -1,11 +1,11 @@
 import { Adt, Fun, Optional, Optionals } from '@ephox/katamari';
 
+import * as InlineUtils from './InlineUtils';
 import * as CaretFinder from '../caret/CaretFinder';
 import CaretPosition from '../caret/CaretPosition';
 import * as CaretUtils from '../caret/CaretUtils';
 import { getParentCaretContainer } from '../fmt/FormatContainer';
 import * as LazyEvaluator from '../util/LazyEvaluator';
-import * as InlineUtils from './InlineUtils';
 
 export interface LocationAdt {
   fold: <T> (

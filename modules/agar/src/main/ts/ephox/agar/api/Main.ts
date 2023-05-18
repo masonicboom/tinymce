@@ -1,4 +1,3 @@
-import { ArrayAssert, StringAssert, StructAssert, StructAssertAdv, StructAssertBasic } from '../assertions/ApproxStructures';
 import * as ApproxStructure from './ApproxStructure';
 import * as Arbitraries from './Arbitraries';
 import * as Assertions from './Assertions';
@@ -35,6 +34,7 @@ import * as Touch from './Touch';
 import * as UiControls from './UiControls';
 import * as UiFinder from './UiFinder';
 import * as Waiter from './Waiter';
+import { ArrayAssert, StringAssert, StructAssert, StructAssertAdv, StructAssertBasic } from '../assertions/ApproxStructures';
 
 export {
   ApproxStructure,

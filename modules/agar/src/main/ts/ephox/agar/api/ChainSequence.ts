@@ -1,8 +1,8 @@
 import { Arr } from '@ephox/katamari';
 
-import { DieFn, NextFn } from '../pipe/Pipe';
 import { Chain } from './Chain';
 import { TestLogs } from './TestLogs';
+import { DieFn, NextFn } from '../pipe/Pipe';
 
 export const compose = <A, B, C> (sab: Chain<A, B>, sbc: Chain<B, C>): Chain<A, C> =>
   // don't Pipe them - assume that the base actions have already been piped

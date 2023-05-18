@@ -2,6 +2,9 @@ import { FieldSchema } from '@ephox/boulder';
 import { Arr, Fun, Optional } from '@ephox/katamari';
 import { SugarElement } from '@ephox/sugar';
 
+import * as Sketcher from './Sketcher';
+import { tieredMenu as TieredMenu } from './TieredMenu';
+import { SingleSketchFactory } from './UiSketcher';
 import * as Boxes from '../../alien/Boxes';
 import * as ComponentStructure from '../../alien/ComponentStructure';
 import { PlacementSpec } from '../../behaviour/positioning/PositioningTypes';
@@ -19,9 +22,6 @@ import { AlloyComponent } from '../component/ComponentApi';
 import * as SketchBehaviours from '../component/SketchBehaviours';
 import { AlloySpec, SketchSpec } from '../component/SpecTypes';
 import * as SystemEvents from '../events/SystemEvents';
-import * as Sketcher from './Sketcher';
-import { tieredMenu as TieredMenu } from './TieredMenu';
-import { SingleSketchFactory } from './UiSketcher';
 
 interface InlineViewPositionState {
   mode: 'position';

@@ -1,10 +1,10 @@
 import { Arr, Cell, Obj, Optional, Optionals, Singleton, Throttler } from '@ephox/katamari';
 import { Attribute } from '@ephox/sugar';
 
-import Editor from '../api/Editor';
 import { AnnotationsRegistry } from './AnnotationsRegistry';
 import * as Identification from './Identification';
 import * as Markings from './Markings';
+import Editor from '../api/Editor';
 
 export interface AnnotationChanges {
   readonly addListener: (name: string, f: AnnotationListener) => void;

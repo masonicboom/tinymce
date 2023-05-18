@@ -1,11 +1,11 @@
 import { Cell } from '@ephox/katamari';
 
+import { ToolbarGroupSpec } from './ToolbarGroupTypes';
 import { AlloyBehaviourRecord } from '../../api/behaviour/Behaviour';
 import { AlloyComponent } from '../../api/component/ComponentApi';
 import { SketchBehaviours } from '../../api/component/SketchBehaviours';
 import { AlloySpec, RawDomSchema, SimpleOrSketchSpec, SketchSpec } from '../../api/component/SpecTypes';
 import { CompositeSketch, CompositeSketchDetail, CompositeSketchSpec } from '../../api/ui/Sketcher';
-import { ToolbarGroupSpec } from './ToolbarGroupTypes';
 
 export interface SplitToolbarBaseDetail extends CompositeSketchDetail {
   uid: string;

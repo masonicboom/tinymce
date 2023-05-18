@@ -4,11 +4,11 @@ import { Fun, Merger, Optional } from '@ephox/katamari';
 
 import { UiFactoryBackstageProviders } from 'tinymce/themes/silver/backstage/Backstage';
 
+import { buildData, renderCommonItem } from './CommonMenuItem';
 import * as ItemClasses from '../ItemClasses';
 import ItemResponse from '../ItemResponse';
 import { renderCheckmark } from '../structure/ItemSlices';
 import { renderItemStructure } from '../structure/ItemStructure';
-import { buildData, renderCommonItem } from './CommonMenuItem';
 
 const renderChoiceItem = (
   spec: Menu.ChoiceMenuItem,

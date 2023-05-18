@@ -2,6 +2,7 @@ import { Objects } from '@ephox/boulder';
 import { Arr, Fun, Merger, Obj, Optional } from '@ephox/katamari';
 import { Attribute, EventArgs, Focus, Value } from '@ephox/sugar';
 
+import * as TypeaheadEvents from './TypeaheadEvents';
 import * as AddEventsBehaviour from '../../api/behaviour/AddEventsBehaviour';
 import { Composing } from '../../api/behaviour/Composing';
 import { Coupling } from '../../api/behaviour/Coupling';
@@ -26,7 +27,6 @@ import { NormalItemSpec } from '../../ui/types/ItemTypes';
 import { HighlightOnOpen, TieredData } from '../../ui/types/TieredMenuTypes';
 import { TypeaheadData, TypeaheadDetail, TypeaheadSpec } from '../../ui/types/TypeaheadTypes';
 import * as InputBase from '../common/InputBase';
-import * as TypeaheadEvents from './TypeaheadEvents';
 
 interface ItemExecuteEvent extends CustomEvent {
   readonly item: AlloyComponent;

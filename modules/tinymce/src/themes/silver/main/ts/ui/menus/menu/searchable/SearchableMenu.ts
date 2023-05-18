@@ -2,10 +2,10 @@ import { AlloyComponent, AlloyTriggers, Coupling, Dropdown, Focusing, Highlighti
 import { Optional } from '@ephox/katamari';
 import { Attribute, Class, SelectorFind, SugarElement } from '@ephox/sugar';
 
-import { MenuLayoutType } from '../MenuUtils';
 import { RedirectMenuItemInteractionEvent } from './SearchableMenuEvents';
 import { findWithinMenu, findWithinSandbox, restoreState, saveState, setActiveDescendant } from './SearchableMenuField';
 import { searchResultsClass } from './SearchableMenus';
+import { MenuLayoutType } from '../MenuUtils';
 
 export type MenuSearchMode = NoSearchMode | SearchMenuWithFieldMode | SearchMenuWithResultsMode;
 export interface NoSearchMode {

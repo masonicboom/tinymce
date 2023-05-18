@@ -1,16 +1,16 @@
 import { Fun, Optional } from '@ephox/katamari';
 import { Css, Height, SugarPosition, Width } from '@ephox/sugar';
 
-import { AlloyComponent } from '../../api/component/ComponentApi';
-import * as AlloyTriggers from '../../api/events/AlloyTriggers';
-import { NativeSimulatedEvent } from '../../events/SimulatedEvent';
-import { SliderModelDetailParts, SliderValueXY, TwoDSliderDetail } from '../types/SliderTypes';
 import * as EdgeActions from './EdgeActions';
 import * as HorizontalModel from './HorizontalModel';
 import * as ModelCommon from './ModelCommon';
 import * as SliderModel from './SliderModel';
 import { currentValue, maxX, maxY, minX, minY, step } from './SliderValues';
 import * as VerticalModel from './VerticalModel';
+import { AlloyComponent } from '../../api/component/ComponentApi';
+import * as AlloyTriggers from '../../api/events/AlloyTriggers';
+import { NativeSimulatedEvent } from '../../events/SimulatedEvent';
+import { SliderModelDetailParts, SliderValueXY, TwoDSliderDetail } from '../types/SliderTypes';
 
 // fire slider change event with xy value
 const fireSliderChange = (spectrum: AlloyComponent, value: SliderValueXY): void => {

@@ -5,14 +5,14 @@ import Editor from 'tinymce/core/api/Editor';
 import { Menu } from 'tinymce/core/api/ui/Ui';
 import { UiFactoryBackstage } from 'tinymce/themes/silver/backstage/Backstage';
 
+import { SelectDataset } from './SelectDatasets';
+import { NestedStyleFormat } from './StyleFormat';
+import * as FormatRegister from './utils/FormatRegister';
 import { renderCommonDropdown } from '../../dropdown/CommonDropdown';
 import ItemResponse from '../../menus/item/ItemResponse';
 import * as NestedMenus from '../../menus/menu/NestedMenus';
 import { ToolbarButtonClasses } from '../../toolbar/button/ButtonClasses';
 import { onSetupEvent } from '../ControlUtils';
-import { SelectDataset } from './SelectDatasets';
-import { NestedStyleFormat } from './StyleFormat';
-import * as FormatRegister from './utils/FormatRegister';
 
 export interface PreviewSpec {
   readonly tag: string;

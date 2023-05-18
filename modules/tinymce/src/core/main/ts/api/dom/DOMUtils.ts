@@ -1,6 +1,9 @@
 import { Arr, Fun, Obj, Optionals, Strings, Type } from '@ephox/katamari';
 import { Attribute, Class, ContentEditable, Css, Html, Insert, Remove, Selectors, SugarElement, SugarNode, Traverse, WindowVisualViewport } from '@ephox/sugar';
 
+import EventUtils, { EventUtilsCallback } from './EventUtils';
+import StyleSheetLoader from './StyleSheetLoader';
+import DomTreeWalker from './TreeWalker';
 import * as TransparentElements from '../../content/TransparentElements';
 import * as NodeType from '../../dom/NodeType';
 import * as Position from '../../dom/Position';
@@ -14,9 +17,6 @@ import Styles, { StyleMap } from '../html/Styles';
 import { URLConverter } from '../OptionTypes';
 import { MappedEvent } from '../util/EventDispatcher';
 import Tools from '../util/Tools';
-import EventUtils, { EventUtilsCallback } from './EventUtils';
-import StyleSheetLoader from './StyleSheetLoader';
-import DomTreeWalker from './TreeWalker';
 
 /**
  * Utility class for various DOM manipulation and retrieval functions.

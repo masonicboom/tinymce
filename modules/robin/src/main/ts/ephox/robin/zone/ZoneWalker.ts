@@ -2,10 +2,10 @@ import { Universe } from '@ephox/boss';
 import { Fun, Optional } from '@ephox/katamari';
 import { Gather, Traverse } from '@ephox/phoenix';
 
+import { LanguageZones, ZoneDetails } from './LanguageZones';
 import { ZonePosition } from '../api/general/ZonePosition';
 import { ZoneViewports } from '../api/general/ZoneViewports';
 import { WordDecisionItem } from '../words/WordDecision';
-import { LanguageZones, ZoneDetails } from './LanguageZones';
 
 // Figure out which direction to take the next step in. Returns None if the traversal should stop.
 const getNextStep = <E, D>(

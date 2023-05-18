@@ -1,9 +1,9 @@
 import { Fun } from '@ephox/katamari';
 
+import { hasOnlyChild, isEmpty } from './ParserUtils';
 import AstNode from '../api/html/Node';
 import Schema from '../api/html/Schema';
 import Tools from '../api/util/Tools';
-import { hasOnlyChild, isEmpty } from './ParserUtils';
 
 const removeOrUnwrapInvalidNode = (node: AstNode, schema: Schema, originalNodeParent: AstNode | null | undefined = node.parent) => {
   if (schema.getSpecialElements()[node.name]) {

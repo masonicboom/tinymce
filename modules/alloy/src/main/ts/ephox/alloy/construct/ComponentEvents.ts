@@ -1,6 +1,7 @@
 import { Objects } from '@ephox/boulder';
 import { Arr, Obj, Optional, Result } from '@ephox/katamari';
 
+import * as EventHandler from './EventHandler';
 import * as ObjIndex from '../alien/ObjIndex';
 import * as PrioritySort from '../alien/PrioritySort';
 import { AlloyBehaviour } from '../api/behaviour/Behaviour';
@@ -11,7 +12,6 @@ import { BehaviourState } from '../behaviour/common/BehaviourState';
 import * as DescribedHandler from '../events/DescribedHandler';
 import { UncurriedHandler } from '../events/EventRegistry';
 import { EventFormat, SimulatedEvent } from '../events/SimulatedEvent';
-import * as EventHandler from './EventHandler';
 
 /*
  * The process of combining a component's events

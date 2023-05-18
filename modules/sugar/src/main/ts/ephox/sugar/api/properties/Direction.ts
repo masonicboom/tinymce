@@ -1,5 +1,5 @@
-import { SugarElement } from '../node/SugarElement';
 import * as Css from './Css';
+import { SugarElement } from '../node/SugarElement';
 
 const onDirection = <T = any> (isLtr: T, isRtl: T) => (element: SugarElement<Element>): T =>
   getDirection(element) === 'rtl' ? isRtl : isLtr;

@@ -1,15 +1,15 @@
 import { Arr, Fun, Optional } from '@ephox/katamari';
 import { ContentEditable, EventArgs, PredicateFind, Situ, SugarElement, SugarNode } from '@ephox/sugar';
 
+import { SelectionAnnotation } from './SelectionAnnotation';
+import * as SelectionKeys from './SelectionKeys';
+import { WindowBridge } from './WindowBridge';
 import * as KeySelection from '../keyboard/KeySelection';
 import * as VerticalMovement from '../keyboard/VerticalMovement';
 import { MouseSelection } from '../mouse/MouseSelection';
 import * as KeyDirection from '../navigation/KeyDirection';
 import * as CellSelection from '../selection/CellSelection';
 import { Response } from '../selection/Response';
-import { SelectionAnnotation } from './SelectionAnnotation';
-import * as SelectionKeys from './SelectionKeys';
-import { WindowBridge } from './WindowBridge';
 
 interface RC {
   readonly rows: number;

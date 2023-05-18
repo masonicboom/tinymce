@@ -4,8 +4,8 @@ import {
   SugarText, Traverse
 } from '@ephox/sugar';
 
-import TagBoundaries from '../common/TagBoundaries';
 import { Universe } from './Universe';
+import TagBoundaries from '../common/TagBoundaries';
 
 export default (): Universe<SugarElement, Document> => {
   const clone = (element: SugarElement<Node>) => {

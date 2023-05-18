@@ -1,6 +1,9 @@
 import { Arr, Obj, Optional, Optionals, Type } from '@ephox/katamari';
 import { ContentEditable, Css, Insert, PredicateFilter, SugarElement, SugarNode, Traverse } from '@ephox/sugar';
 
+import * as InsertDetailsNewLine from './InsertDetailsNewLine';
+import * as InsertLi from './InsertLi';
+import * as NewLineUtils from './NewLineUtils';
 import DOMUtils from '../api/dom/DOMUtils';
 import DomTreeWalker from '../api/dom/TreeWalker';
 import Editor from '../api/Editor';
@@ -15,9 +18,6 @@ import { isCaretNode } from '../fmt/FormatContainer';
 import * as NormalizeRange from '../selection/NormalizeRange';
 import { isWhitespaceText } from '../text/Whitespace';
 import * as Zwsp from '../text/Zwsp';
-import * as InsertDetailsNewLine from './InsertDetailsNewLine';
-import * as InsertLi from './InsertLi';
-import * as NewLineUtils from './NewLineUtils';
 
 const trimZwsp = (fragment: DocumentFragment) => {
   Arr.each(PredicateFilter.descendants(SugarElement.fromDom(fragment), SugarNode.isText), (text) => {

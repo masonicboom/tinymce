@@ -1,10 +1,10 @@
 import { Universe } from '@ephox/boss';
 import { Arr } from '@ephox/katamari';
 
+import * as TypedList from './TypedList';
 import * as Spot from '../api/data/Spot';
 import { TypedItem } from '../api/data/TypedItem';
 import { SpotPoint } from '../api/data/Types';
-import * as TypedList from './TypedList';
 
 /**
  * Flattens the item tree into an array of TypedItem representations.

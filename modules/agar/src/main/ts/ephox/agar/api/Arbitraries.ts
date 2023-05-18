@@ -1,10 +1,10 @@
 import { SimRange, SugarElement } from '@ephox/sugar';
 import * as fc from 'fast-check';
 
+import * as Generators from './Generators';
 import * as ArbContent from '../arbitrary/ArbContent';
 import { SchemaDetail } from '../arbitrary/ArbSchemaTypes';
 import { SelectionExclusions } from '../arbitrary/GenSelection';
-import * as Generators from './Generators';
 
 const scenario = (
   component: string,

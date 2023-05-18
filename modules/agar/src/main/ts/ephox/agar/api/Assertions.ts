@@ -2,13 +2,13 @@ import { Assert, TestError, TestLabel } from '@ephox/bedrock-client';
 import { Obj, Optional } from '@ephox/katamari';
 import { Compare, SugarElement, Truncate } from '@ephox/sugar';
 
-import { elementQueue, StructAssert } from '../assertions/ApproxStructures';
-import * as Differ from '../assertions/Differ';
 import * as ApproxStructure from './ApproxStructure';
 import { Chain } from './Chain';
 import * as Logger from './Logger';
 import { Step } from './Step';
 import * as UiFinder from './UiFinder';
+import { elementQueue, StructAssert } from '../assertions/ApproxStructures';
+import * as Differ from '../assertions/Differ';
 
 const toStep = <U extends any[]>(method: (...args: U) => void) =>
   <T>(...args: U) => Step.sync<T>(() => {

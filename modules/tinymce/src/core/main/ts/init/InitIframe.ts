@@ -1,12 +1,12 @@
 import { Optional, Strings } from '@ephox/katamari';
 import { Attribute, Class, DomEvent, SugarElement } from '@ephox/sugar';
 
+import * as InitContentBody from './InitContentBody';
 import DOMUtils from '../api/dom/DOMUtils';
 import Editor from '../api/Editor';
 import Env from '../api/Env';
 import * as Options from '../api/Options';
 import { TranslatedString } from '../api/util/I18n';
-import * as InitContentBody from './InitContentBody';
 
 interface BoxInfo {
   readonly editorContainer: HTMLElement | null;

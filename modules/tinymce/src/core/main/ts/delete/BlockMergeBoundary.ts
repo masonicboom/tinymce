@@ -1,13 +1,13 @@
 import { Optional, Optionals } from '@ephox/katamari';
 import { Compare, PredicateFind, SugarElement, SugarNode } from '@ephox/sugar';
 
+import * as DeleteUtils from './DeleteUtils';
 import * as CaretFinder from '../caret/CaretFinder';
 import CaretPosition from '../caret/CaretPosition';
 import * as TransparentElements from '../content/TransparentElements';
 import * as ElementType from '../dom/ElementType';
 import * as Empty from '../dom/Empty';
 import * as NodeType from '../dom/NodeType';
-import * as DeleteUtils from './DeleteUtils';
 
 export interface BlockPosition {
   readonly block: SugarElement<Element>;

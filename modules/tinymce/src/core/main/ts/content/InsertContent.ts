@@ -1,9 +1,9 @@
-import Editor from '../api/Editor';
-import Tools from '../api/util/Tools';
-import * as Rtc from '../Rtc';
 import { InsertContentDetails } from './ContentTypes';
 import { trimOrPadLeftRight } from './NbspTrim';
 import { postProcessSetContent, preProcessSetContent } from './PrePostProcess';
+import Editor from '../api/Editor';
+import Tools from '../api/util/Tools';
+import * as Rtc from '../Rtc';
 
 interface DetailsWithContent extends InsertContentDetails {
   readonly content: string;

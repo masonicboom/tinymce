@@ -1,13 +1,13 @@
 import { FieldPresence, FieldProcessor, FieldSchema, Objects, StructureSchema, ValueType } from '@ephox/boulder';
 import { Arr, Fun, Obj, Optional, Result } from '@ephox/katamari';
 
+import * as PartSubstitutes from './PartSubstitutes';
+import * as PartType from './PartType';
 import { AlloyComponent } from '../api/component/ComponentApi';
 import { AlloySpec, SimpleOrSketchSpec, SketchSpec } from '../api/component/SpecTypes';
 import { CompositeSketchDetail } from '../api/ui/Sketcher';
 import * as Fields from '../data/Fields';
 import * as UiSubstitutes from '../spec/UiSubstitutes';
-import * as PartSubstitutes from './PartSubstitutes';
-import * as PartType from './PartType';
 
 export interface GeneratedParts {
   [key: string]: (config: Record<string, any>) => ConfiguredPart;

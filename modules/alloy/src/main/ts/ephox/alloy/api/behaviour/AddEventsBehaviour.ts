@@ -1,9 +1,9 @@
 import { FieldSchema } from '@ephox/boulder';
 import { Fun } from '@ephox/katamari';
 
+import { AlloyBehaviour, create as createBehaviour, NamedConfiguredBehaviour } from './Behaviour';
 import { NoState } from '../../behaviour/common/BehaviourState';
 import { AlloyEventKeyAndHandler, AlloyEventRecord, derive } from '../events/AlloyEvents';
-import { AlloyBehaviour, create as createBehaviour, NamedConfiguredBehaviour } from './Behaviour';
 
 // AlloyEventKeyAndHandler type argument needs to be any here to satisfy an array of handlers
 // where each item can be any subtype of EventFormat we can't use <T extends EventFormat> since

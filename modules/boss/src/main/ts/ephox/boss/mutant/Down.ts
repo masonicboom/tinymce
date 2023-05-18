@@ -1,7 +1,7 @@
 import { Arr } from '@ephox/katamari';
 
-import { Gene } from '../api/Gene';
 import * as Comparator from './Comparator';
+import { Gene } from '../api/Gene';
 
 const selector = (item: Gene, query: string): Gene[] => {
   return Arr.bind(item.children || [], (child) => {

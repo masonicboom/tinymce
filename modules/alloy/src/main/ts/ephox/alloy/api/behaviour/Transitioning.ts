@@ -1,11 +1,11 @@
 import { Objects } from '@ephox/boulder';
 import { Obj } from '@ephox/katamari';
 
+import * as Behaviour from './Behaviour';
 import * as ActiveTransitioning from '../../behaviour/transitioning/ActiveTransitioning';
 import * as TransitionApis from '../../behaviour/transitioning/TransitionApis';
 import { TransitioningBehaviour, TransitionPropertiesSpec, TransitioningConfigSpec } from '../../behaviour/transitioning/TransitioningTypes';
 import TransitionSchema from '../../behaviour/transitioning/TransitionSchema';
-import * as Behaviour from './Behaviour';
 
 const createRoutes = (routes: Record<string, TransitionPropertiesSpec>): TransitioningConfigSpec['routes'] => {
   const r: TransitioningConfigSpec['routes'] = { };

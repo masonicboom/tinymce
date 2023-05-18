@@ -1,6 +1,7 @@
 import { Arr, Fun, Optional, Optionals } from '@ephox/katamari';
 import { Attribute, Compare, SugarElement } from '@ephox/sugar';
 
+import * as Transitions from './Transitions';
 import { Generators, GeneratorsWrapper, SimpleGenerators } from '../api/Generators';
 import * as ResizeBehaviour from '../api/ResizeBehaviour';
 import * as Structs from '../api/Structs';
@@ -12,7 +13,6 @@ import { Warehouse } from '../api/Warehouse';
 import * as Redraw from '../operate/Redraw';
 import * as LockedColumnUtils from '../util/LockedColumnUtils';
 import { CompElm, RowCell, RowElement } from '../util/TableTypes';
-import * as Transitions from './Transitions';
 
 export interface OperationBehaviours {
   readonly sizing?: TableSize;

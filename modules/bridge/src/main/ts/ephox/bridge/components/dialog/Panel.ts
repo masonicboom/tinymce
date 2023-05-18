@@ -1,7 +1,6 @@
 import { FieldPresence, FieldSchema, StructureSchema } from '@ephox/boulder';
 import { Result } from '@ephox/katamari';
 
-import * as ComponentSchema from '../../core/ComponentSchema';
 import { alertBannerSchema } from './AlertBanner';
 import { createBarFields } from './Bar';
 import { BodyComponent, BodyComponentSpec } from './BodyComponent';
@@ -26,6 +25,7 @@ import { tableSchema } from './Table';
 import { textAreaSchema } from './Textarea';
 import { treeSchema } from './Tree';
 import { urlInputSchema } from './UrlInput';
+import * as ComponentSchema from '../../core/ComponentSchema';
 
 export interface PanelSpec {
   type: 'panel';

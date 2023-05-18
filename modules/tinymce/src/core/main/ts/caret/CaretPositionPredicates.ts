@@ -1,12 +1,12 @@
 import { Fun, Optional } from '@ephox/katamari';
 import { Css, SugarElement } from '@ephox/sugar';
 
+import CaretPosition from './CaretPosition';
+import { getChildNodeAtRelativeOffset } from './CaretUtils';
 import BookmarkManager from '../api/dom/BookmarkManager';
 import * as NodeType from '../dom/NodeType';
 import { isWhiteSpace } from '../text/CharType';
 import * as Zwsp from '../text/Zwsp';
-import CaretPosition from './CaretPosition';
-import { getChildNodeAtRelativeOffset } from './CaretUtils';
 
 const isChar = (forward: boolean, predicate: (chr: string) => boolean, pos: CaretPosition): boolean =>
   Optional.from(pos.container()).filter(NodeType.isText).exists((text) => {
